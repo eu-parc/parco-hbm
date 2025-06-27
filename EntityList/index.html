@@ -1,0 +1,842 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://eu-parc.github.io/parco-hbm/EntityList/" rel="canonical"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.14" name="generator"/>
+<title>Class: EntityList - PEH-model Documentation</title>
+<link href="../assets/stylesheets/main.342714a4.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../css/ansi-colours.css" rel="stylesheet"/>
+<link href="../css/jupyter-cells.css" rel="stylesheet"/>
+<link href="../css/pandas-dataframe.css" rel="stylesheet"/>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="cyan" data-md-color-scheme="slate" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#class-entitylist">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="PEH-model Documentation" class="md-header__button md-logo" data-md-component="logo" href=".." title="PEH-model Documentation">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            PEH-model Documentation
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Class: EntityList
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/eu-parc/parco-hbm" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="PEH-model Documentation" class="md-nav__button md-logo" data-md-component="logo" href=".." title="PEH-model Documentation">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+    PEH-model Documentation
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/eu-parc/parco-hbm" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+<span class="md-ellipsis">
+    Index
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../about/">
+<span class="md-ellipsis">
+    About
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#slots">
+<span class="md-ellipsis">
+      Slots
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#identifier-and-mapping-information">
+<span class="md-ellipsis">
+      Identifier and Mapping Information
+    </span>
+</a>
+<nav aria-label="Identifier and Mapping Information" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schema-source">
+<span class="md-ellipsis">
+      Schema Source
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mappings">
+<span class="md-ellipsis">
+      Mappings
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linkml-source">
+<span class="md-ellipsis">
+      LinkML Source
+    </span>
+</a>
+<nav aria-label="LinkML Source" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#direct">
+<span class="md-ellipsis">
+      Direct
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#induced">
+<span class="md-ellipsis">
+      Induced
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="class-entitylist">Class: EntityList</h1>
+<p><em>A generic top level object for collecting named entities under one root entity</em></p>
+<p>URI: <a href="https://w3id.org/peh/terms/EntityList">pehterms:EntityList</a></p>
+<div class="mermaid"> classDiagram
+    class EntityList
+    click EntityList href "../EntityList"
+      EntityList : biochementities
+
+
+
+
+
+        EntityList --&gt; "*" BioChemEntity : biochementities
+        click BioChemEntity href "../BioChemEntity"
+
+
+
+      EntityList : data_requests
+
+
+
+
+
+        EntityList --&gt; "*" DataRequest : data_requests
+        click DataRequest href "../DataRequest"
+
+
+
+      EntityList : groupings
+
+
+
+
+
+        EntityList --&gt; "*" Grouping : groupings
+        click Grouping href "../Grouping"
+
+
+
+      EntityList : indicators
+
+
+
+
+
+        EntityList --&gt; "*" Indicator : indicators
+        click Indicator href "../Indicator"
+
+
+
+      EntityList : layouts
+
+
+
+
+
+        EntityList --&gt; "*" DataLayout : layouts
+        click DataLayout href "../DataLayout"
+
+
+
+      EntityList : matrices
+
+
+
+
+
+        EntityList --&gt; "*" Matrix : matrices
+        click Matrix href "../Matrix"
+
+
+
+      EntityList : metadata_fields
+
+
+
+
+
+        EntityList --&gt; "*" ObservablePropertyMetadataField : metadata_fields
+        click ObservablePropertyMetadataField href "../ObservablePropertyMetadataField"
+
+
+
+      EntityList : observable_properties
+
+
+
+
+
+        EntityList --&gt; "*" ObservableProperty : observable_properties
+        click ObservableProperty href "../ObservableProperty"
+
+
+
+      EntityList : observation_groups
+
+
+
+
+
+        EntityList --&gt; "*" ObservationGroup : observation_groups
+        click ObservationGroup href "../ObservationGroup"
+
+
+
+      EntityList : observation_results
+
+
+
+
+
+        EntityList --&gt; "*" ObservationResult : observation_results
+        click ObservationResult href "../ObservationResult"
+
+
+
+      EntityList : observations
+
+
+
+
+
+        EntityList --&gt; "*" Observation : observations
+        click Observation href "../Observation"
+
+
+
+      EntityList : observed_values
+
+
+
+
+
+        EntityList --&gt; "*" ObservedValue : observed_values
+        click ObservedValue href "../ObservedValue"
+
+
+
+      EntityList : physical_entities
+
+
+
+
+
+        EntityList --&gt; "*" PhysicalEntity : physical_entities
+        click PhysicalEntity href "../PhysicalEntity"
+
+
+
+      EntityList : projects
+
+
+
+
+
+        EntityList --&gt; "*" Project : projects
+        click Project href "../Project"
+
+
+
+      EntityList : stakeholders
+
+
+
+
+
+        EntityList --&gt; "*" Stakeholder : stakeholders
+        click Stakeholder href "../Stakeholder"
+
+
+
+      EntityList : studies
+
+
+
+
+
+        EntityList --&gt; "*" Study : studies
+        click Study href "../Study"
+
+
+
+      EntityList : study_entities
+
+
+
+
+
+        EntityList --&gt; "*" StudyEntity : study_entities
+        click StudyEntity href "../StudyEntity"
+
+
+
+      EntityList : units
+
+
+
+
+
+        EntityList --&gt; "*" Unit : units
+        click Unit href "../Unit"
+
+
+
+
+</div>
+<!-- no inheritance hierarchy -->
+<h2 id="slots">Slots</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Cardinality and Range</th>
+<th>Description</th>
+<th>Inheritance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../matrices/">matrices</a></td>
+<td>* <br/> <a href="../Matrix/">Matrix</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../metadata_fields/">metadata_fields</a></td>
+<td>* <br/> <a href="../ObservablePropertyMetadataField/">ObservablePropertyMetadataField</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../biochementities/">biochementities</a></td>
+<td>* <br/> <a href="../BioChemEntity/">BioChemEntity</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../groupings/">groupings</a></td>
+<td>* <br/> <a href="../Grouping/">Grouping</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../indicators/">indicators</a></td>
+<td>* <br/> <a href="../Indicator/">Indicator</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../units/">units</a></td>
+<td>* <br/> <a href="../Unit/">Unit</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../observable_properties/">observable_properties</a></td>
+<td>* <br/> <a href="../ObservableProperty/">ObservableProperty</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../stakeholders/">stakeholders</a></td>
+<td>* <br/> <a href="../Stakeholder/">Stakeholder</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../projects/">projects</a></td>
+<td>* <br/> <a href="../Project/">Project</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../studies/">studies</a></td>
+<td>* <br/> <a href="../Study/">Study</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../study_entities/">study_entities</a></td>
+<td>* <br/> <a href="../StudyEntity/">StudyEntity</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../physical_entities/">physical_entities</a></td>
+<td>* <br/> <a href="../PhysicalEntity/">PhysicalEntity</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../observation_groups/">observation_groups</a></td>
+<td>* <br/> <a href="../ObservationGroup/">ObservationGroup</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../observations/">observations</a></td>
+<td>* <br/> <a href="../Observation/">Observation</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../observation_results/">observation_results</a></td>
+<td>* <br/> <a href="../ObservationResult/">ObservationResult</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../observed_values/">observed_values</a></td>
+<td>* <br/> <a href="../ObservedValue/">ObservedValue</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../layouts/">layouts</a></td>
+<td>* <br/> <a href="../DataLayout/">DataLayout</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../data_requests/">data_requests</a></td>
+<td>* <br/> <a href="../DataRequest/">DataRequest</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+</tbody>
+</table>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: https://w3id.org/peh/peh-model</li>
+</ul>
+<h2 id="mappings">Mappings</h2>
+<table>
+<thead>
+<tr>
+<th>Mapping Type</th>
+<th>Mapped Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>self</td>
+<td>pehterms:EntityList</td>
+</tr>
+<tr>
+<td>native</td>
+<td>pehterms:EntityList</td>
+</tr>
+</tbody>
+</table>
+<h2 id="linkml-source">LinkML Source</h2>
+<!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
+<h3 id="direct">Direct</h3>
+<details>
+<pre><code class="language-yaml">name: EntityList
+description: A generic top level object for collecting named entities under one root
+  entity
+from_schema: https://w3id.org/peh/peh-model
+slots:
+- matrices
+- metadata_fields
+- biochementities
+- groupings
+- indicators
+- units
+- observable_properties
+- stakeholders
+- projects
+- studies
+- study_entities
+- physical_entities
+- observation_groups
+- observations
+- observation_results
+- observed_values
+- layouts
+- data_requests
+tree_root: true
+
+</code></pre>
+</details>
+<h3 id="induced">Induced</h3>
+<details>
+<pre><code class="language-yaml">name: EntityList
+description: A generic top level object for collecting named entities under one root
+  entity
+from_schema: https://w3id.org/peh/peh-model
+attributes:
+  matrices:
+    name: matrices
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: matrices
+    owner: EntityList
+    domain_of:
+    - EntityList
+    range: Matrix
+    multivalued: true
+    inlined_as_list: true
+  metadata_fields:
+    name: metadata_fields
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: metadata_fields
+    owner: EntityList
+    domain_of:
+    - EntityList
+    range: ObservablePropertyMetadataField
+    multivalued: true
+    inlined_as_list: true
+  biochementities:
+    name: biochementities
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: biochementities
+    owner: EntityList
+    domain_of:
+    - EntityList
+    range: BioChemEntity
+    multivalued: true
+    inlined_as_list: true
+  groupings:
+    name: groupings
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: groupings
+    owner: EntityList
+    domain_of:
+    - EntityList
+    range: Grouping
+    multivalued: true
+    inlined_as_list: true
+  indicators:
+    name: indicators
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: indicators
+    owner: EntityList
+    domain_of:
+    - EntityList
+    range: Indicator
+    multivalued: true
+    inlined_as_list: true
+  units:
+    name: units
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: units
+    owner: EntityList
+    domain_of:
+    - EntityList
+    range: Unit
+    multivalued: true
+    inlined_as_list: true
+  observable_properties:
+    name: observable_properties
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: observable_properties
+    owner: EntityList
+    domain_of:
+    - EntityList
+    range: ObservableProperty
+    multivalued: true
+    inlined_as_list: true
+  stakeholders:
+    name: stakeholders
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: stakeholders
+    owner: EntityList
+    domain_of:
+    - EntityList
+    range: Stakeholder
+    multivalued: true
+    inlined_as_list: true
+  projects:
+    name: projects
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: projects
+    owner: EntityList
+    domain_of:
+    - EntityList
+    range: Project
+    multivalued: true
+    inlined_as_list: true
+  studies:
+    name: studies
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: studies
+    owner: EntityList
+    domain_of:
+    - EntityList
+    range: Study
+    multivalued: true
+    inlined_as_list: true
+  study_entities:
+    name: study_entities
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: study_entities
+    owner: EntityList
+    domain_of:
+    - EntityList
+    range: StudyEntity
+    multivalued: true
+    inlined_as_list: true
+  physical_entities:
+    name: physical_entities
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: physical_entities
+    owner: EntityList
+    domain_of:
+    - EntityList
+    range: PhysicalEntity
+    multivalued: true
+    inlined_as_list: true
+  observation_groups:
+    name: observation_groups
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: observation_groups
+    owner: EntityList
+    domain_of:
+    - EntityList
+    range: ObservationGroup
+    multivalued: true
+    inlined_as_list: true
+  observations:
+    name: observations
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: observations
+    owner: EntityList
+    domain_of:
+    - EntityList
+    range: Observation
+    multivalued: true
+    inlined_as_list: true
+  observation_results:
+    name: observation_results
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: observation_results
+    owner: EntityList
+    domain_of:
+    - EntityList
+    range: ObservationResult
+    multivalued: true
+    inlined_as_list: true
+  observed_values:
+    name: observed_values
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: observed_values
+    owner: EntityList
+    domain_of:
+    - EntityList
+    - ObservationResult
+    - DataExtract
+    range: ObservedValue
+    multivalued: true
+    inlined_as_list: true
+  layouts:
+    name: layouts
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: layouts
+    owner: EntityList
+    domain_of:
+    - EntityList
+    range: DataLayout
+    multivalued: true
+    inlined_as_list: true
+  data_requests:
+    name: data_requests
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: data_requests
+    owner: EntityList
+    domain_of:
+    - EntityList
+    range: DataRequest
+    multivalued: true
+    inlined_as_list: true
+tree_root: true
+
+</code></pre>
+</details>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+<script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+<script src="../javascripts/tablesort.js"></script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script><script type="module">import mermaid from "https://unpkg.com/mermaid@10.9.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
+</html>
