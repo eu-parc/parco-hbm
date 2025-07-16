@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://eu-parc.github.io/parco-hbm/ProcessingStep/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.6.14" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.15" name="generator"/>
 <title>Class: ProcessingStep - PEH-model Documentation</title>
 <link href="../assets/stylesheets/main.342714a4.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
@@ -245,13 +245,15 @@
 
       ProcessingStep : id
 
-      ProcessingStep : label
-
       ProcessingStep : name
 
       ProcessingStep : remark
 
+      ProcessingStep : short_name
+
       ProcessingStep : start_date
+
+      ProcessingStep : ui_label
 
       ProcessingStep : unique_name
 
@@ -300,19 +302,25 @@
 <td><a href="../NamedThing/">NamedThing</a></td>
 </tr>
 <tr>
+<td><a href="../short_name/">short_name</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../NamedThing/">NamedThing</a></td>
+</tr>
+<tr>
 <td><a href="../name/">name</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td></td>
 <td><a href="../NamedThing/">NamedThing</a></td>
 </tr>
 <tr>
-<td><a href="../description/">description</a></td>
+<td><a href="../ui_label/">ui_label</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td></td>
 <td><a href="../NamedThing/">NamedThing</a></td>
 </tr>
 <tr>
-<td><a href="../label/">label</a></td>
+<td><a href="../description/">description</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td></td>
 <td><a href="../NamedThing/">NamedThing</a></td>
@@ -425,13 +433,20 @@ attributes:
   unique_name:
     name: unique_name
     from_schema: https://w3id.org/peh/peh-model
-    exact_mappings:
-    - skos:altLabel
     close_mappings:
     - schema:identifier
     rank: 1000
-    slot_uri: schema:alternateName
+    slot_uri: skos:prefLabel
     alias: unique_name
+    owner: ProcessingStep
+    domain_of:
+    - NamedThing
+    range: string
+  short_name:
+    name: short_name
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: short_name
     owner: ProcessingStep
     domain_of:
     - NamedThing
@@ -449,6 +464,15 @@ attributes:
     - NamedThing
     - Contact
     range: string
+  ui_label:
+    name: ui_label
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: ui_label
+    owner: ProcessingStep
+    domain_of:
+    - NamedThing
+    range: string
   description:
     name: description
     from_schema: https://w3id.org/peh/peh-model
@@ -460,20 +484,6 @@ attributes:
     owner: ProcessingStep
     domain_of:
     - NamedThing
-    range: string
-  label:
-    name: label
-    from_schema: https://w3id.org/peh/peh-model
-    exact_mappings:
-    - schema:alternateName
-    rank: 1000
-    slot_uri: skos:prefLabel
-    alias: label
-    owner: ProcessingStep
-    domain_of:
-    - NamedThing
-    - ObservablePropertyValueOption
-    - DataLayoutElement
     range: string
   remark:
     name: remark
@@ -515,7 +525,7 @@ attributes:
 <div class="md-dialog__inner md-typeset"></div>
 </div>
 <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": "0.0.1a2"}</script>
-<script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+<script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
 <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
 <script src="../javascripts/tablesort.js"></script>
 <script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";

@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
@@ -377,7 +377,7 @@
 
 
 <h1 id="slot-unique_name">Slot: unique_name</h1>
-<p>URI: <a href="http://schema.org/alternateName">schema:alternateName</a>
+<p>URI: <a href="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a>
 Alias: unique_name</p>
 <!-- no inheritance hierarchy -->
 
@@ -392,18 +392,43 @@ Alias: unique_name</p>
 </thead>
 <tbody>
 <tr>
+<td><a href="../StudySubjectGroup/">StudySubjectGroup</a></td>
+<td>A group of study subjects that is itself also a study entity that observation...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../ObservableProperty/">ObservableProperty</a></td>
+<td>A fully defined variable that allows registering an observation about any of ...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../StudyEntity/">StudyEntity</a></td>
+<td>Any entity carrying data or context relevant to a Personal Exposure and Healt...</td>
+<td>no</td>
+</tr>
+<tr>
 <td><a href="../PhysicalEntity/">PhysicalEntity</a></td>
 <td>A digital placeholder for a physical entity as it exists in the real world,</td>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../HomeEnvironment/">HomeEnvironment</a></td>
-<td>A home environment relevant to the research, typically related to the at-home...</td>
+<td><a href="../StudySubject/">StudySubject</a></td>
+<td>A study entity that is a main subject for the study</td>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../ObservablePropertyMetadataField/">ObservablePropertyMetadataField</a></td>
-<td>Predefined contextual qualifier for Observable Property metadata</td>
+<td><a href="../Study/">Study</a></td>
+<td>A structured, goal-directed observational investigation designed to collect a...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../SampleCollection/">SampleCollection</a></td>
+<td>A collection of samples that is itself also a study entity that observations ...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../DataLayout/">DataLayout</a></td>
+<td>Layout, allowing the definition of templating sections for combining layout a...</td>
 <td>no</td>
 </tr>
 <tr>
@@ -417,83 +442,8 @@ Alias: unique_name</p>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../StudySubject/">StudySubject</a></td>
-<td>A study entity that is a main subject for the study</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../NamedThing/">NamedThing</a></td>
-<td>An abstract model for any of the identifiable entities</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../StudyPopulation/">StudyPopulation</a></td>
-<td>A group of study entities that is itself also a study entity that observation...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../ObservationResult/">ObservationResult</a></td>
-<td>The result of an observational effort in Personal Exposure and Health researc...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../BioChemIdentifierSchema/">BioChemIdentifierSchema</a></td>
-<td>A well-defined schema used by a certain community or system, listing biochemi...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../ObservationGroup/">ObservationGroup</a></td>
-<td>A grouped collection of observations, intended and/or executed, as part of a ...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../BioChemEntity/">BioChemEntity</a></td>
-<td>A biological, chemical or biochemical entity that is relevant to the Personal...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Sample/">Sample</a></td>
-<td>A portion of a measurement matrix collected from a subject or environment for...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../DataLayout/">DataLayout</a></td>
-<td>Layout, allowing the definition of templating sections for combining layout a...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../ObservableProperty/">ObservableProperty</a></td>
-<td>A fully defined variable that allows registering an observation about any of ...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../DataRequest/">DataRequest</a></td>
-<td>Registration of a request for data by a data user</td>
-<td>no</td>
-</tr>
-<tr>
 <td><a href="../ProcessingStep/">ProcessingStep</a></td>
 <td>One step in the data request and processing flow</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Project/">Project</a></td>
-<td>A collaborative effort in the Personal Exposure and Health research domain</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Study/">Study</a></td>
-<td>A structured, goal-directed observational investigation designed to collect a...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Indicator/">Indicator</a></td>
-<td>Any measurable or observable variable that can describe data or context in th...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../StudyEntity/">StudyEntity</a></td>
-<td>Any entity carrying data or context relevant to a Personal Exposure and Healt...</td>
 <td>no</td>
 </tr>
 <tr>
@@ -502,8 +452,23 @@ Alias: unique_name</p>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../DataStakeholder/">DataStakeholder</a></td>
-<td>An organisation participating in a data process in Personal Exposure and Heal...</td>
+<td><a href="../HomeEnvironment/">HomeEnvironment</a></td>
+<td>A home environment relevant to the research, typically related to the at-home...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../ObservationGroup/">ObservationGroup</a></td>
+<td>A grouped collection of observations, intended and/or executed, as part of a ...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../BioChemIdentifierSchema/">BioChemIdentifierSchema</a></td>
+<td>A well-defined schema used by a certain community or system, listing biochemi...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../ObservationResult/">ObservationResult</a></td>
+<td>The result of an observational effort in Personal Exposure and Health researc...</td>
 <td>no</td>
 </tr>
 <tr>
@@ -512,43 +477,38 @@ Alias: unique_name</p>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../Person/">Person</a></td>
-<td>A human subject or stakeholder in Personal Exposure and Health research</td>
-<td>no</td>
-</tr>
-<tr>
 <td><a href="../DataLayoutSection/">DataLayoutSection</a></td>
 <td>Definition for an individual layout or data section, as part of a full layout</td>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../Stakeholder/">Stakeholder</a></td>
-<td>Any organisation involved in the research process</td>
+<td><a href="../Person/">Person</a></td>
+<td>A human subject or stakeholder in Personal Exposure and Health research</td>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../WorkEnvironment/">WorkEnvironment</a></td>
-<td>A work environment relevant to the research, typically related to the at-work...</td>
+<td><a href="../Sample/">Sample</a></td>
+<td>A portion of a measurement matrix collected from a subject or environment for...</td>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../Matrix/">Matrix</a></td>
-<td>The physical medium or biological substrate from which a biomarker, or other ...</td>
+<td><a href="../Indicator/">Indicator</a></td>
+<td>Any measurable or observable variable that can describe data or context in th...</td>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../Unit/">Unit</a></td>
-<td>A unit of measurement, a quantity chosen as a standard in terms of which othe...</td>
+<td><a href="../Project/">Project</a></td>
+<td>A collaborative effort in the Personal Exposure and Health research domain</td>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../StudySubjectGroup/">StudySubjectGroup</a></td>
-<td>A group of study subjects that is itself also a study entity that observation...</td>
+<td><a href="../NamedThing/">NamedThing</a></td>
+<td>An abstract model for any of the identifiable entities</td>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../Geolocation/">Geolocation</a></td>
-<td>A geographic location relevant to the Personal Exposure and Health projects o...</td>
+<td><a href="../ObservablePropertyMetadataField/">ObservablePropertyMetadataField</a></td>
+<td>Predefined contextual qualifier for Observable Property metadata</td>
 <td>no</td>
 </tr>
 <tr>
@@ -557,8 +517,48 @@ Alias: unique_name</p>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../SampleCollection/">SampleCollection</a></td>
-<td>A collection of samples that is itself also a study entity that observations ...</td>
+<td><a href="../Geolocation/">Geolocation</a></td>
+<td>A geographic location relevant to the Personal Exposure and Health projects o...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../Stakeholder/">Stakeholder</a></td>
+<td>Any organisation involved in the research process</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../DataStakeholder/">DataStakeholder</a></td>
+<td>An organisation participating in a data process in Personal Exposure and Heal...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../Unit/">Unit</a></td>
+<td>A unit of measurement, a quantity chosen as a standard in terms of which othe...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../Matrix/">Matrix</a></td>
+<td>The physical medium or biological substrate from which a biomarker, or other ...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../WorkEnvironment/">WorkEnvironment</a></td>
+<td>A work environment relevant to the research, typically related to the at-work...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../DataRequest/">DataRequest</a></td>
+<td>Registration of a request for data by a data user</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../BioChemEntity/">BioChemEntity</a></td>
+<td>A biological, chemical or biochemical entity that is relevant to the Personal...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../StudyPopulation/">StudyPopulation</a></td>
+<td>A group of study entities that is itself also a study entity that observation...</td>
 <td>no</td>
 </tr>
 </tbody>
@@ -583,15 +583,11 @@ Alias: unique_name</p>
 <tbody>
 <tr>
 <td>self</td>
-<td>schema:alternateName</td>
+<td>skos:prefLabel</td>
 </tr>
 <tr>
 <td>native</td>
 <td>pehterms:unique_name</td>
-</tr>
-<tr>
-<td>exact</td>
-<td>skos:altLabel</td>
 </tr>
 <tr>
 <td>close</td>
@@ -604,12 +600,10 @@ Alias: unique_name</p>
 
 <pre><code class="language-yaml">name: unique_name
 from_schema: https://w3id.org/peh/peh-model
-exact_mappings:
-- skos:altLabel
 close_mappings:
 - schema:identifier
 rank: 1000
-slot_uri: schema:alternateName
+slot_uri: skos:prefLabel
 alias: unique_name
 domain_of:
 - NamedThing
@@ -671,7 +665,7 @@ range: string
       <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": "0.0.1a2"}</script>
     
     
-      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
         <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
       
