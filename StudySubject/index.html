@@ -306,43 +306,43 @@
 <tr>
 <td><a href="../id/">id</a></td>
 <td>1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>Machine readable, unique identifier; ideally a URI/GUPRI (Globally Unique, Pe...</td>
 <td><a href="../NamedThing/">NamedThing</a></td>
 </tr>
 <tr>
 <td><a href="../unique_name/">unique_name</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>Human readable name, unique across the context the entity is defined in</td>
 <td><a href="../NamedThing/">NamedThing</a></td>
 </tr>
 <tr>
 <td><a href="../short_name/">short_name</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>Shortened name or code, preferrable unique across the context the entity is d...</td>
 <td><a href="../NamedThing/">NamedThing</a></td>
 </tr>
 <tr>
 <td><a href="../name/">name</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>Common human readable name</td>
 <td><a href="../NamedThing/">NamedThing</a></td>
 </tr>
 <tr>
 <td><a href="../ui_label/">ui_label</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>Human readable label, to be used in user facing interfaces in the most common...</td>
 <td><a href="../NamedThing/">NamedThing</a></td>
 </tr>
 <tr>
 <td><a href="../description/">description</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>Long form description or definition for the entity</td>
 <td><a href="../NamedThing/">NamedThing</a></td>
 </tr>
 <tr>
 <td><a href="../remark/">remark</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>Additional comment, note or remark providing context on the use of an entity ...</td>
 <td><a href="../NamedThing/">NamedThing</a></td>
 </tr>
 </tbody>
@@ -414,6 +414,8 @@ attributes:
     inlined_as_list: true
   id:
     name: id
+    description: Machine readable, unique identifier; ideally a URI/GUPRI (Globally
+      Unique, Persistent, Resolvable Identifier).
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     slot_uri: schema:identifier
@@ -426,6 +428,8 @@ attributes:
     required: true
   unique_name:
     name: unique_name
+    description: Human readable name, unique across the context the entity is defined
+      in.
     from_schema: https://w3id.org/peh/peh-model
     close_mappings:
     - schema:identifier
@@ -438,6 +442,8 @@ attributes:
     range: string
   short_name:
     name: short_name
+    description: Shortened name or code, preferrable unique across the context the
+      entity is defined in.
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     alias: short_name
@@ -447,6 +453,7 @@ attributes:
     range: string
   name:
     name: name
+    description: Common human readable name
     from_schema: https://w3id.org/peh/peh-model
     exact_mappings:
     - skos:altLabel
@@ -460,6 +467,8 @@ attributes:
     range: string
   ui_label:
     name: ui_label
+    description: Human readable label, to be used in user facing interfaces in the
+      most common use cases.
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     alias: ui_label
@@ -469,6 +478,7 @@ attributes:
     range: string
   description:
     name: description
+    description: Long form description or definition for the entity.
     from_schema: https://w3id.org/peh/peh-model
     exact_mappings:
     - skos:definition
@@ -481,6 +491,8 @@ attributes:
     range: string
   remark:
     name: remark
+    description: Additional comment, note or remark providing context on the use of
+      an entity or the interpretation of its properties.
     from_schema: https://w3id.org/peh/peh-model
     exact_mappings:
     - skos:note
