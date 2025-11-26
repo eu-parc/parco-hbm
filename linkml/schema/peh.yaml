@@ -3,7 +3,7 @@ name: PEH-Model
 description: |-
   Entity and relation ontology and datamodel for Personal Exposure and Health data
 
-version: 0.3.1
+version: 0.3.2
 
 imports:
   - linkml:types
@@ -321,28 +321,19 @@ classes:
       Reference and parameters mapping to the implementation that can perform the intended calculation
     slots:
       - function_name
-      - function_args
       - function_kwargs
       - function_results
-  CalculationArgument:
-    description: >-
-      The definition of a positional argument used in the calculation, including the information needed to pick it from the project or study data structure
-    slots:
-      - source_path
-      - process_state
-      - imputation_state
-      - value_type
-      - unit
   CalculationKeywordArgument:
     description: >-
       The definition of a named argument used in the calculation, including the information needed to pick it from the project or study data structure
     slots:
       - mapping_name
-      - source_path
       - process_state
       - imputation_state
       - value_type
       - unit
+      - observable_property
+      - contextual_field_reference
   CalculationResult:
     description: >-
       The definition for the output the calculation, optionally including mapping information
@@ -352,7 +343,8 @@ classes:
       - unit
       - round_decimals
       - scale_factor
-      - destination_path
+      - observable_property
+      - contextual_field_reference
   ValidationDesign:
     description: >-
       Definition of a validation rule for automatically imposing business logic constraints
@@ -366,12 +358,18 @@ classes:
     description: >-
       A logical expression, allowing for combining arguments into more complex validation rules
     slots:
-      - validation_subject_source_paths
+      - validation_subject_contextual_field_references
       - validation_condition_expression
       - validation_command
       - validation_arg_values
-      - validation_arg_source_paths
+      - validation_arg_contextual_field_references
       - validation_arg_expressions
+  ContextualFieldReference:
+    description: >-
+      A two-level reference, identifying a field or column in a named series of two-dimensional datasets
+    slots:
+      - dataset_label
+      - field_label
   Contact:
     description: >-
       A stakeholder having a contact role in the research process
@@ -840,10 +838,6 @@ slots:
   calculation_implementation:
     range: CalculationImplementation
   function_name:
-  function_args:
-    multivalued: true
-    inlined_as_list: true
-    range: CalculationArgument
   function_kwargs:
     multivalued: true
     inlined_as_list: true
@@ -865,24 +859,30 @@ slots:
   validation_error_level:
     range: ValidationErrorLevel
   validation_error_message_template:
-  validation_subject_source_paths:
+  validation_subject_contextual_field_references:
     multivalued: true
+    inlined_as_list: true
+    range: ContextualFieldReference
   validation_command:
     range: ValidationCommand
   validation_arg_values:
     multivalued: true
-  validation_arg_source_paths:
+  validation_arg_contextual_field_references:
     multivalued: true
+    inlined_as_list: true
+    range: ContextualFieldReference
   validation_arg_expressions:
     multivalued: true
     inlined_as_list: true
     range: ValidationExpression
+  contextual_field_reference:
+    range: ContextualFieldReference
+  dataset_label:
+  field_label:
 
   process_state:
   imputation_state:
   mapping_name:
-  source_path:
-  destination_path:
   round_decimals:
     range: integer
   scale_factor:
@@ -1037,6 +1037,7 @@ slots:
     range: ObservableProperty
   observable_property:
     range: ObservableProperty
+    inlined: false
   observed_values:
     multivalued: true
     inlined_as_list: true
