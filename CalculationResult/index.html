@@ -253,9 +253,29 @@
 <div class="mermaid"> classDiagram
     class CalculationResult
     click CalculationResult href "../CalculationResult/"
-      CalculationResult : destination_path
+      CalculationResult : contextual_field_reference
+
+
+
+
+
+        CalculationResult --&gt; "0..1" ContextualFieldReference : contextual_field_reference
+        click ContextualFieldReference href "../ContextualFieldReference/"
+
+
 
       CalculationResult : mapping_name
+
+      CalculationResult : observable_property
+
+
+
+
+
+        CalculationResult --&gt; "0..1" ObservableProperty : observable_property
+        click ObservableProperty href "../ObservableProperty/"
+
+
 
       CalculationResult : round_decimals
 
@@ -319,8 +339,14 @@
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../destination_path/">destination_path</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td><a href="../observable_property/">observable_property</a></td>
+<td>0..1 <br/> <a href="../ObservableProperty/">ObservableProperty</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../contextual_field_reference/">contextual_field_reference</a></td>
+<td>0..1 <br/> <a href="../ContextualFieldReference/">ContextualFieldReference</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -383,7 +409,8 @@ slots:
 - unit
 - round_decimals
 - scale_factor
-- destination_path
+- observable_property
+- contextual_field_reference
 
 </code></pre>
 </details>
@@ -413,7 +440,6 @@ attributes:
     domain_of:
     - ObservableProperty
     - ObservablePropertyMetadataField
-    - CalculationArgument
     - CalculationKeywordArgument
     - CalculationResult
     range: string
@@ -424,7 +450,6 @@ attributes:
     alias: unit
     owner: CalculationResult
     domain_of:
-    - CalculationArgument
     - CalculationKeywordArgument
     - CalculationResult
     - ObservedValue
@@ -447,15 +472,30 @@ attributes:
     domain_of:
     - CalculationResult
     range: decimal
-  destination_path:
-    name: destination_path
+  observable_property:
+    name: observable_property
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: destination_path
+    alias: observable_property
     owner: CalculationResult
     domain_of:
+    - CalculationKeywordArgument
     - CalculationResult
-    range: string
+    - ObservedValue
+    - DataLayoutElement
+    - ObservedEntityProperty
+    range: ObservableProperty
+    inlined: false
+  contextual_field_reference:
+    name: contextual_field_reference
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: contextual_field_reference
+    owner: CalculationResult
+    domain_of:
+    - CalculationKeywordArgument
+    - CalculationResult
+    range: ContextualFieldReference
 
 </code></pre>
 </details>

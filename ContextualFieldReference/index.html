@@ -5,10 +5,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://eu-parc.github.io/parco-hbm/CalculationArgument/" rel="canonical"/>
+<link href="https://eu-parc.github.io/parco-hbm/ContextualFieldReference/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.7.0" name="generator"/>
-<title>Class: CalculationArgument - PEH-model Documentation</title>
+<title>Class: ContextualFieldReference - PEH-model Documentation</title>
 <link href="../assets/stylesheets/main.618322db.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -24,7 +24,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#class-calculationargument">
+<a class="md-skip" href="#class-contextualfieldreference">
           Skip to content
         </a>
 </div>
@@ -50,7 +50,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Class: CalculationArgument
+              Class: ContextualFieldReference
             
           </span>
 </div>
@@ -247,30 +247,15 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="class-calculationargument">Class: CalculationArgument</h1>
-<p><em>The definition of a positional argument used in the calculation, including the information needed to pick it from the project or study data structure</em></p>
-<p>URI: <a href="https://w3id.org/peh/terms/CalculationArgument">pehterms:CalculationArgument</a></p>
+<h1 id="class-contextualfieldreference">Class: ContextualFieldReference</h1>
+<p><em>A two-level reference, identifying a field or column in a named series of two-dimensional datasets</em></p>
+<p>URI: <a href="https://w3id.org/peh/terms/ContextualFieldReference">pehterms:ContextualFieldReference</a></p>
 <div class="mermaid"> classDiagram
-    class CalculationArgument
-    click CalculationArgument href "../CalculationArgument/"
-      CalculationArgument : imputation_state
+    class ContextualFieldReference
+    click ContextualFieldReference href "../ContextualFieldReference/"
+      ContextualFieldReference : dataset_label
 
-      CalculationArgument : process_state
-
-      CalculationArgument : source_path
-
-      CalculationArgument : unit
-
-
-
-
-
-        CalculationArgument --&gt; "0..1" Unit : unit
-        click Unit href "../Unit/"
-
-
-
-      CalculationArgument : value_type
+      ContextualFieldReference : field_label
 
 
 </div>
@@ -287,32 +272,14 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../source_path/">source_path</a></td>
+<td><a href="../dataset_label/">dataset_label</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td></td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../process_state/">process_state</a></td>
+<td><a href="../field_label/">field_label</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../imputation_state/">imputation_state</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../value_type/">value_type</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../unit/">unit</a></td>
-<td>0..1 <br/> <a href="../Unit/">Unit</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -330,10 +297,28 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../CalculationImplementation/">CalculationImplementation</a></td>
-<td><a href="../function_args/">function_args</a></td>
+<td><a href="../CalculationKeywordArgument/">CalculationKeywordArgument</a></td>
+<td><a href="../contextual_field_reference/">contextual_field_reference</a></td>
 <td>range</td>
-<td><a href="./">CalculationArgument</a></td>
+<td><a href="./">ContextualFieldReference</a></td>
+</tr>
+<tr>
+<td><a href="../CalculationResult/">CalculationResult</a></td>
+<td><a href="../contextual_field_reference/">contextual_field_reference</a></td>
+<td>range</td>
+<td><a href="./">ContextualFieldReference</a></td>
+</tr>
+<tr>
+<td><a href="../ValidationExpression/">ValidationExpression</a></td>
+<td><a href="../validation_subject_contextual_field_references/">validation_subject_contextual_field_references</a></td>
+<td>range</td>
+<td><a href="./">ContextualFieldReference</a></td>
+</tr>
+<tr>
+<td><a href="../ValidationExpression/">ValidationExpression</a></td>
+<td><a href="../validation_arg_contextual_field_references/">validation_arg_contextual_field_references</a></td>
+<td>range</td>
+<td><a href="./">ContextualFieldReference</a></td>
 </tr>
 </tbody>
 </table>
@@ -353,11 +338,11 @@
 <tbody>
 <tr>
 <td>self</td>
-<td>pehterms:CalculationArgument</td>
+<td>pehterms:ContextualFieldReference</td>
 </tr>
 <tr>
 <td>native</td>
-<td>pehterms:CalculationArgument</td>
+<td>pehterms:ContextualFieldReference</td>
 </tr>
 </tbody>
 </table>
@@ -365,81 +350,41 @@
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
 <h3 id="direct">Direct</h3>
 <details>
-<pre><code class="language-yaml">name: CalculationArgument
-description: The definition of a positional argument used in the calculation, including
-  the information needed to pick it from the project or study data structure
+<pre><code class="language-yaml">name: ContextualFieldReference
+description: A two-level reference, identifying a field or column in a named series
+  of two-dimensional datasets
 from_schema: https://w3id.org/peh/peh-model
 slots:
-- source_path
-- process_state
-- imputation_state
-- value_type
-- unit
+- dataset_label
+- field_label
 
 </code></pre>
 </details>
 <h3 id="induced">Induced</h3>
 <details>
-<pre><code class="language-yaml">name: CalculationArgument
-description: The definition of a positional argument used in the calculation, including
-  the information needed to pick it from the project or study data structure
+<pre><code class="language-yaml">name: ContextualFieldReference
+description: A two-level reference, identifying a field or column in a named series
+  of two-dimensional datasets
 from_schema: https://w3id.org/peh/peh-model
 attributes:
-  source_path:
-    name: source_path
+  dataset_label:
+    name: dataset_label
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: source_path
-    owner: CalculationArgument
+    alias: dataset_label
+    owner: ContextualFieldReference
     domain_of:
-    - CalculationArgument
-    - CalculationKeywordArgument
+    - ContextualFieldReference
     range: string
-  process_state:
-    name: process_state
+  field_label:
+    name: field_label
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: process_state
-    owner: CalculationArgument
+    alias: field_label
+    owner: ContextualFieldReference
     domain_of:
-    - CalculationArgument
-    - CalculationKeywordArgument
+    - ContextualFieldReference
     range: string
-  imputation_state:
-    name: imputation_state
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: imputation_state
-    owner: CalculationArgument
-    domain_of:
-    - CalculationArgument
-    - CalculationKeywordArgument
-    range: string
-  value_type:
-    name: value_type
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: value_type
-    owner: CalculationArgument
-    domain_of:
-    - ObservableProperty
-    - ObservablePropertyMetadataField
-    - CalculationArgument
-    - CalculationKeywordArgument
-    - CalculationResult
-    range: string
-  unit:
-    name: unit
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: unit
-    owner: CalculationArgument
-    domain_of:
-    - CalculationArgument
-    - CalculationKeywordArgument
-    - CalculationResult
-    - ObservedValue
-    range: Unit
 
 </code></pre>
 </details>

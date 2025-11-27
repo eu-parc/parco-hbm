@@ -253,17 +253,6 @@
 <div class="mermaid"> classDiagram
     class CalculationImplementation
     click CalculationImplementation href "../CalculationImplementation/"
-      CalculationImplementation : function_args
-
-
-
-
-
-        CalculationImplementation --&gt; "*" CalculationArgument : function_args
-        click CalculationArgument href "../CalculationArgument/"
-
-
-
       CalculationImplementation : function_kwargs
 
 
@@ -305,12 +294,6 @@
 <tr>
 <td><a href="../function_name/">function_name</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../function_args/">function_args</a></td>
-<td>* <br/> <a href="../CalculationArgument/">CalculationArgument</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -381,7 +364,6 @@ description: Reference and parameters mapping to the implementation that can per
 from_schema: https://w3id.org/peh/peh-model
 slots:
 - function_name
-- function_args
 - function_kwargs
 - function_results
 
@@ -403,18 +385,6 @@ attributes:
     domain_of:
     - CalculationImplementation
     range: string
-  function_args:
-    name: function_args
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: function_args
-    owner: CalculationImplementation
-    domain_of:
-    - CalculationImplementation
-    range: CalculationArgument
-    multivalued: true
-    inlined: true
-    inlined_as_list: true
   function_kwargs:
     name: function_kwargs
     from_schema: https://w3id.org/peh/peh-model

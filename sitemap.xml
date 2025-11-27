@@ -2,1222 +2,1222 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/BioChemEntity/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/BioChemEntityLink/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/BioChemEntityLinkType/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/BioChemIdentifier/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/BioChemIdentifierSchema/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Boolean/</loc>
-         <lastmod>2025-11-25</lastmod>
-    </url>
-    <url>
-         <loc>https://eu-parc.github.io/parco-hbm/CalculationArgument/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/CalculationDesign/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/CalculationImplementation/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/CalculationKeywordArgument/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/CalculationResult/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Contact/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ContactRole/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ContextAlias/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
+    </url>
+    <url>
+         <loc>https://eu-parc.github.io/parco-hbm/ContextualFieldReference/</loc>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Curie/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/DataExtract/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/DataImportConfig/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/DataImportSectionMapping/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/DataImportSectionMappingLink/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/DataLayout/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/DataLayoutElement/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/DataLayoutElementLink/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/DataLayoutElementStyle/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/DataLayoutElementType/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/DataLayoutSection/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/DataLayoutSectionType/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/DataRequest/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/DataRole/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/DataStakeholder/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Date/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/DateOrDatetime/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Datetime/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Decimal/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Double/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/EntityList/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Environment/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Float/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Geolocation/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Grouping/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/HasAliases/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/HasContextAliases/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/HasTranslations/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/HasValidationStatus/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/HomeEnvironment/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Indicator/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/IndicatorType/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Integer/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Jsonpath/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Jsonpointer/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/LinkType/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Matrix/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/NamedThing/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Ncname/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Nodeidentifier/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Objectidentifier/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ObjectiveType/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ObservableEntityType/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ObservableProperty/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ObservablePropertyMetadataElement/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ObservablePropertyMetadataField/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ObservablePropertyValueOption/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Observation/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ObservationDesign/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ObservationGroup/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ObservationResult/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ObservationResultType/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ObservationType/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ObservedEntityProperty/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ObservedValue/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/PEH-Model/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Person/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/PhysicalEntity/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/PhysicalEntityLink/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ProcessingAction/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ProcessingStep/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Project/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ProjectRole/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ProjectStakeholder/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ProvenanceData/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/QualityData/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/QudtQuantityKind/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/QudtUnit/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ResearchObjective/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ResearchPopulationType/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Sample/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/SampleCollection/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Sparqlpath/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Stakeholder/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/String/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Study/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/StudyEntity/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/StudyEntityLink/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/StudyPopulation/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/StudyRole/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/StudyStakeholder/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/StudySubject/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/StudySubjectGroup/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Time/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Translation/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Unit/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Uri/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/Uriorcurie/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ValidationCommand/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ValidationDesign/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ValidationErrorLevel/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ValidationExpression/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ValidationHistoryRecord/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ValidationStatus/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/WorkEnvironment/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/about/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/abstract/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/aggregation_target/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/alias/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/aliases/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/authors/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/biochementities/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/biochementity/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/biochementity_links/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/biochementity_linktype/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/biochemidentifiers/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/calculation_designs/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/calculation_implementation/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/calculation_implementation_as_json/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/calculation_name/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/categorical/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/collection_date/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/conditional/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/constraints/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/contact_email/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/contact_phone/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/contact_roles/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/contacts/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/context/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/context_aliases/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
+    </url>
+    <url>
+         <loc>https://eu-parc.github.io/parco-hbm/contextual_field_reference/</loc>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/current_validation_status/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/data_requests/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/data_roles/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/data_stakeholders/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
+    </url>
+    <url>
+         <loc>https://eu-parc.github.io/parco-hbm/dataset_label/</loc>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/default_immutable/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/default_language/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/default_observation_result_type/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/default_required/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/default_significantdecimals/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/default_unit/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/default_unit_label/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/default_zeroallowed/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/delivery_date/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/description/</loc>
-         <lastmod>2025-11-25</lastmod>
-    </url>
-    <url>
-         <loc>https://eu-parc.github.io/parco-hbm/destination_path/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/element_style/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/element_type/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/elements/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/end_date/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/field/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
+    </url>
+    <url>
+         <loc>https://eu-parc.github.io/parco-hbm/field_label/</loc>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/foreign_key_link/</loc>
-         <lastmod>2025-11-25</lastmod>
-    </url>
-    <url>
-         <loc>https://eu-parc.github.io/parco-hbm/function_args/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/function_kwargs/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/function_name/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/function_results/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/geographic_scope/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/grouping_id_list/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/groupings/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/id/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/identifier_code/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/identifier_schema/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/identifying_observable_property_id_list/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/import_configs/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/imputation_state/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/imputed_unit/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/imputed_value/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/indicator/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/indicator_type/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/indicators/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/is_observable_entity_key/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/key/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/label/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/language/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/layout/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/layouts/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/linktype/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/location/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/mapping_name/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/matrices/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/matrix/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/member_id_list/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/metadata_fields/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/molweight_grampermol/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/multivalued/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/name/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/normalised_unit/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/normalised_value/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/objective_type/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/observable_entity/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/observable_entity_id_list/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/observable_entity_type/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/observable_properties/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/observable_property/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/observation/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/observation_design/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/observation_designs/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/observation_end_date/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/observation_group_id_list/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/observation_groups/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/observation_id_list/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/observation_result_id_list/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/observation_result_type/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/observation_results/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/observation_start_date/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/observation_type/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/observations/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/observed_entity_properties/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/observed_values/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/optional_observable_property_id_list/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/orcid/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/parent_grouping_id_list/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/parent_matrix/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/physical_entities/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/physical_entity/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/physical_entity_links/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/physical_label/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/process_state/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/processing_actions/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/processing_description/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/processing_steps/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/project_id_list/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/project_roles/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/project_stakeholders/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/projects/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/property/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/property_name/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/provenance_context_key/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/provenance_data/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/provenance_value/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/quality_context_key/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/quality_data/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/quality_value/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/quantity_kind/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/raw_unit/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/raw_value/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/recruited_in_project/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/relevant_observable_entity_types/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/relevant_observation_types/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/remark/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/remark_on_content/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/remark_on_methodology/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/request_properties/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/required_observable_property_id_list/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/research_objectives/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/research_population_type/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/rorid/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/round_decimals/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/same_unit_as/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/sample_id_list/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/sampled_in_project/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/scale_factor/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/secondary_parent_matrix_id_list/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/section/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/section_mapping/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/section_mapping_links/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/section_type/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/sections/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/short_name/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/sort_order/</loc>
-         <lastmod>2025-11-25</lastmod>
-    </url>
-    <url>
-         <loc>https://eu-parc.github.io/parco-hbm/source_path/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/stakeholder/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/stakeholders/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/start_date/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/studies/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/study_entities/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/study_entity/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/study_entity_id_list/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/study_entity_links/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/study_id_list/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/study_roles/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/study_stakeholders/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/translated_value/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/translations/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/ui_label/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/unique_name/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/unit/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/units/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/validation_actor/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
+    </url>
+    <url>
+         <loc>https://eu-parc.github.io/parco-hbm/validation_arg_contextual_field_references/</loc>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/validation_arg_expressions/</loc>
-         <lastmod>2025-11-25</lastmod>
-    </url>
-    <url>
-         <loc>https://eu-parc.github.io/parco-hbm/validation_arg_source_paths/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/validation_arg_values/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/validation_command/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/validation_condition_expression/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/validation_datetime/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/validation_designs/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/validation_error_level/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/validation_error_message_template/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/validation_expression/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/validation_history/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/validation_institute/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/validation_name/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/validation_remark/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/validation_status/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
-         <loc>https://eu-parc.github.io/parco-hbm/validation_subject_source_paths/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <loc>https://eu-parc.github.io/parco-hbm/validation_subject_contextual_field_references/</loc>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/value/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/value_as_string/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/value_metadata/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/value_options/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/value_type/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/parco-hbm/web_uri/</loc>
-         <lastmod>2025-11-25</lastmod>
+         <lastmod>2025-11-27</lastmod>
     </url>
 </urlset>

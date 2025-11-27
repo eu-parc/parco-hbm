@@ -253,13 +253,33 @@
 <div class="mermaid"> classDiagram
     class CalculationKeywordArgument
     click CalculationKeywordArgument href "../CalculationKeywordArgument/"
+      CalculationKeywordArgument : contextual_field_reference
+
+
+
+
+
+        CalculationKeywordArgument --&gt; "0..1" ContextualFieldReference : contextual_field_reference
+        click ContextualFieldReference href "../ContextualFieldReference/"
+
+
+
       CalculationKeywordArgument : imputation_state
 
       CalculationKeywordArgument : mapping_name
 
-      CalculationKeywordArgument : process_state
+      CalculationKeywordArgument : observable_property
 
-      CalculationKeywordArgument : source_path
+
+
+
+
+        CalculationKeywordArgument --&gt; "0..1" ObservableProperty : observable_property
+        click ObservableProperty href "../ObservableProperty/"
+
+
+
+      CalculationKeywordArgument : process_state
 
       CalculationKeywordArgument : unit
 
@@ -295,12 +315,6 @@
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../source_path/">source_path</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
 <td><a href="../process_state/">process_state</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td></td>
@@ -321,6 +335,18 @@
 <tr>
 <td><a href="../unit/">unit</a></td>
 <td>0..1 <br/> <a href="../Unit/">Unit</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../observable_property/">observable_property</a></td>
+<td>0..1 <br/> <a href="../ObservableProperty/">ObservableProperty</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../contextual_field_reference/">contextual_field_reference</a></td>
+<td>0..1 <br/> <a href="../ContextualFieldReference/">ContextualFieldReference</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -379,11 +405,12 @@ description: The definition of a named argument used in the calculation, includi
 from_schema: https://w3id.org/peh/peh-model
 slots:
 - mapping_name
-- source_path
 - process_state
 - imputation_state
 - value_type
 - unit
+- observable_property
+- contextual_field_reference
 
 </code></pre>
 </details>
@@ -404,16 +431,6 @@ attributes:
     - CalculationKeywordArgument
     - CalculationResult
     range: string
-  source_path:
-    name: source_path
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: source_path
-    owner: CalculationKeywordArgument
-    domain_of:
-    - CalculationArgument
-    - CalculationKeywordArgument
-    range: string
   process_state:
     name: process_state
     from_schema: https://w3id.org/peh/peh-model
@@ -421,7 +438,6 @@ attributes:
     alias: process_state
     owner: CalculationKeywordArgument
     domain_of:
-    - CalculationArgument
     - CalculationKeywordArgument
     range: string
   imputation_state:
@@ -431,7 +447,6 @@ attributes:
     alias: imputation_state
     owner: CalculationKeywordArgument
     domain_of:
-    - CalculationArgument
     - CalculationKeywordArgument
     range: string
   value_type:
@@ -443,7 +458,6 @@ attributes:
     domain_of:
     - ObservableProperty
     - ObservablePropertyMetadataField
-    - CalculationArgument
     - CalculationKeywordArgument
     - CalculationResult
     range: string
@@ -454,11 +468,34 @@ attributes:
     alias: unit
     owner: CalculationKeywordArgument
     domain_of:
-    - CalculationArgument
     - CalculationKeywordArgument
     - CalculationResult
     - ObservedValue
     range: Unit
+  observable_property:
+    name: observable_property
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: observable_property
+    owner: CalculationKeywordArgument
+    domain_of:
+    - CalculationKeywordArgument
+    - CalculationResult
+    - ObservedValue
+    - DataLayoutElement
+    - ObservedEntityProperty
+    range: ObservableProperty
+    inlined: false
+  contextual_field_reference:
+    name: contextual_field_reference
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: contextual_field_reference
+    owner: CalculationKeywordArgument
+    domain_of:
+    - CalculationKeywordArgument
+    - CalculationResult
+    range: ContextualFieldReference
 
 </code></pre>
 </details>

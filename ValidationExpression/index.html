@@ -253,6 +253,17 @@
 <div class="mermaid"> classDiagram
     class ValidationExpression
     click ValidationExpression href "../ValidationExpression/"
+      ValidationExpression : validation_arg_contextual_field_references
+
+
+
+
+
+        ValidationExpression --&gt; "*" ContextualFieldReference : validation_arg_contextual_field_references
+        click ContextualFieldReference href "../ContextualFieldReference/"
+
+
+
       ValidationExpression : validation_arg_expressions
 
 
@@ -263,8 +274,6 @@
         click ValidationExpression href "../ValidationExpression/"
 
 
-
-      ValidationExpression : validation_arg_source_paths
 
       ValidationExpression : validation_arg_values
 
@@ -290,7 +299,16 @@
 
 
 
-      ValidationExpression : validation_subject_source_paths
+      ValidationExpression : validation_subject_contextual_field_references
+
+
+
+
+
+        ValidationExpression --&gt; "*" ContextualFieldReference : validation_subject_contextual_field_references
+        click ContextualFieldReference href "../ContextualFieldReference/"
+
+
 
 
 </div>
@@ -307,8 +325,8 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../validation_subject_source_paths/">validation_subject_source_paths</a></td>
-<td>* <br/> <a href="../String/">String</a></td>
+<td><a href="../validation_subject_contextual_field_references/">validation_subject_contextual_field_references</a></td>
+<td>* <br/> <a href="../ContextualFieldReference/">ContextualFieldReference</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -331,8 +349,8 @@
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../validation_arg_source_paths/">validation_arg_source_paths</a></td>
-<td>* <br/> <a href="../String/">String</a></td>
+<td><a href="../validation_arg_contextual_field_references/">validation_arg_contextual_field_references</a></td>
+<td>* <br/> <a href="../ContextualFieldReference/">ContextualFieldReference</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -408,11 +426,11 @@ description: A logical expression, allowing for combining arguments into more co
   validation rules
 from_schema: https://w3id.org/peh/peh-model
 slots:
-- validation_subject_source_paths
+- validation_subject_contextual_field_references
 - validation_condition_expression
 - validation_command
 - validation_arg_values
-- validation_arg_source_paths
+- validation_arg_contextual_field_references
 - validation_arg_expressions
 
 </code></pre>
@@ -424,16 +442,18 @@ description: A logical expression, allowing for combining arguments into more co
   validation rules
 from_schema: https://w3id.org/peh/peh-model
 attributes:
-  validation_subject_source_paths:
-    name: validation_subject_source_paths
+  validation_subject_contextual_field_references:
+    name: validation_subject_contextual_field_references
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: validation_subject_source_paths
+    alias: validation_subject_contextual_field_references
     owner: ValidationExpression
     domain_of:
     - ValidationExpression
-    range: string
+    range: ContextualFieldReference
     multivalued: true
+    inlined: true
+    inlined_as_list: true
   validation_condition_expression:
     name: validation_condition_expression
     from_schema: https://w3id.org/peh/peh-model
@@ -462,16 +482,18 @@ attributes:
     - ValidationExpression
     range: string
     multivalued: true
-  validation_arg_source_paths:
-    name: validation_arg_source_paths
+  validation_arg_contextual_field_references:
+    name: validation_arg_contextual_field_references
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: validation_arg_source_paths
+    alias: validation_arg_contextual_field_references
     owner: ValidationExpression
     domain_of:
     - ValidationExpression
-    range: string
+    range: ContextualFieldReference
     multivalued: true
+    inlined: true
+    inlined_as_list: true
   validation_arg_expressions:
     name: validation_arg_expressions
     from_schema: https://w3id.org/peh/peh-model

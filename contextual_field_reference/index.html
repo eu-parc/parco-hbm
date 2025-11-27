@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://eu-parc.github.io/parco-hbm/validation_subject_source_paths/">
+        <link rel="canonical" href="https://eu-parc.github.io/parco-hbm/contextual_field_reference/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>Slot: validation_subject_source_paths - PEH-model Documentation</title>
+        <title>Slot: contextual_field_reference - PEH-model Documentation</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-validation_subject_source_paths" class="md-skip">
+        <a href="#slot-contextual_field_reference" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: validation_subject_source_paths
+              Slot: contextual_field_reference
             
           </span>
         </div>
@@ -401,9 +401,9 @@
   
 
 
-<h1 id="slot-validation_subject_source_paths">Slot: validation_subject_source_paths</h1>
-<p>URI: <a href="https://w3id.org/peh/terms/validation_subject_source_paths">pehterms:validation_subject_source_paths</a>
-Alias: validation_subject_source_paths</p>
+<h1 id="slot-contextual_field_reference">Slot: contextual_field_reference</h1>
+<p>URI: <a href="https://w3id.org/peh/terms/contextual_field_reference">pehterms:contextual_field_reference</a>
+Alias: contextual_field_reference</p>
 <!-- no inheritance hierarchy -->
 
 <h2 id="applicable-classes">Applicable Classes</h2>
@@ -417,20 +417,20 @@ Alias: validation_subject_source_paths</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="../ValidationExpression/">ValidationExpression</a></td>
-<td>A logical expression, allowing for combining arguments into more complex vali...</td>
+<td><a href="../CalculationKeywordArgument/">CalculationKeywordArgument</a></td>
+<td>The definition of a named argument used in the calculation, including the inf...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../CalculationResult/">CalculationResult</a></td>
+<td>The definition for the output the calculation, optionally including mapping i...</td>
 <td>no</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>
-<p>Range: <a href="../String/">String</a></p>
-</li>
-<li>
-<p>Multivalued: True</p>
-</li>
+<li>Range: <a href="../ContextualFieldReference/">ContextualFieldReference</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -448,25 +448,25 @@ Alias: validation_subject_source_paths</p>
 <tbody>
 <tr>
 <td>self</td>
-<td>pehterms:validation_subject_source_paths</td>
+<td>pehterms:contextual_field_reference</td>
 </tr>
 <tr>
 <td>native</td>
-<td>pehterms:validation_subject_source_paths</td>
+<td>pehterms:contextual_field_reference</td>
 </tr>
 </tbody>
 </table>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: validation_subject_source_paths
+<pre><code class="language-yaml">name: contextual_field_reference
 from_schema: https://w3id.org/peh/peh-model
 rank: 1000
-alias: validation_subject_source_paths
+alias: contextual_field_reference
 domain_of:
-- ValidationExpression
-range: string
-multivalued: true
+- CalculationKeywordArgument
+- CalculationResult
+range: ContextualFieldReference
 
 </code></pre>
 
