@@ -7,9 +7,9 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://eu-parc.github.io/parco-hbm/ObservableProperty/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.7.0" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.1" name="generator"/>
 <title>Class: ObservableProperty - PEH-model Documentation</title>
-<link href="../assets/stylesheets/main.618322db.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
@@ -293,30 +293,9 @@
 
 
 
-      ObservableProperty : default_immutable
-
-      ObservableProperty : default_observation_result_type
-
-
-
-
-
-        ObservableProperty --&gt; "0..1" ObservationResultType : default_observation_result_type
-        click ObservationResultType href "../ObservationResultType/"
-
-
-
-      ObservableProperty : default_required
-
-      ObservableProperty : default_significantdecimals
-
-      ObservableProperty : default_unit
-
-      ObservableProperty : default_unit_label
-
-      ObservableProperty : default_zeroallowed
-
       ObservableProperty : description
+
+      ObservableProperty : exact_matches
 
       ObservableProperty : grouping_id_list
 
@@ -330,6 +309,8 @@
 
 
       ObservableProperty : id
+
+      ObservableProperty : immutable
 
       ObservableProperty : indicator
 
@@ -345,6 +326,17 @@
       ObservableProperty : multivalued
 
       ObservableProperty : name
+
+      ObservableProperty : observation_result_type
+
+
+
+
+
+        ObservableProperty --&gt; "0..1" ObservationResultType : observation_result_type
+        click ObservationResultType href "../ObservationResultType/"
+
+
 
       ObservableProperty : quantity_kind
 
@@ -381,7 +373,11 @@
 
       ObservableProperty : remark
 
+      ObservableProperty : required
+
       ObservableProperty : short_name
+
+      ObservableProperty : significantdecimals
 
       ObservableProperty : translations
 
@@ -397,6 +393,19 @@
       ObservableProperty : ui_label
 
       ObservableProperty : unique_name
+
+      ObservableProperty : unit
+
+
+
+
+
+        ObservableProperty --&gt; "0..1" Unit : unit
+        click Unit href "../Unit/"
+
+
+
+      ObservableProperty : unit_label
 
       ObservableProperty : validation_designs
 
@@ -432,6 +441,8 @@
 
 
       ObservableProperty : value_type
+
+      ObservableProperty : zeroallowed
 
 
 </div>
@@ -490,39 +501,39 @@
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../default_unit/">default_unit</a></td>
+<td><a href="../unit/">unit</a></td>
+<td>0..1 <br/> <a href="../Unit/">Unit</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../unit_label/">unit_label</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td></td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../default_unit_label/">default_unit_label</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../default_required/">default_required</a></td>
+<td><a href="../required/">required</a></td>
 <td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
 <td></td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../default_zeroallowed/">default_zeroallowed</a></td>
+<td><a href="../zeroallowed/">zeroallowed</a></td>
 <td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
 <td></td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../default_significantdecimals/">default_significantdecimals</a></td>
+<td><a href="../significantdecimals/">significantdecimals</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
-<td></td>
+<td>Variable precision indication, expressed as the number of significant decimal...</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../default_immutable/">default_immutable</a></td>
+<td><a href="../immutable/">immutable</a></td>
 <td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
-<td></td>
+<td>Variable values are not expected to change over time (e</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -532,7 +543,7 @@
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../default_observation_result_type/">default_observation_result_type</a></td>
+<td><a href="../observation_result_type/">observation_result_type</a></td>
 <td>0..1 <br/> <a href="../ObservationResultType/">ObservationResultType</a></td>
 <td></td>
 <td>direct</td>
@@ -619,6 +630,12 @@
 <td><a href="../remark/">remark</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td>Additional comment, note or remark providing context on the use of an entity ...</td>
+<td><a href="../NamedThing/">NamedThing</a></td>
+</tr>
+<tr>
+<td><a href="../exact_matches/">exact_matches</a></td>
+<td>* <br/> <a href="../String/">String</a></td>
+<td></td>
 <td><a href="../NamedThing/">NamedThing</a></td>
 </tr>
 </tbody>
@@ -733,14 +750,14 @@ slots:
 - value_options
 - value_metadata
 - quantity_kind
-- default_unit
-- default_unit_label
-- default_required
-- default_zeroallowed
-- default_significantdecimals
-- default_immutable
+- unit
+- unit_label
+- required
+- zeroallowed
+- significantdecimals
+- immutable
 - grouping_id_list
-- default_observation_result_type
+- observation_result_type
 - relevant_observable_entity_types
 - relevant_observation_types
 - indicator
@@ -825,57 +842,63 @@ attributes:
     - Indicator
     - ObservableProperty
     range: QudtQuantityKind
-  default_unit:
-    name: default_unit
+  unit:
+    name: unit
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: default_unit
+    alias: unit
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
+    - CalculationKeywordArgument
+    - CalculationResult
     - ObservedValue
-    range: string
-  default_unit_label:
-    name: default_unit_label
+    range: Unit
+  unit_label:
+    name: unit_label
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: default_unit_label
+    alias: unit_label
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
     range: string
-  default_required:
-    name: default_required
+  required:
+    name: required
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: default_required
+    alias: required
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
     range: boolean
-  default_zeroallowed:
-    name: default_zeroallowed
+  zeroallowed:
+    name: zeroallowed
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: default_zeroallowed
+    alias: zeroallowed
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
     range: boolean
-  default_significantdecimals:
-    name: default_significantdecimals
+  significantdecimals:
+    name: significantdecimals
+    description: Variable precision indication, expressed as the number of significant
+      decimals
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: default_significantdecimals
+    alias: significantdecimals
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
     range: integer
-  default_immutable:
-    name: default_immutable
+  immutable:
+    name: immutable
+    description: Variable values are not expected to change over time (e.g. birthdate
+      of a person)
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: default_immutable
+    alias: immutable
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
@@ -892,14 +915,16 @@ attributes:
     - ObservableProperty
     range: Grouping
     multivalued: true
-  default_observation_result_type:
-    name: default_observation_result_type
+  observation_result_type:
+    name: observation_result_type
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: default_observation_result_type
+    alias: observation_result_type
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
+    - ObservationDesign
+    - ObservationResult
     range: ObservationResultType
   relevant_observable_entity_types:
     name: relevant_observable_entity_types
@@ -1071,6 +1096,16 @@ attributes:
     domain_of:
     - NamedThing
     range: string
+  exact_matches:
+    name: exact_matches
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: exact_matches
+    owner: ObservableProperty
+    domain_of:
+    - NamedThing
+    range: string
+    multivalued: true
 
 </code></pre>
 </details>
@@ -1098,8 +1133,8 @@ attributes:
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": "0.2.0"}</script>
-<script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+<script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": "0.2.0"}</script>
+<script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
 <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
 <script src="../javascripts/tablesort.js"></script>
 <script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";

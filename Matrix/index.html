@@ -7,9 +7,9 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://eu-parc.github.io/parco-hbm/Matrix/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.7.0" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.1" name="generator"/>
 <title>Class: Matrix - PEH-model Documentation</title>
-<link href="../assets/stylesheets/main.618322db.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
@@ -269,8 +269,6 @@
       NamedThing &lt;|-- Matrix
         click NamedThing href "../NamedThing/"
 
-      Matrix : aggregation_target
-
       Matrix : context_aliases
 
 
@@ -283,6 +281,8 @@
 
 
       Matrix : description
+
+      Matrix : exact_matches
 
       Matrix : id
 
@@ -301,20 +301,7 @@
 
       Matrix : remark
 
-      Matrix : secondary_parent_matrix_id_list
-
-
-
-
-
-        Matrix --&gt; "*" Matrix : secondary_parent_matrix_id_list
-        click Matrix href "../Matrix/"
-
-
-
       Matrix : short_name
-
-      Matrix : sort_order
 
       Matrix : translations
 
@@ -352,26 +339,8 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../sort_order/">sort_order</a></td>
-<td>0..1 <br/> <a href="../Decimal/">Decimal</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../aggregation_target/">aggregation_target</a></td>
-<td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
 <td><a href="../parent_matrix/">parent_matrix</a></td>
 <td>0..1 <br/> <a href="./">Matrix</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../secondary_parent_matrix_id_list/">secondary_parent_matrix_id_list</a></td>
-<td>* <br/> <a href="./">Matrix</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -429,6 +398,12 @@
 <td>Additional comment, note or remark providing context on the use of an entity ...</td>
 <td><a href="../NamedThing/">NamedThing</a></td>
 </tr>
+<tr>
+<td><a href="../exact_matches/">exact_matches</a></td>
+<td>* <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../NamedThing/">NamedThing</a></td>
+</tr>
 </tbody>
 </table>
 <h2 id="usages">Usages</h2>
@@ -451,12 +426,6 @@
 <tr>
 <td><a href="./">Matrix</a></td>
 <td><a href="../parent_matrix/">parent_matrix</a></td>
-<td>range</td>
-<td><a href="./">Matrix</a></td>
-</tr>
-<tr>
-<td><a href="./">Matrix</a></td>
-<td><a href="../secondary_parent_matrix_id_list/">secondary_parent_matrix_id_list</a></td>
 <td>range</td>
 <td><a href="./">Matrix</a></td>
 </tr>
@@ -517,10 +486,7 @@ mixins:
 - HasContextAliases
 - HasTranslations
 slots:
-- sort_order
-- aggregation_target
 - parent_matrix
-- secondary_parent_matrix_id_list
 
 </code></pre>
 </details>
@@ -535,26 +501,6 @@ mixins:
 - HasContextAliases
 - HasTranslations
 attributes:
-  sort_order:
-    name: sort_order
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: sort_order
-    owner: Matrix
-    domain_of:
-    - Grouping
-    - Matrix
-    - ObservationGroup
-    range: decimal
-  aggregation_target:
-    name: aggregation_target
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: aggregation_target
-    owner: Matrix
-    domain_of:
-    - Matrix
-    range: boolean
   parent_matrix:
     name: parent_matrix
     from_schema: https://w3id.org/peh/peh-model
@@ -565,16 +511,6 @@ attributes:
     domain_of:
     - Matrix
     range: Matrix
-  secondary_parent_matrix_id_list:
-    name: secondary_parent_matrix_id_list
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: secondary_parent_matrix_id_list
-    owner: Matrix
-    domain_of:
-    - Matrix
-    range: Matrix
-    multivalued: true
   context_aliases:
     name: context_aliases
     from_schema: https://w3id.org/peh/peh-model
@@ -690,6 +626,16 @@ attributes:
     domain_of:
     - NamedThing
     range: string
+  exact_matches:
+    name: exact_matches
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: exact_matches
+    owner: Matrix
+    domain_of:
+    - NamedThing
+    range: string
+    multivalued: true
 
 </code></pre>
 </details>
@@ -717,8 +663,8 @@ attributes:
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": "0.2.0"}</script>
-<script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+<script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": "0.2.0"}</script>
+<script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
 <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
 <script src="../javascripts/tablesort.js"></script>
 <script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";

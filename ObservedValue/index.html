@@ -7,9 +7,9 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://eu-parc.github.io/parco-hbm/ObservedValue/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.7.0" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.1" name="generator"/>
 <title>Class: ObservedValue - PEH-model Documentation</title>
-<link href="../assets/stylesheets/main.618322db.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
@@ -253,13 +253,29 @@
 <div class="mermaid"> classDiagram
     class ObservedValue
     click ObservedValue href "../ObservedValue/"
-      ObservedValue : default_unit
-
       ObservedValue : imputed_unit
+
+
+
+
+
+        ObservedValue --&gt; "0..1" Unit : imputed_unit
+        click Unit href "../Unit/"
+
+
 
       ObservedValue : imputed_value
 
       ObservedValue : normalised_unit
+
+
+
+
+
+        ObservedValue --&gt; "0..1" Unit : normalised_unit
+        click Unit href "../Unit/"
+
+
 
       ObservedValue : normalised_value
 
@@ -309,6 +325,15 @@
 
       ObservedValue : raw_unit
 
+
+
+
+
+        ObservedValue --&gt; "0..1" Unit : raw_unit
+        click Unit href "../Unit/"
+
+
+
       ObservedValue : raw_value
 
       ObservedValue : unit
@@ -353,12 +378,6 @@
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../default_unit/">default_unit</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
 <td><a href="../raw_value/">raw_value</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td></td>
@@ -366,7 +385,7 @@
 </tr>
 <tr>
 <td><a href="../raw_unit/">raw_unit</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>0..1 <br/> <a href="../Unit/">Unit</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -378,7 +397,7 @@
 </tr>
 <tr>
 <td><a href="../imputed_unit/">imputed_unit</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>0..1 <br/> <a href="../Unit/">Unit</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -390,7 +409,7 @@
 </tr>
 <tr>
 <td><a href="../normalised_unit/">normalised_unit</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>0..1 <br/> <a href="../Unit/">Unit</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -492,7 +511,6 @@ from_schema: https://w3id.org/peh/peh-model
 slots:
 - observable_entity
 - observable_property
-- default_unit
 - raw_value
 - raw_unit
 - imputed_value
@@ -538,16 +556,6 @@ attributes:
     - ObservedEntityProperty
     range: ObservableProperty
     inlined: false
-  default_unit:
-    name: default_unit
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: default_unit
-    owner: ObservedValue
-    domain_of:
-    - ObservableProperty
-    - ObservedValue
-    range: string
   raw_value:
     name: raw_value
     from_schema: https://w3id.org/peh/peh-model
@@ -565,7 +573,7 @@ attributes:
     owner: ObservedValue
     domain_of:
     - ObservedValue
-    range: string
+    range: Unit
   imputed_value:
     name: imputed_value
     from_schema: https://w3id.org/peh/peh-model
@@ -583,7 +591,7 @@ attributes:
     owner: ObservedValue
     domain_of:
     - ObservedValue
-    range: string
+    range: Unit
   normalised_value:
     name: normalised_value
     from_schema: https://w3id.org/peh/peh-model
@@ -601,7 +609,7 @@ attributes:
     owner: ObservedValue
     domain_of:
     - ObservedValue
-    range: string
+    range: Unit
   value:
     name: value
     from_schema: https://w3id.org/peh/peh-model
@@ -620,6 +628,7 @@ attributes:
     alias: unit
     owner: ObservedValue
     domain_of:
+    - ObservableProperty
     - CalculationKeywordArgument
     - CalculationResult
     - ObservedValue
@@ -684,8 +693,8 @@ attributes:
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": "0.2.0"}</script>
-<script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+<script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": "0.2.0"}</script>
+<script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
 <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
 <script src="../javascripts/tablesort.js"></script>
 <script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
