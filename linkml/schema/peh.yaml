@@ -133,6 +133,7 @@ classes:
       - translated_value
 
   Unit:
+    class_uri: wikidata:Q2198779
     description: >-
       A unit of measurement, a quantity chosen as a standard in terms of which other quantities may be expressed
     is_a: NamedThing
@@ -156,24 +157,13 @@ classes:
       - HasValidationStatus
     slots:
       - grouping_id_list
+      - biochementity_type
       - molweight_grampermol
-      - biochemidentifiers
-      - biochementity_links
-  BioChemIdentifier:
-    description: >-
-      An identifier by which a biochemical entity is known in a schema (the BioChemIdentifierSchema) used by a certain community or system
-    mixins:
-      - HasValidationStatus
-    slots:
-      - identifier_schema
-      - identifier_code
-  BioChemIdentifierSchema:
-    description: >-
-      A well-defined schema used by a certain community or system, listing biochemical entities with individual identifiers 
-    is_a: NamedThing
-    slots:
-      - web_uri
+      - parent_compounds
+      - group_compound_members
+      - member_of_group_compounds
   Matrix:
+    class_uri: wikidata:Q685816
     description: >-
       The physical medium or biological substrate from which a biomarker, or other analyte is quantified in observational studies
     is_a: NamedThing
@@ -183,6 +173,7 @@ classes:
     slots:
       - parent_matrix
   Indicator:
+    class_uri: wikidata:Q937228
     description: >-
       Any measurable or observable variable that can describe data or context in the Personal Exposure and Health domain
     close_mappings:
@@ -199,12 +190,6 @@ classes:
       - constraints
       - grouping_id_list
       - relevant_observable_entity_types
-      - biochementity_links
-  BioChemEntityLink:
-    description: >-
-      A relational property that allows creating qualified links to biochemical entities
-    slots:
-      - biochementity_linktype
       - biochementity
 
   PhysicalEntity:
@@ -690,6 +675,8 @@ slots:
     range: ContextAlias
   exact_matches:
     multivalued: true
+    range: uriorcurie
+    slot_uri: skos:exactMatch
   context:
     range: NamedThing
     inlined: false
@@ -713,6 +700,7 @@ slots:
     range: Unit
   same_unit_as:
     range: QudtUnit
+    slot_uri: skos:exactMatch
   quantity_kind:
     range: QudtQuantityKind
 
@@ -723,14 +711,11 @@ slots:
   grouping_id_list:
     multivalued: true
     range: Grouping
+    slot_uri: skos:broader
   parent_grouping_id_list:
     multivalued: true
     range: Grouping
-    slot_uri: skos:broader
-  biochemidentifiers:
-    multivalued: true
-    inlined_as_list: true
-    range: BioChemIdentifier
+    slot_uri: rdfs:subClassOf
   biochementities:
     multivalued: true
     inlined_as_list: true
@@ -740,10 +725,6 @@ slots:
     inlined_as_list: true
     range: Indicator
 
-  web_uri:
-  identifier_schema:
-    range: BioChemIdentifierSchema
-  identifier_code:
   current_validation_status:
     range: ValidationStatus
   validation_datetime:
@@ -754,9 +735,32 @@ slots:
   validation_institute:
   validation_remark:
 
+  biochementity_type:
+    range: BioChemEntityType
+  molweight_grampermol:
+    range: decimal
+  parent_compounds:
+    multivalued: true
+    range: BioChemEntity
+    slot_uri: rdfs:subClassOf
+  group_compound_members:
+    multivalued: true
+    range: BioChemEntity
+    slot_uri: skos:narrower
+    description: >-
+      For a compound that groups other compounds, links to members of the group.
+      Inverse of the BioChemEntity member_of_group_compounds slot
+  member_of_group_compounds:
+    multivalued: true
+    range: BioChemEntity
+    slot_uri: skos:broader
+    description: >-
+      Declares the compound being part of one or more group compounds.
+      Inverse of the BioChemEntity group_compound_members slot
+
   parent_matrix:
     range: Matrix
-    slot_uri: skos:broader
+    slot_uri: rdfs:subClassOf
   indicator_type:
     range: IndicatorType
   property:
@@ -771,14 +775,6 @@ slots:
   relevant_observable_entity_types:
     multivalued: true
     range: ObservableEntityType
-  molweight_grampermol:
-    range: decimal
-  biochementity_links:
-    multivalued: true
-    inlined_as_list: true
-    range: BioChemEntityLink
-  biochementity_linktype:
-    range: BioChemEntityLinkType
   biochementity:
     range: BioChemEntity
     inlined: false
@@ -812,7 +808,8 @@ slots:
     range: ObservationType
   indicator:
     range: Indicator
-  
+    slot_uri: rdfs:subClassOf
+
   calculation_designs:
     multivalued: true
     inlined_as_list: true
@@ -1190,15 +1187,12 @@ enums:
       exposuremarker:
       geomarker:
       observation:
-  BioChemEntityLinkType:
+  BioChemEntityType:
     permissible_values:
-      exact_match:
-      close_match:
-      broader:
-      part_of:
-      group_contains:
-      has_parent_compound:
-      branched_version_of:
+      compound_group:
+      compound:
+      conjugated_compound:
+      unconjugated_compound:
   ResearchPopulationType:
     permissible_values:
       general_population:
