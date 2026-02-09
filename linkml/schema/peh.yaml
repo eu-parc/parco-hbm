@@ -750,6 +750,7 @@ slots:
     description: >-
       For a compound that groups other compounds, links to members of the group.
       Inverse of the BioChemEntity member_of_group_compounds slot
+    inverse: member_of_group_compounds
   member_of_group_compounds:
     multivalued: true
     range: BioChemEntity
@@ -757,6 +758,7 @@ slots:
     description: >-
       Declares the compound being part of one or more group compounds.
       Inverse of the BioChemEntity group_compound_members slot
+    inverse: group_compound_members
 
   parent_matrix:
     range: Matrix
