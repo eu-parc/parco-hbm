@@ -265,7 +265,7 @@ classes:
       - relevant_observable_entity_types
       - relevant_observation_types
       - indicator
-      - calculation_designs
+      - calculation_design
       - validation_designs
   ObservablePropertyValueOption:
     description: >-
@@ -812,9 +812,7 @@ slots:
     range: Indicator
     slot_uri: rdfs:subClassOf
 
-  calculation_designs:
-    multivalued: true
-    inlined_as_list: true
+  calculation_design:
     range: CalculationDesign
   calculation_name:
   conditional:
