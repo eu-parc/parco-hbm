@@ -62,7 +62,6 @@ classes:
       An abstract model for any of the identifiable entities
     slots:
       - id
-      - unique_name
       - short_name
       - name
       - ui_label
@@ -629,19 +628,17 @@ slots:
     slot_uri: schema:identifier
     description: >-
       Machine readable, unique identifier; ideally a URI/GUPRI (Globally Unique, Persistent, Resolvable Identifier).
-  unique_name:
-    slot_uri: skos:prefLabel
-    close_mappings:
-    - schema:identifier
-    description: >-
-      Human readable name, unique across the context the entity is defined in.
   short_name:
+    slot_uri: schema:alternateName
     description: >-
-      Shortened name or code, preferrable unique across the context the entity is defined in.
-  name:
-    slot_uri: schema:name
+      Shortened name or code, preferrably unique within the context the entity is (typically) used in.
     exact_mappings:
     - skos:altLabel
+  name:
+    slot_uri: rdfs:label
+    exact_mappings:
+    - schema:name
+    - skos:prefLabel
     description: >-
       Common human readable name
   description:
@@ -650,10 +647,10 @@ slots:
     - skos:definition
     description: >-
       Long form description or definition for the entity.
-  label:
   ui_label:
+    # restricted to internal use
     description: >-
-      Human readable label, to be used in user facing interfaces in the most common use cases.
+      Human readable label, to be used in user interactions through forms or documents.
   remark:
     slot_uri: schema:comment
     exact_mappings:
@@ -665,6 +662,7 @@ slots:
     slot_uri: schema:identifier
   rorid:
     slot_uri: schema:identifier
+  label:
   alias:
   aliases:
     multivalued: true
