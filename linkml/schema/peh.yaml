@@ -49,6 +49,7 @@ classes:
       - physical_entities
       - observation_groups
       - observations
+      - observation_designs
       - observation_results
       - observed_values
       - layouts
@@ -502,14 +503,21 @@ classes:
       - observation_result_id_list
   ObservationDesign:
     description: >-
-      The list of properties being observed and the study entities they are observed for (or, alternatively, the entity type all observed entities belong to)
+      The setup of the observation, listing the study entity type being observed (and -optionally- the entities), as well as the the properties being recorded
+    is_a: NamedThing
     slots:
       - observation_result_type
       - observable_entity_type
       - observable_entity_id_list
-      - identifying_observable_property_id_list
-      - required_observable_property_id_list
-      - optional_observable_property_id_list
+      - observable_property_specifications
+  ObservablePropertySpecification:
+    description: >-
+      For an observable property being recorded, lists its categorisation and processing rules
+    slots:
+    - observable_property
+    - specification_category
+    - calculation_design
+    - validation_designs
   ObservationResult:
     description: >-
       The result of an observational effort in Personal Exposure and Health research
@@ -1019,11 +1027,18 @@ slots:
     range: ObservationType
   observation_design:
     range: ObservationDesign
+    inlined: false
   observation_designs:
     multivalued: true
     range: ObservationDesign
   observation_result_type:
     range: ObservationResultType
+  observable_property_specifications:
+    multivalued: true
+    inlined_as_list: true
+    range: ObservablePropertySpecification
+  specification_category:
+    range: ObservablePropertySpecificationCategory
   observation_results:
     multivalued: true
     inlined_as_list: true
@@ -1038,15 +1053,6 @@ slots:
     range: StudyEntity
   observable_entity:
     range: StudyEntity
-  identifying_observable_property_id_list:
-    multivalued: true
-    range: ObservableProperty
-  required_observable_property_id_list:
-    multivalued: true
-    range: ObservableProperty
-  optional_observable_property_id_list:
-    multivalued: true
-    range: ObservableProperty
   observable_properties:
     multivalued: true
     inlined_as_list: true
@@ -1298,6 +1304,16 @@ enums:
       fieldwork:
       geospatial:
       metadata:
+  ObservablePropertySpecificationCategory:
+    permissible_values:
+      identifying:
+        description: Used to uniquely identify the ObservableEntity
+      required:
+        description: Must be provided for the observation to be valid
+      optional:
+        description: May be provided but not required
+      derived:
+        description: Is calculated from other ObservableProperties
   ObservationResultType:
     permissible_values:
       measurement:
