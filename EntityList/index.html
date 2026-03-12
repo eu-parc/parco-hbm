@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://eu-parc.github.io/parco-hbm/EntityList/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.7.1" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.5" name="generator"/>
 <title>Class: EntityList - PEH-model Documentation</title>
 <link href="../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
@@ -161,6 +161,15 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#class-properties">
+<span class="md-ellipsis">
+      
+        Class Properties
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#slots">
 <span class="md-ellipsis">
       
@@ -244,14 +253,14 @@
 <div class="mermaid"> classDiagram
     class EntityList
     click EntityList href "../EntityList/"
-      EntityList : biochementities
+      EntityList : biochementity_subclasses
 
 
 
 
 
-        EntityList --&gt; "*" BioChemEntity : biochementities
-        click BioChemEntity href "../BioChemEntity/"
+        EntityList --&gt; "*" BioChemEntitySubClass : biochementity_subclasses
+        click BioChemEntitySubClass href "../BioChemEntitySubClass/"
 
 
 
@@ -288,14 +297,14 @@
 
 
 
-      EntityList : indicators
+      EntityList : indicator_subclasses
 
 
 
 
 
-        EntityList --&gt; "*" Indicator : indicators
-        click Indicator href "../Indicator/"
+        EntityList --&gt; "*" IndicatorSubClass : indicator_subclasses
+        click IndicatorSubClass href "../IndicatorSubClass/"
 
 
 
@@ -310,14 +319,14 @@
 
 
 
-      EntityList : matrices
+      EntityList : matrix_subclasses
 
 
 
 
 
-        EntityList --&gt; "*" Matrix : matrices
-        click Matrix href "../Matrix/"
+        EntityList --&gt; "*" MatrixSubClass : matrix_subclasses
+        click MatrixSubClass href "../MatrixSubClass/"
 
 
 
@@ -340,6 +349,17 @@
 
         EntityList --&gt; "*" ObservableProperty : observable_properties
         click ObservableProperty href "../ObservableProperty/"
+
+
+
+      EntityList : observation_designs
+
+
+
+
+
+        EntityList --&gt; "*" ObservationDesign : observation_designs
+        click ObservationDesign href "../ObservationDesign/"
 
 
 
@@ -442,20 +462,24 @@
 
 
 
-      EntityList : units
-
-
-
-
-
-        EntityList --&gt; "*" Unit : units
-        click Unit href "../Unit/"
-
-
-
 
 </div>
 <!-- no inheritance hierarchy -->
+<h2 id="class-properties">Class Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tree Root</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
 <h2 id="slots">Slots</h2>
 <table>
 <thead>
@@ -468,38 +492,14 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../matrices/">matrices</a></td>
-<td>* <br/> <a href="../Matrix/">Matrix</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
 <td><a href="../metadata_fields/">metadata_fields</a></td>
 <td>* <br/> <a href="../ObservablePropertyMetadataField/">ObservablePropertyMetadataField</a></td>
 <td></td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../biochementities/">biochementities</a></td>
-<td>* <br/> <a href="../BioChemEntity/">BioChemEntity</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
 <td><a href="../groupings/">groupings</a></td>
 <td>* <br/> <a href="../Grouping/">Grouping</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../indicators/">indicators</a></td>
-<td>* <br/> <a href="../Indicator/">Indicator</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../units/">units</a></td>
-<td>* <br/> <a href="../Unit/">Unit</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -552,6 +552,12 @@
 <td>direct</td>
 </tr>
 <tr>
+<td><a href="../observation_designs/">observation_designs</a></td>
+<td>* <br/> <a href="../ObservationDesign/">ObservationDesign</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
 <td><a href="../observation_results/">observation_results</a></td>
 <td>* <br/> <a href="../ObservationResult/">ObservationResult</a></td>
 <td></td>
@@ -578,6 +584,24 @@
 <tr>
 <td><a href="../data_requests/">data_requests</a></td>
 <td>* <br/> <a href="../DataRequest/">DataRequest</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../matrix_subclasses/">matrix_subclasses</a></td>
+<td>* <br/> <a href="../MatrixSubClass/">MatrixSubClass</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../biochementity_subclasses/">biochementity_subclasses</a></td>
+<td>* <br/> <a href="../BioChemEntitySubClass/">BioChemEntitySubClass</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../indicator_subclasses/">indicator_subclasses</a></td>
+<td>* <br/> <a href="../IndicatorSubClass/">IndicatorSubClass</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -616,12 +640,8 @@ description: A generic top level object for collecting named entities under one 
   entity
 from_schema: https://w3id.org/peh/peh-model
 slots:
-- matrices
 - metadata_fields
-- biochementities
 - groupings
-- indicators
-- units
 - observable_properties
 - stakeholders
 - projects
@@ -630,11 +650,15 @@ slots:
 - physical_entities
 - observation_groups
 - observations
+- observation_designs
 - observation_results
 - observed_values
 - layouts
 - import_configs
 - data_requests
+- matrix_subclasses
+- biochementity_subclasses
+- indicator_subclasses
 tree_root: true
 
 </code></pre>
@@ -646,17 +670,6 @@ description: A generic top level object for collecting named entities under one 
   entity
 from_schema: https://w3id.org/peh/peh-model
 attributes:
-  matrices:
-    name: matrices
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: matrices
-    owner: EntityList
-    domain_of:
-    - EntityList
-    range: Matrix
-    multivalued: true
-    inlined_as_list: true
   metadata_fields:
     name: metadata_fields
     from_schema: https://w3id.org/peh/peh-model
@@ -668,17 +681,6 @@ attributes:
     range: ObservablePropertyMetadataField
     multivalued: true
     inlined_as_list: true
-  biochementities:
-    name: biochementities
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: biochementities
-    owner: EntityList
-    domain_of:
-    - EntityList
-    range: BioChemEntity
-    multivalued: true
-    inlined_as_list: true
   groupings:
     name: groupings
     from_schema: https://w3id.org/peh/peh-model
@@ -688,28 +690,6 @@ attributes:
     domain_of:
     - EntityList
     range: Grouping
-    multivalued: true
-    inlined_as_list: true
-  indicators:
-    name: indicators
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: indicators
-    owner: EntityList
-    domain_of:
-    - EntityList
-    range: Indicator
-    multivalued: true
-    inlined_as_list: true
-  units:
-    name: units
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: units
-    owner: EntityList
-    domain_of:
-    - EntityList
-    range: Unit
     multivalued: true
     inlined_as_list: true
   observable_properties:
@@ -800,6 +780,17 @@ attributes:
     range: Observation
     multivalued: true
     inlined_as_list: true
+  observation_designs:
+    name: observation_designs
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: observation_designs
+    owner: EntityList
+    domain_of:
+    - EntityList
+    - DataRequest
+    range: ObservationDesign
+    multivalued: true
   observation_results:
     name: observation_results
     from_schema: https://w3id.org/peh/peh-model
@@ -855,6 +846,39 @@ attributes:
     domain_of:
     - EntityList
     range: DataRequest
+    multivalued: true
+    inlined_as_list: true
+  matrix_subclasses:
+    name: matrix_subclasses
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: matrix_subclasses
+    owner: EntityList
+    domain_of:
+    - EntityList
+    range: MatrixSubClass
+    multivalued: true
+    inlined_as_list: true
+  biochementity_subclasses:
+    name: biochementity_subclasses
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: biochementity_subclasses
+    owner: EntityList
+    domain_of:
+    - EntityList
+    range: BioChemEntitySubClass
+    multivalued: true
+    inlined_as_list: true
+  indicator_subclasses:
+    name: indicator_subclasses
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: indicator_subclasses
+    owner: EntityList
+    domain_of:
+    - EntityList
+    range: IndicatorSubClass
     multivalued: true
     inlined_as_list: true
 tree_root: true

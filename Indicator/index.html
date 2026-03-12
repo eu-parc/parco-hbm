@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://eu-parc.github.io/parco-hbm/Indicator/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.7.1" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.5" name="generator"/>
 <title>Class: Indicator - PEH-model Documentation</title>
 <link href="../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
@@ -170,19 +170,19 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#slots">
+<a class="md-nav__link" href="#class-properties">
 <span class="md-ellipsis">
       
-        Slots
+        Class Properties
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#usages">
+<a class="md-nav__link" href="#slots">
 <span class="md-ellipsis">
       
-        Usages
+        Slots
       
     </span>
 </a>
@@ -258,134 +258,51 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-indicator">Class: Indicator</h1>
 <p><em>Any measurable or observable variable that can describe data or context in the Personal Exposure and Health domain</em></p>
-<p>URI: <a href="https://w3id.org/peh/terms/Indicator">pehterms:Indicator</a></p>
+<p>URI: <a href="https://www.wikidata.org/wiki/Q937228">wikidata:Q937228</a></p>
 <div class="mermaid"> classDiagram
     class Indicator
     click Indicator href "../Indicator/"
-      HasContextAliases &lt;|-- Indicator
-        click HasContextAliases href "../HasContextAliases/"
-      HasTranslations &lt;|-- Indicator
-        click HasTranslations href "../HasTranslations/"
       NamedThing &lt;|-- Indicator
         click NamedThing href "../NamedThing/"
-
-      Indicator : biochementity_links
-
-
-
-
-
-        Indicator --&gt; "*" BioChemEntityLink : biochementity_links
-        click BioChemEntityLink href "../BioChemEntityLink/"
-
-
-
-      Indicator : constraints
-
-      Indicator : context_aliases
-
-
-
-
-
-        Indicator --&gt; "*" ContextAlias : context_aliases
-        click ContextAlias href "../ContextAlias/"
-
-
 
       Indicator : description
 
       Indicator : exact_matches
 
-      Indicator : grouping_id_list
-
-
-
-
-
-        Indicator --&gt; "*" Grouping : grouping_id_list
-        click Grouping href "../Grouping/"
-
-
-
       Indicator : id
 
-      Indicator : indicator_type
-
-
-
-
-
-        Indicator --&gt; "0..1" IndicatorType : indicator_type
-        click IndicatorType href "../IndicatorType/"
-
-
-
-      Indicator : matrix
-
-
-
-
-
-        Indicator --&gt; "0..1" Matrix : matrix
-        click Matrix href "../Matrix/"
-
-
-
       Indicator : name
-
-      Indicator : property
-
-      Indicator : quantity_kind
-
-
-
-
-
-        Indicator --&gt; "0..1" QudtQuantityKind : quantity_kind
-        click QudtQuantityKind href "../QudtQuantityKind/"
-
-
-
-      Indicator : relevant_observable_entity_types
-
-
-
-
-
-        Indicator --&gt; "*" ObservableEntityType : relevant_observable_entity_types
-        click ObservableEntityType href "../ObservableEntityType/"
-
-
 
       Indicator : remark
 
       Indicator : short_name
 
-      Indicator : translations
-
-
-
-
-
-        Indicator --&gt; "*" Translation : translations
-        click Translation href "../Translation/"
-
-
-
       Indicator : ui_label
-
-      Indicator : unique_name
 
 
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
 <li><a href="../NamedThing/">NamedThing</a><ul>
-<li><strong>Indicator</strong> [ <a href="../HasContextAliases/">HasContextAliases</a> <a href="../HasTranslations/">HasTranslations</a>]</li>
+<li><strong>Indicator</strong></li>
 </ul>
 </li>
 </ul>
+<h2 id="class-properties">Class Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Class URI</td>
+<td><a href="https://www.wikidata.org/wiki/Q937228">wikidata:Q937228</a></td>
+</tr>
+</tbody>
+</table>
 <h2 id="slots">Slots</h2>
 <table>
 <thead>
@@ -398,81 +315,15 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../indicator_type/">indicator_type</a></td>
-<td>0..1 <br/> <a href="../IndicatorType/">IndicatorType</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../property/">property</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../quantity_kind/">quantity_kind</a></td>
-<td>0..1 <br/> <a href="../QudtQuantityKind/">QudtQuantityKind</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../matrix/">matrix</a></td>
-<td>0..1 <br/> <a href="../Matrix/">Matrix</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../constraints/">constraints</a></td>
-<td>* <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../grouping_id_list/">grouping_id_list</a></td>
-<td>* <br/> <a href="../Grouping/">Grouping</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../relevant_observable_entity_types/">relevant_observable_entity_types</a></td>
-<td>* <br/> <a href="../ObservableEntityType/">ObservableEntityType</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../biochementity_links/">biochementity_links</a></td>
-<td>* <br/> <a href="../BioChemEntityLink/">BioChemEntityLink</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../context_aliases/">context_aliases</a></td>
-<td>* <br/> <a href="../ContextAlias/">ContextAlias</a></td>
-<td></td>
-<td><a href="../HasContextAliases/">HasContextAliases</a></td>
-</tr>
-<tr>
-<td><a href="../translations/">translations</a></td>
-<td>* <br/> <a href="../Translation/">Translation</a></td>
-<td></td>
-<td><a href="../HasTranslations/">HasTranslations</a></td>
-</tr>
-<tr>
 <td><a href="../id/">id</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
 <td>Machine readable, unique identifier; ideally a URI/GUPRI (Globally Unique, Pe...</td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-<tr>
-<td><a href="../unique_name/">unique_name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Human readable name, unique across the context the entity is defined in</td>
 <td><a href="../NamedThing/">NamedThing</a></td>
 </tr>
 <tr>
 <td><a href="../short_name/">short_name</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Shortened name or code, preferrable unique across the context the entity is d...</td>
+<td>Shortened name or code, preferrably unique within the context the entity is (...</td>
 <td><a href="../NamedThing/">NamedThing</a></td>
 </tr>
 <tr>
@@ -484,7 +335,7 @@
 <tr>
 <td><a href="../ui_label/">ui_label</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Human readable label, to be used in user facing interfaces in the most common...</td>
+<td>Human readable label, to be used in user interactions through forms or docume...</td>
 <td><a href="../NamedThing/">NamedThing</a></td>
 </tr>
 <tr>
@@ -501,34 +352,9 @@
 </tr>
 <tr>
 <td><a href="../exact_matches/">exact_matches</a></td>
-<td>* <br/> <a href="../String/">String</a></td>
+<td>* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
 <td></td>
 <td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="usages">Usages</h2>
-<table>
-<thead>
-<tr>
-<th>used by</th>
-<th>used in</th>
-<th>type</th>
-<th>used</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../EntityList/">EntityList</a></td>
-<td><a href="../indicators/">indicators</a></td>
-<td>range</td>
-<td><a href="./">Indicator</a></td>
-</tr>
-<tr>
-<td><a href="../ObservableProperty/">ObservableProperty</a></td>
-<td><a href="../indicator/">indicator</a></td>
-<td>range</td>
-<td><a href="./">Indicator</a></td>
 </tr>
 </tbody>
 </table>
@@ -548,7 +374,7 @@
 <tbody>
 <tr>
 <td>self</td>
-<td>pehterms:Indicator</td>
+<td>wikidata:Q937228</td>
 </tr>
 <tr>
 <td>native</td>
@@ -571,18 +397,7 @@ from_schema: https://w3id.org/peh/peh-model
 close_mappings:
 - iop:Variable
 is_a: NamedThing
-mixins:
-- HasContextAliases
-- HasTranslations
-slots:
-- indicator_type
-- property
-- quantity_kind
-- matrix
-- constraints
-- grouping_id_list
-- relevant_observable_entity_types
-- biochementity_links
+class_uri: wikidata:Q937228
 
 </code></pre>
 </details>
@@ -595,122 +410,7 @@ from_schema: https://w3id.org/peh/peh-model
 close_mappings:
 - iop:Variable
 is_a: NamedThing
-mixins:
-- HasContextAliases
-- HasTranslations
 attributes:
-  indicator_type:
-    name: indicator_type
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: indicator_type
-    owner: Indicator
-    domain_of:
-    - Indicator
-    range: IndicatorType
-  property:
-    name: property
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: property
-    owner: Indicator
-    domain_of:
-    - Indicator
-    range: string
-  quantity_kind:
-    name: quantity_kind
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: quantity_kind
-    owner: Indicator
-    domain_of:
-    - Unit
-    - Indicator
-    - ObservableProperty
-    range: QudtQuantityKind
-  matrix:
-    name: matrix
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: matrix
-    owner: Indicator
-    domain_of:
-    - Indicator
-    - Sample
-    - SampleCollection
-    range: Matrix
-  constraints:
-    name: constraints
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: constraints
-    owner: Indicator
-    domain_of:
-    - Indicator
-    - Sample
-    - SampleCollection
-    range: string
-    multivalued: true
-  grouping_id_list:
-    name: grouping_id_list
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: grouping_id_list
-    owner: Indicator
-    domain_of:
-    - BioChemEntity
-    - Indicator
-    - ObservableProperty
-    range: Grouping
-    multivalued: true
-  relevant_observable_entity_types:
-    name: relevant_observable_entity_types
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: relevant_observable_entity_types
-    owner: Indicator
-    domain_of:
-    - Indicator
-    - ObservableProperty
-    range: ObservableEntityType
-    multivalued: true
-  biochementity_links:
-    name: biochementity_links
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: biochementity_links
-    owner: Indicator
-    domain_of:
-    - BioChemEntity
-    - Indicator
-    range: BioChemEntityLink
-    multivalued: true
-    inlined: true
-    inlined_as_list: true
-  context_aliases:
-    name: context_aliases
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: context_aliases
-    owner: Indicator
-    domain_of:
-    - HasContextAliases
-    range: ContextAlias
-    multivalued: true
-    inlined: true
-    inlined_as_list: true
-  translations:
-    name: translations
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: translations
-    owner: Indicator
-    domain_of:
-    - HasTranslations
-    range: Translation
-    multivalued: true
-    inlined: true
-    inlined_as_list: true
   id:
     name: id
     description: Machine readable, unique identifier; ideally a URI/GUPRI (Globally
@@ -723,28 +423,19 @@ attributes:
     owner: Indicator
     domain_of:
     - NamedThing
-    range: string
+    - QUDTUnit
+    - QUDTQuantityKind
+    range: uriorcurie
     required: true
-  unique_name:
-    name: unique_name
-    description: Human readable name, unique across the context the entity is defined
-      in.
-    from_schema: https://w3id.org/peh/peh-model
-    close_mappings:
-    - schema:identifier
-    rank: 1000
-    slot_uri: skos:prefLabel
-    alias: unique_name
-    owner: Indicator
-    domain_of:
-    - NamedThing
-    range: string
   short_name:
     name: short_name
-    description: Shortened name or code, preferrable unique across the context the
-      entity is defined in.
+    description: Shortened name or code, preferrably unique within the context the
+      entity is (typically) used in.
     from_schema: https://w3id.org/peh/peh-model
+    exact_mappings:
+    - skos:altLabel
     rank: 1000
+    slot_uri: schema:alternateName
     alias: short_name
     owner: Indicator
     domain_of:
@@ -755,9 +446,10 @@ attributes:
     description: Common human readable name
     from_schema: https://w3id.org/peh/peh-model
     exact_mappings:
-    - skos:altLabel
+    - schema:name
+    - skos:prefLabel
     rank: 1000
-    slot_uri: schema:name
+    slot_uri: rdfs:label
     alias: name
     owner: Indicator
     domain_of:
@@ -766,8 +458,8 @@ attributes:
     range: string
   ui_label:
     name: ui_label
-    description: Human readable label, to be used in user facing interfaces in the
-      most common use cases.
+    description: Human readable label, to be used in user interactions through forms
+      or documents.
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     alias: ui_label
@@ -806,12 +498,14 @@ attributes:
     name: exact_matches
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
+    slot_uri: skos:exactMatch
     alias: exact_matches
     owner: Indicator
     domain_of:
     - NamedThing
-    range: string
+    range: uriorcurie
     multivalued: true
+class_uri: wikidata:Q937228
 
 </code></pre>
 </details>

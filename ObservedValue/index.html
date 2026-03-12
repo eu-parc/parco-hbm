@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://eu-parc.github.io/parco-hbm/ObservedValue/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.7.1" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.5" name="generator"/>
 <title>Class: ObservedValue - PEH-model Documentation</title>
 <link href="../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
@@ -259,8 +259,8 @@
 
 
 
-        ObservedValue --&gt; "0..1" Unit : imputed_unit
-        click Unit href "../Unit/"
+        ObservedValue --&gt; "0..1" QUDTUnit : imputed_unit
+        click QUDTUnit href "../QUDTUnit/"
 
 
 
@@ -272,8 +272,8 @@
 
 
 
-        ObservedValue --&gt; "0..1" Unit : normalised_unit
-        click Unit href "../Unit/"
+        ObservedValue --&gt; "0..1" QUDTUnit : normalised_unit
+        click QUDTUnit href "../QUDTUnit/"
 
 
 
@@ -329,8 +329,8 @@
 
 
 
-        ObservedValue --&gt; "0..1" Unit : raw_unit
-        click Unit href "../Unit/"
+        ObservedValue --&gt; "0..1" QUDTUnit : raw_unit
+        click QUDTUnit href "../QUDTUnit/"
 
 
 
@@ -342,8 +342,8 @@
 
 
 
-        ObservedValue --&gt; "0..1" Unit : unit
-        click Unit href "../Unit/"
+        ObservedValue --&gt; "0..1" QUDTUnit : unit
+        click QUDTUnit href "../QUDTUnit/"
 
 
 
@@ -385,7 +385,7 @@
 </tr>
 <tr>
 <td><a href="../raw_unit/">raw_unit</a></td>
-<td>0..1 <br/> <a href="../Unit/">Unit</a></td>
+<td>0..1 <br/> <a href="../QUDTUnit/">QUDTUnit</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -397,7 +397,7 @@
 </tr>
 <tr>
 <td><a href="../imputed_unit/">imputed_unit</a></td>
-<td>0..1 <br/> <a href="../Unit/">Unit</a></td>
+<td>0..1 <br/> <a href="../QUDTUnit/">QUDTUnit</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -409,7 +409,7 @@
 </tr>
 <tr>
 <td><a href="../normalised_unit/">normalised_unit</a></td>
-<td>0..1 <br/> <a href="../Unit/">Unit</a></td>
+<td>0..1 <br/> <a href="../QUDTUnit/">QUDTUnit</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -421,7 +421,7 @@
 </tr>
 <tr>
 <td><a href="../unit/">unit</a></td>
-<td>0..1 <br/> <a href="../Unit/">Unit</a></td>
+<td>0..1 <br/> <a href="../QUDTUnit/">QUDTUnit</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -551,6 +551,7 @@ attributes:
     domain_of:
     - CalculationKeywordArgument
     - CalculationResult
+    - ObservablePropertySpecification
     - ObservedValue
     - DataLayoutElement
     - ObservedEntityProperty
@@ -567,13 +568,17 @@ attributes:
     range: string
   raw_unit:
     name: raw_unit
+    annotations:
+      rdf_type:
+        tag: rdf_type
+        value: qudt:Unit
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     alias: raw_unit
     owner: ObservedValue
     domain_of:
     - ObservedValue
-    range: Unit
+    range: QUDTUnit
   imputed_value:
     name: imputed_value
     from_schema: https://w3id.org/peh/peh-model
@@ -585,13 +590,17 @@ attributes:
     range: string
   imputed_unit:
     name: imputed_unit
+    annotations:
+      rdf_type:
+        tag: rdf_type
+        value: qudt:Unit
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     alias: imputed_unit
     owner: ObservedValue
     domain_of:
     - ObservedValue
-    range: Unit
+    range: QUDTUnit
   normalised_value:
     name: normalised_value
     from_schema: https://w3id.org/peh/peh-model
@@ -603,13 +612,17 @@ attributes:
     range: string
   normalised_unit:
     name: normalised_unit
+    annotations:
+      rdf_type:
+        tag: rdf_type
+        value: qudt:Unit
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     alias: normalised_unit
     owner: ObservedValue
     domain_of:
     - ObservedValue
-    range: Unit
+    range: QUDTUnit
   value:
     name: value
     from_schema: https://w3id.org/peh/peh-model
@@ -623,8 +636,13 @@ attributes:
     range: string
   unit:
     name: unit
+    annotations:
+      rdf_type:
+        tag: rdf_type
+        value: qudt:Unit
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
+    slot_uri: qudt:hasUnit
     alias: unit
     owner: ObservedValue
     domain_of:
@@ -632,7 +650,7 @@ attributes:
     - CalculationKeywordArgument
     - CalculationResult
     - ObservedValue
-    range: Unit
+    range: QUDTUnit
   value_as_string:
     name: value_as_string
     from_schema: https://w3id.org/peh/peh-model

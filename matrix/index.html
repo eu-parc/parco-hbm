@@ -17,7 +17,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
     
     
       
@@ -329,6 +329,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-and-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type and Range
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cardinality-and-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cardinality and Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -417,13 +445,13 @@ Alias: matrix</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="../SampleCollection/">SampleCollection</a></td>
-<td>A collection of samples that is itself also a study entity that observations ...</td>
+<td><a href="../IndicatorSubClass/">IndicatorSubClass</a></td>
+<td>Template class used to generate OWL Classes</td>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../Indicator/">Indicator</a></td>
-<td>Any measurable or observable variable that can describe data or context in th...</td>
+<td><a href="../SampleCollection/">SampleCollection</a></td>
+<td>A collection of samples that is itself also a study entity that observations ...</td>
 <td>no</td>
 </tr>
 <tr>
@@ -434,9 +462,40 @@ Alias: matrix</p>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
-<ul>
-<li>Range: <a href="../Matrix/">Matrix</a></li>
-</ul>
+<h3 id="type-and-range">Type and Range</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Range</td>
+<td><a href="../Matrix/">Matrix</a></td>
+</tr>
+<tr>
+<td>Domain Of</td>
+<td><a href="../IndicatorSubClass/">IndicatorSubClass</a>, <a href="../Sample/">Sample</a>, <a href="../SampleCollection/">SampleCollection</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cardinality-and-requirements">Cardinality and Requirements</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
@@ -469,7 +528,7 @@ from_schema: https://w3id.org/peh/peh-model
 rank: 1000
 alias: matrix
 domain_of:
-- Indicator
+- IndicatorSubClass
 - Sample
 - SampleCollection
 range: Matrix

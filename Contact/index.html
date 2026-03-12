@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://eu-parc.github.io/parco-hbm/Contact/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.7.1" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.5" name="generator"/>
 <title>Class: Contact - PEH-model Documentation</title>
 <link href="../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
@@ -442,9 +442,10 @@ attributes:
     description: Common human readable name
     from_schema: https://w3id.org/peh/peh-model
     exact_mappings:
-    - skos:altLabel
+    - schema:name
+    - skos:prefLabel
     rank: 1000
-    slot_uri: schema:name
+    slot_uri: rdfs:label
     alias: name
     owner: Contact
     domain_of:

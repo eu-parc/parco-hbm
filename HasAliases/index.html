@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://eu-parc.github.io/parco-hbm/HasAliases/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.7.1" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.5" name="generator"/>
 <title>Class: HasAliases - PEH-model Documentation</title>
 <link href="../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
@@ -161,6 +161,15 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#class-properties">
+<span class="md-ellipsis">
+      
+        Class Properties
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#slots">
 <span class="md-ellipsis">
       
@@ -255,12 +264,29 @@
     click HasAliases href "../HasAliases/"
       HasAliases &lt;|-- BioChemEntity
         click BioChemEntity href "../BioChemEntity/"
+      HasAliases &lt;|-- BioChemEntitySubClass
+        click BioChemEntitySubClass href "../BioChemEntitySubClass/"
 
       HasAliases : aliases
 
 
 </div>
 <!-- no inheritance hierarchy -->
+<h2 id="class-properties">Class Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mixin</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
 <h2 id="slots">Slots</h2>
 <table>
 <thead>
@@ -292,6 +318,10 @@
 <tr>
 <td><a href="../BioChemEntity/">BioChemEntity</a></td>
 <td>A biological, chemical or biochemical entity that is relevant to the Personal...</td>
+</tr>
+<tr>
+<td><a href="../BioChemEntitySubClass/">BioChemEntitySubClass</a></td>
+<td>Template class used to generate OWL Classes</td>
 </tr>
 </tbody>
 </table>

@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://eu-parc.github.io/parco-hbm/HomeEnvironment/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.7.1" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.5" name="generator"/>
 <title>Class: HomeEnvironment - PEH-model Documentation</title>
 <link href="../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
@@ -281,8 +281,6 @@
 
       HomeEnvironment : ui_label
 
-      HomeEnvironment : unique_name
-
 
 </div>
 <h2 id="inheritance">Inheritance</h2>
@@ -317,20 +315,14 @@
 </tr>
 <tr>
 <td><a href="../id/">id</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
 <td>Machine readable, unique identifier; ideally a URI/GUPRI (Globally Unique, Pe...</td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-<tr>
-<td><a href="../unique_name/">unique_name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Human readable name, unique across the context the entity is defined in</td>
 <td><a href="../NamedThing/">NamedThing</a></td>
 </tr>
 <tr>
 <td><a href="../short_name/">short_name</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Shortened name or code, preferrable unique across the context the entity is d...</td>
+<td>Shortened name or code, preferrably unique within the context the entity is (...</td>
 <td><a href="../NamedThing/">NamedThing</a></td>
 </tr>
 <tr>
@@ -342,7 +334,7 @@
 <tr>
 <td><a href="../ui_label/">ui_label</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Human readable label, to be used in user facing interfaces in the most common...</td>
+<td>Human readable label, to be used in user interactions through forms or docume...</td>
 <td><a href="../NamedThing/">NamedThing</a></td>
 </tr>
 <tr>
@@ -359,7 +351,7 @@
 </tr>
 <tr>
 <td><a href="../exact_matches/">exact_matches</a></td>
-<td>* <br/> <a href="../String/">String</a></td>
+<td>* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
 <td></td>
 <td><a href="../NamedThing/">NamedThing</a></td>
 </tr>
@@ -433,28 +425,19 @@ attributes:
     owner: HomeEnvironment
     domain_of:
     - NamedThing
-    range: string
+    - QUDTUnit
+    - QUDTQuantityKind
+    range: uriorcurie
     required: true
-  unique_name:
-    name: unique_name
-    description: Human readable name, unique across the context the entity is defined
-      in.
-    from_schema: https://w3id.org/peh/peh-model
-    close_mappings:
-    - schema:identifier
-    rank: 1000
-    slot_uri: skos:prefLabel
-    alias: unique_name
-    owner: HomeEnvironment
-    domain_of:
-    - NamedThing
-    range: string
   short_name:
     name: short_name
-    description: Shortened name or code, preferrable unique across the context the
-      entity is defined in.
+    description: Shortened name or code, preferrably unique within the context the
+      entity is (typically) used in.
     from_schema: https://w3id.org/peh/peh-model
+    exact_mappings:
+    - skos:altLabel
     rank: 1000
+    slot_uri: schema:alternateName
     alias: short_name
     owner: HomeEnvironment
     domain_of:
@@ -465,9 +448,10 @@ attributes:
     description: Common human readable name
     from_schema: https://w3id.org/peh/peh-model
     exact_mappings:
-    - skos:altLabel
+    - schema:name
+    - skos:prefLabel
     rank: 1000
-    slot_uri: schema:name
+    slot_uri: rdfs:label
     alias: name
     owner: HomeEnvironment
     domain_of:
@@ -476,8 +460,8 @@ attributes:
     range: string
   ui_label:
     name: ui_label
-    description: Human readable label, to be used in user facing interfaces in the
-      most common use cases.
+    description: Human readable label, to be used in user interactions through forms
+      or documents.
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     alias: ui_label
@@ -516,11 +500,12 @@ attributes:
     name: exact_matches
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
+    slot_uri: skos:exactMatch
     alias: exact_matches
     owner: HomeEnvironment
     domain_of:
     - NamedThing
-    range: string
+    range: uriorcurie
     multivalued: true
 
 </code></pre>

@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
     
     
       
@@ -502,14 +502,6 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="BioChemEntityLink/">BioChemEntityLink</a></td>
-<td>A relational property that allows creating qualified links to biochemical ent...</td>
-</tr>
-<tr>
-<td><a href="BioChemIdentifier/">BioChemIdentifier</a></td>
-<td>An identifier by which a biochemical entity is known in a schema (the BioChem...</td>
-</tr>
-<tr>
 <td><a href="CalculationDesign/">CalculationDesign</a></td>
 <td>Definition of a calculation method for deriving an observational value from o...</td>
 </tr>
@@ -586,8 +578,8 @@
 <td>A biological, chemical or biochemical entity that is relevant to the Personal...</td>
 </tr>
 <tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="BioChemIdentifierSchema/">BioChemIdentifierSchema</a></td>
-<td>A well-defined schema used by a certain community or system, listing biochemi...</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="BioChemEntitySubClass/">BioChemEntitySubClass</a></td>
+<td>Template class used to generate OWL Classes</td>
 </tr>
 <tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="DataImportConfig/">DataImportConfig</a></td>
@@ -618,8 +610,16 @@
 <td>Any measurable or observable variable that can describe data or context in th...</td>
 </tr>
 <tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="IndicatorSubClass/">IndicatorSubClass</a></td>
+<td>Template class used to generate OWL Classes</td>
+</tr>
+<tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Matrix/">Matrix</a></td>
 <td>The physical medium or biological substrate from which a biomarker, or other ...</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="MatrixSubClass/">MatrixSubClass</a></td>
+<td>Template class used to generate OWL Classes</td>
 </tr>
 <tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ObservableProperty/">ObservableProperty</a></td>
@@ -632,6 +632,10 @@
 <tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Observation/">Observation</a></td>
 <td>The registration of the intent to perform a set of observations as well as th...</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ObservationDesign/">ObservationDesign</a></td>
+<td>The setup of the observation, listing the study entity type being observed (a...</td>
 </tr>
 <tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ObservationResult/">ObservationResult</a></td>
@@ -714,20 +718,16 @@
 <td>A group of study subjects that is itself also a study entity that observation...</td>
 </tr>
 <tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Unit/">Unit</a></td>
-<td>A unit of measurement, a quantity chosen as a standard in terms of which othe...</td>
-</tr>
-<tr>
 <td><a href="ObservablePropertyMetadataElement/">ObservablePropertyMetadataElement</a></td>
 <td>Key-value element that adds contextual metadata to an Observable Property ins...</td>
 </tr>
 <tr>
-<td><a href="ObservablePropertyValueOption/">ObservablePropertyValueOption</a></td>
-<td>Potential selection choices for Observable Properties that are categorical va...</td>
+<td><a href="ObservablePropertySpecification/">ObservablePropertySpecification</a></td>
+<td>For an observable property being recorded, lists its categorisation and proce...</td>
 </tr>
 <tr>
-<td><a href="ObservationDesign/">ObservationDesign</a></td>
-<td>The list of properties being observed and the study entities they are observe...</td>
+<td><a href="ObservablePropertyValueOption/">ObservablePropertyValueOption</a></td>
+<td>Potential selection choices for Observable Properties that are categorical va...</td>
 </tr>
 <tr>
 <td><a href="ObservedEntityProperty/">ObservedEntityProperty</a></td>
@@ -752,6 +752,14 @@
 <tr>
 <td><a href="QualityData/">QualityData</a></td>
 <td>Quality metadata, adding context to an Observed Value</td>
+</tr>
+<tr>
+<td><a href="QUDTQuantityKind/">QUDTQuantityKind</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="QUDTUnit/">QUDTUnit</a></td>
+<td></td>
 </tr>
 <tr>
 <td><a href="StudyEntityLink/">StudyEntityLink</a></td>
@@ -801,27 +809,19 @@
 <td></td>
 </tr>
 <tr>
-<td><a href="biochementities/">biochementities</a></td>
-<td></td>
-</tr>
-<tr>
 <td><a href="biochementity/">biochementity</a></td>
 <td></td>
 </tr>
 <tr>
-<td><a href="biochementity_links/">biochementity_links</a></td>
+<td><a href="biochementity_subclasses/">biochementity_subclasses</a></td>
 <td></td>
 </tr>
 <tr>
-<td><a href="biochementity_linktype/">biochementity_linktype</a></td>
+<td><a href="biochementity_type/">biochementity_type</a></td>
 <td></td>
 </tr>
 <tr>
-<td><a href="biochemidentifiers/">biochemidentifiers</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="calculation_designs/">calculation_designs</a></td>
+<td><a href="calculation_design/">calculation_design</a></td>
 <td></td>
 </tr>
 <tr>
@@ -961,6 +961,10 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="group_compound_members/">group_compound_members</a></td>
+<td>For a compound that groups other compounds, links to members of the group</td>
+</tr>
+<tr>
 <td><a href="grouping_id_list/">grouping_id_list</a></td>
 <td></td>
 </tr>
@@ -969,20 +973,12 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="has_observable_property_type/">has_observable_property_type</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="id/">id</a></td>
 <td>Machine readable, unique identifier; ideally a URI/GUPRI (Globally Unique, Pe...</td>
-</tr>
-<tr>
-<td><a href="identifier_code/">identifier_code</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="identifier_schema/">identifier_schema</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="identifying_observable_property_id_list/">identifying_observable_property_id_list</a></td>
-<td></td>
 </tr>
 <tr>
 <td><a href="immutable/">immutable</a></td>
@@ -1005,15 +1001,11 @@
 <td></td>
 </tr>
 <tr>
-<td><a href="indicator/">indicator</a></td>
+<td><a href="indicator_subclasses/">indicator_subclasses</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="indicator_type/">indicator_type</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="indicators/">indicators</a></td>
 <td></td>
 </tr>
 <tr>
@@ -1053,16 +1045,20 @@
 <td></td>
 </tr>
 <tr>
-<td><a href="matrices/">matrices</a></td>
+<td><a href="matrix/">matrix</a></td>
 <td></td>
 </tr>
 <tr>
-<td><a href="matrix/">matrix</a></td>
+<td><a href="matrix_subclasses/">matrix_subclasses</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="member_id_list/">member_id_list</a></td>
 <td></td>
+</tr>
+<tr>
+<td><a href="member_of_group_compounds/">member_of_group_compounds</a></td>
+<td>Declares the compound being part of one or more group compounds</td>
 </tr>
 <tr>
 <td><a href="metadata_fields/">metadata_fields</a></td>
@@ -1110,6 +1106,10 @@
 </tr>
 <tr>
 <td><a href="observable_property/">observable_property</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="observable_property_specifications/">observable_property_specifications</a></td>
 <td></td>
 </tr>
 <tr>
@@ -1173,15 +1173,19 @@
 <td></td>
 </tr>
 <tr>
-<td><a href="optional_observable_property_id_list/">optional_observable_property_id_list</a></td>
-<td></td>
-</tr>
-<tr>
 <td><a href="orcid/">orcid</a></td>
 <td></td>
 </tr>
 <tr>
+<td><a href="parent_compounds/">parent_compounds</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="parent_grouping_id_list/">parent_grouping_id_list</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="parent_indicator/">parent_indicator</a></td>
 <td></td>
 </tr>
 <tr>
@@ -1313,10 +1317,6 @@
 <td></td>
 </tr>
 <tr>
-<td><a href="required_observable_property_id_list/">required_observable_property_id_list</a></td>
-<td></td>
-</tr>
-<tr>
 <td><a href="research_objectives/">research_objectives</a></td>
 <td></td>
 </tr>
@@ -1330,10 +1330,6 @@
 </tr>
 <tr>
 <td><a href="round_decimals/">round_decimals</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="same_unit_as/">same_unit_as</a></td>
 <td></td>
 </tr>
 <tr>
@@ -1370,11 +1366,15 @@
 </tr>
 <tr>
 <td><a href="short_name/">short_name</a></td>
-<td>Shortened name or code, preferrable unique across the context the entity is d...</td>
+<td>Shortened name or code, preferrably unique within the context the entity is (...</td>
 </tr>
 <tr>
 <td><a href="significantdecimals/">significantdecimals</a></td>
 <td>Variable precision indication, expressed as the number of significant decimal...</td>
+</tr>
+<tr>
+<td><a href="specification_category/">specification_category</a></td>
+<td></td>
 </tr>
 <tr>
 <td><a href="stakeholder/">stakeholder</a></td>
@@ -1430,22 +1430,10 @@
 </tr>
 <tr>
 <td><a href="ui_label/">ui_label</a></td>
-<td>Human readable label, to be used in user facing interfaces in the most common...</td>
-</tr>
-<tr>
-<td><a href="unique_name/">unique_name</a></td>
-<td>Human readable name, unique across the context the entity is defined in</td>
+<td>Human readable label, to be used in user interactions through forms or docume...</td>
 </tr>
 <tr>
 <td><a href="unit/">unit</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="unit_label/">unit_label</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="units/">units</a></td>
 <td></td>
 </tr>
 <tr>
@@ -1537,10 +1525,6 @@
 <td></td>
 </tr>
 <tr>
-<td><a href="web_uri/">web_uri</a></td>
-<td></td>
-</tr>
-<tr>
 <td><a href="zeroallowed/">zeroallowed</a></td>
 <td></td>
 </tr>
@@ -1556,7 +1540,7 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="BioChemEntityLinkType/">BioChemEntityLinkType</a></td>
+<td><a href="BioChemEntityType/">BioChemEntityType</a></td>
 <td></td>
 </tr>
 <tr>
@@ -1596,6 +1580,10 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="ObservablePropertySpecificationCategory/">ObservablePropertySpecificationCategory</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="ObservationResultType/">ObservationResultType</a></td>
 <td></td>
 </tr>
@@ -1605,14 +1593,6 @@
 </tr>
 <tr>
 <td><a href="ProjectRole/">ProjectRole</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="QudtQuantityKind/">QudtQuantityKind</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="QudtUnit/">QudtUnit</a></td>
 <td></td>
 </tr>
 <tr>

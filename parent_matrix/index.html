@@ -17,7 +17,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
     
     
       
@@ -329,6 +329,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-and-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type and Range
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cardinality-and-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cardinality and Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -402,7 +430,7 @@
 
 
 <h1 id="slot-parent_matrix">Slot: parent_matrix</h1>
-<p>URI: <a href="http://www.w3.org/2004/02/skos/core#broader">skos:broader</a>
+<p>URI: <a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a>
 Alias: parent_matrix</p>
 <!-- no inheritance hierarchy -->
 
@@ -417,16 +445,51 @@ Alias: parent_matrix</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="../Matrix/">Matrix</a></td>
-<td>The physical medium or biological substrate from which a biomarker, or other ...</td>
+<td><a href="../MatrixSubClass/">MatrixSubClass</a></td>
+<td>Template class used to generate OWL Classes</td>
 <td>no</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
-<ul>
-<li>Range: <a href="../Matrix/">Matrix</a></li>
-</ul>
+<h3 id="type-and-range">Type and Range</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Range</td>
+<td><a href="../MatrixSubClass/">MatrixSubClass</a></td>
+</tr>
+<tr>
+<td>Domain Of</td>
+<td><a href="../MatrixSubClass/">MatrixSubClass</a></td>
+</tr>
+<tr>
+<td>Slot URI</td>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cardinality-and-requirements">Cardinality and Requirements</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
@@ -443,7 +506,7 @@ Alias: parent_matrix</p>
 <tbody>
 <tr>
 <td>self</td>
-<td>skos:broader</td>
+<td>rdfs:subClassOf</td>
 </tr>
 <tr>
 <td>native</td>
@@ -457,11 +520,11 @@ Alias: parent_matrix</p>
 <pre><code class="language-yaml">name: parent_matrix
 from_schema: https://w3id.org/peh/peh-model
 rank: 1000
-slot_uri: skos:broader
+slot_uri: rdfs:subClassOf
 alias: parent_matrix
 domain_of:
-- Matrix
-range: Matrix
+- MatrixSubClass
+range: MatrixSubClass
 
 </code></pre>
 

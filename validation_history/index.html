@@ -17,7 +17,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
     
     
       
@@ -329,6 +329,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-and-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type and Range
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cardinality-and-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cardinality and Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -417,8 +445,13 @@ Alias: validation_history</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="../BioChemIdentifier/">BioChemIdentifier</a></td>
-<td>An identifier by which a biochemical entity is known in a schema (the BioChem...</td>
+<td><a href="../HasValidationStatus/">HasValidationStatus</a></td>
+<td>The capacity of including both a current validation status and a history of v...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../BioChemEntitySubClass/">BioChemEntitySubClass</a></td>
+<td>Template class used to generate OWL Classes</td>
 <td>no</td>
 </tr>
 <tr>
@@ -426,27 +459,43 @@ Alias: validation_history</p>
 <td>A biological, chemical or biochemical entity that is relevant to the Personal...</td>
 <td>no</td>
 </tr>
-<tr>
-<td><a href="../HasValidationStatus/">HasValidationStatus</a></td>
-<td>The capacity of including both a current validation status and a history of v...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Unit/">Unit</a></td>
-<td>A unit of measurement, a quantity chosen as a standard in terms of which othe...</td>
-<td>no</td>
-</tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
-<ul>
-<li>
-<p>Range: <a href="../ValidationHistoryRecord/">ValidationHistoryRecord</a></p>
-</li>
-<li>
-<p>Multivalued: True</p>
-</li>
-</ul>
+<h3 id="type-and-range">Type and Range</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Range</td>
+<td><a href="../ValidationHistoryRecord/">ValidationHistoryRecord</a></td>
+</tr>
+<tr>
+<td>Domain Of</td>
+<td><a href="../HasValidationStatus/">HasValidationStatus</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cardinality-and-requirements">Cardinality and Requirements</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Multivalued</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>

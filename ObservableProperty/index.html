@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://eu-parc.github.io/parco-hbm/ObservableProperty/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.7.1" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.5" name="generator"/>
 <title>Class: ObservableProperty - PEH-model Documentation</title>
 <link href="../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
@@ -269,13 +269,13 @@
       NamedThing &lt;|-- ObservableProperty
         click NamedThing href "../NamedThing/"
 
-      ObservableProperty : calculation_designs
+      ObservableProperty : calculation_design
 
 
 
 
 
-        ObservableProperty --&gt; "*" CalculationDesign : calculation_designs
+        ObservableProperty --&gt; "0..1" CalculationDesign : calculation_design
         click CalculationDesign href "../CalculationDesign/"
 
 
@@ -308,20 +308,20 @@
 
 
 
+      ObservableProperty : has_observable_property_type
+
+
+
+
+
+        ObservableProperty --&gt; "*" IndicatorSubClass : has_observable_property_type
+        click IndicatorSubClass href "../IndicatorSubClass/"
+
+
+
       ObservableProperty : id
 
       ObservableProperty : immutable
-
-      ObservableProperty : indicator
-
-
-
-
-
-        ObservableProperty --&gt; "0..1" Indicator : indicator
-        click Indicator href "../Indicator/"
-
-
 
       ObservableProperty : multivalued
 
@@ -344,8 +344,8 @@
 
 
 
-        ObservableProperty --&gt; "0..1" QudtQuantityKind : quantity_kind
-        click QudtQuantityKind href "../QudtQuantityKind/"
+        ObservableProperty --&gt; "0..1" QUDTQuantityKind : quantity_kind
+        click QUDTQuantityKind href "../QUDTQuantityKind/"
 
 
 
@@ -392,20 +392,16 @@
 
       ObservableProperty : ui_label
 
-      ObservableProperty : unique_name
-
       ObservableProperty : unit
 
 
 
 
 
-        ObservableProperty --&gt; "0..1" Unit : unit
-        click Unit href "../Unit/"
+        ObservableProperty --&gt; "0..1" QUDTUnit : unit
+        click QUDTUnit href "../QUDTUnit/"
 
 
-
-      ObservableProperty : unit_label
 
       ObservableProperty : validation_designs
 
@@ -496,19 +492,13 @@
 </tr>
 <tr>
 <td><a href="../quantity_kind/">quantity_kind</a></td>
-<td>0..1 <br/> <a href="../QudtQuantityKind/">QudtQuantityKind</a></td>
+<td>0..1 <br/> <a href="../QUDTQuantityKind/">QUDTQuantityKind</a></td>
 <td></td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../unit/">unit</a></td>
-<td>0..1 <br/> <a href="../Unit/">Unit</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../unit_label/">unit_label</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>0..1 <br/> <a href="../QUDTUnit/">QUDTUnit</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -561,20 +551,20 @@
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../indicator/">indicator</a></td>
-<td>0..1 <br/> <a href="../Indicator/">Indicator</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../calculation_designs/">calculation_designs</a></td>
-<td>* <br/> <a href="../CalculationDesign/">CalculationDesign</a></td>
+<td><a href="../calculation_design/">calculation_design</a></td>
+<td>0..1 <br/> <a href="../CalculationDesign/">CalculationDesign</a></td>
 <td></td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../validation_designs/">validation_designs</a></td>
 <td>* <br/> <a href="../ValidationDesign/">ValidationDesign</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../has_observable_property_type/">has_observable_property_type</a></td>
+<td>* <br/> <a href="../IndicatorSubClass/">IndicatorSubClass</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -592,20 +582,14 @@
 </tr>
 <tr>
 <td><a href="../id/">id</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
 <td>Machine readable, unique identifier; ideally a URI/GUPRI (Globally Unique, Pe...</td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-<tr>
-<td><a href="../unique_name/">unique_name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Human readable name, unique across the context the entity is defined in</td>
 <td><a href="../NamedThing/">NamedThing</a></td>
 </tr>
 <tr>
 <td><a href="../short_name/">short_name</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Shortened name or code, preferrable unique across the context the entity is d...</td>
+<td>Shortened name or code, preferrably unique within the context the entity is (...</td>
 <td><a href="../NamedThing/">NamedThing</a></td>
 </tr>
 <tr>
@@ -617,7 +601,7 @@
 <tr>
 <td><a href="../ui_label/">ui_label</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Human readable label, to be used in user facing interfaces in the most common...</td>
+<td>Human readable label, to be used in user interactions through forms or docume...</td>
 <td><a href="../NamedThing/">NamedThing</a></td>
 </tr>
 <tr>
@@ -634,7 +618,7 @@
 </tr>
 <tr>
 <td><a href="../exact_matches/">exact_matches</a></td>
-<td>* <br/> <a href="../String/">String</a></td>
+<td>* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
 <td></td>
 <td><a href="../NamedThing/">NamedThing</a></td>
 </tr>
@@ -670,20 +654,8 @@
 <td><a href="./">ObservableProperty</a></td>
 </tr>
 <tr>
-<td><a href="../ObservationDesign/">ObservationDesign</a></td>
-<td><a href="../identifying_observable_property_id_list/">identifying_observable_property_id_list</a></td>
-<td>range</td>
-<td><a href="./">ObservableProperty</a></td>
-</tr>
-<tr>
-<td><a href="../ObservationDesign/">ObservationDesign</a></td>
-<td><a href="../required_observable_property_id_list/">required_observable_property_id_list</a></td>
-<td>range</td>
-<td><a href="./">ObservableProperty</a></td>
-</tr>
-<tr>
-<td><a href="../ObservationDesign/">ObservationDesign</a></td>
-<td><a href="../optional_observable_property_id_list/">optional_observable_property_id_list</a></td>
+<td><a href="../ObservablePropertySpecification/">ObservablePropertySpecification</a></td>
+<td><a href="../observable_property/">observable_property</a></td>
 <td>range</td>
 <td><a href="./">ObservableProperty</a></td>
 </tr>
@@ -751,7 +723,6 @@ slots:
 - value_metadata
 - quantity_kind
 - unit
-- unit_label
 - required
 - zeroallowed
 - significantdecimals
@@ -760,9 +731,9 @@ slots:
 - observation_result_type
 - relevant_observable_entity_types
 - relevant_observation_types
-- indicator
-- calculation_designs
+- calculation_design
 - validation_designs
+- has_observable_property_type
 
 </code></pre>
 </details>
@@ -833,19 +804,28 @@ attributes:
     inlined_as_list: true
   quantity_kind:
     name: quantity_kind
+    annotations:
+      rdf_type:
+        tag: rdf_type
+        value: qudt:QuantityKind
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
+    slot_uri: qudt:hasQuantityKind
     alias: quantity_kind
     owner: ObservableProperty
     domain_of:
-    - Unit
-    - Indicator
+    - IndicatorSubClass
     - ObservableProperty
-    range: QudtQuantityKind
+    range: QUDTQuantityKind
   unit:
     name: unit
+    annotations:
+      rdf_type:
+        tag: rdf_type
+        value: qudt:Unit
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
+    slot_uri: qudt:hasUnit
     alias: unit
     owner: ObservableProperty
     domain_of:
@@ -853,16 +833,7 @@ attributes:
     - CalculationKeywordArgument
     - CalculationResult
     - ObservedValue
-    range: Unit
-  unit_label:
-    name: unit_label
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: unit_label
-    owner: ObservableProperty
-    domain_of:
-    - ObservableProperty
-    range: string
+    range: QUDTUnit
   required:
     name: required
     from_schema: https://w3id.org/peh/peh-model
@@ -907,11 +878,12 @@ attributes:
     name: grouping_id_list
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
+    slot_uri: skos:broader
     alias: grouping_id_list
     owner: ObservableProperty
     domain_of:
-    - BioChemEntity
-    - Indicator
+    - BioChemEntitySubClass
+    - IndicatorSubClass
     - ObservableProperty
     range: Grouping
     multivalued: true
@@ -933,7 +905,7 @@ attributes:
     alias: relevant_observable_entity_types
     owner: ObservableProperty
     domain_of:
-    - Indicator
+    - IndicatorSubClass
     - ObservableProperty
     range: ObservableEntityType
     multivalued: true
@@ -947,27 +919,16 @@ attributes:
     - ObservableProperty
     range: ObservationType
     multivalued: true
-  indicator:
-    name: indicator
+  calculation_design:
+    name: calculation_design
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: indicator
+    alias: calculation_design
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
-    range: Indicator
-  calculation_designs:
-    name: calculation_designs
-    from_schema: https://w3id.org/peh/peh-model
-    rank: 1000
-    alias: calculation_designs
-    owner: ObservableProperty
-    domain_of:
-    - ObservableProperty
+    - ObservablePropertySpecification
     range: CalculationDesign
-    multivalued: true
-    inlined: true
-    inlined_as_list: true
   validation_designs:
     name: validation_designs
     from_schema: https://w3id.org/peh/peh-model
@@ -976,11 +937,23 @@ attributes:
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
+    - ObservablePropertySpecification
     - DataLayoutSection
     range: ValidationDesign
     multivalued: true
     inlined: true
     inlined_as_list: true
+  has_observable_property_type:
+    name: has_observable_property_type
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    slot_uri: rdf:type
+    alias: has_observable_property_type
+    owner: ObservableProperty
+    domain_of:
+    - ObservableProperty
+    range: IndicatorSubClass
+    multivalued: true
   translations:
     name: translations
     from_schema: https://w3id.org/peh/peh-model
@@ -1017,28 +990,19 @@ attributes:
     owner: ObservableProperty
     domain_of:
     - NamedThing
-    range: string
+    - QUDTUnit
+    - QUDTQuantityKind
+    range: uriorcurie
     required: true
-  unique_name:
-    name: unique_name
-    description: Human readable name, unique across the context the entity is defined
-      in.
-    from_schema: https://w3id.org/peh/peh-model
-    close_mappings:
-    - schema:identifier
-    rank: 1000
-    slot_uri: skos:prefLabel
-    alias: unique_name
-    owner: ObservableProperty
-    domain_of:
-    - NamedThing
-    range: string
   short_name:
     name: short_name
-    description: Shortened name or code, preferrable unique across the context the
-      entity is defined in.
+    description: Shortened name or code, preferrably unique within the context the
+      entity is (typically) used in.
     from_schema: https://w3id.org/peh/peh-model
+    exact_mappings:
+    - skos:altLabel
     rank: 1000
+    slot_uri: schema:alternateName
     alias: short_name
     owner: ObservableProperty
     domain_of:
@@ -1049,9 +1013,10 @@ attributes:
     description: Common human readable name
     from_schema: https://w3id.org/peh/peh-model
     exact_mappings:
-    - skos:altLabel
+    - schema:name
+    - skos:prefLabel
     rank: 1000
-    slot_uri: schema:name
+    slot_uri: rdfs:label
     alias: name
     owner: ObservableProperty
     domain_of:
@@ -1060,8 +1025,8 @@ attributes:
     range: string
   ui_label:
     name: ui_label
-    description: Human readable label, to be used in user facing interfaces in the
-      most common use cases.
+    description: Human readable label, to be used in user interactions through forms
+      or documents.
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     alias: ui_label
@@ -1100,11 +1065,12 @@ attributes:
     name: exact_matches
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
+    slot_uri: skos:exactMatch
     alias: exact_matches
     owner: ObservableProperty
     domain_of:
     - NamedThing
-    range: string
+    range: uriorcurie
     multivalued: true
 
 </code></pre>

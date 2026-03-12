@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://eu-parc.github.io/parco-hbm/CalculationResult/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.7.1" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.5" name="generator"/>
 <title>Class: CalculationResult - PEH-model Documentation</title>
 <link href="../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
@@ -287,8 +287,8 @@
 
 
 
-        CalculationResult --&gt; "0..1" Unit : unit
-        click Unit href "../Unit/"
+        CalculationResult --&gt; "0..1" QUDTUnit : unit
+        click QUDTUnit href "../QUDTUnit/"
 
 
 
@@ -322,7 +322,7 @@
 </tr>
 <tr>
 <td><a href="../unit/">unit</a></td>
-<td>0..1 <br/> <a href="../Unit/">Unit</a></td>
+<td>0..1 <br/> <a href="../QUDTUnit/">QUDTUnit</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -445,8 +445,13 @@ attributes:
     range: string
   unit:
     name: unit
+    annotations:
+      rdf_type:
+        tag: rdf_type
+        value: qudt:Unit
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
+    slot_uri: qudt:hasUnit
     alias: unit
     owner: CalculationResult
     domain_of:
@@ -454,7 +459,7 @@ attributes:
     - CalculationKeywordArgument
     - CalculationResult
     - ObservedValue
-    range: Unit
+    range: QUDTUnit
   round_decimals:
     name: round_decimals
     from_schema: https://w3id.org/peh/peh-model
@@ -482,6 +487,7 @@ attributes:
     domain_of:
     - CalculationKeywordArgument
     - CalculationResult
+    - ObservablePropertySpecification
     - ObservedValue
     - DataLayoutElement
     - ObservedEntityProperty

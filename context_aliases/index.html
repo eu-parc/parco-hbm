@@ -17,7 +17,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
     
     
       
@@ -329,6 +329,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-and-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type and Range
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cardinality-and-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cardinality and Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -417,33 +445,8 @@ Alias: context_aliases</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="../Grouping/">Grouping</a></td>
-<td>A generic grouping entity that allows categorising entities in a hierarchical...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Study/">Study</a></td>
-<td>A structured, goal-directed observational investigation designed to collect a...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Contact/">Contact</a></td>
-<td>A stakeholder having a contact role in the research process</td>
-<td>no</td>
-</tr>
-<tr>
 <td><a href="../HasContextAliases/">HasContextAliases</a></td>
 <td>The capacity of including a list of terms being used in known scopes or conte...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../ObservableProperty/">ObservableProperty</a></td>
-<td>A fully defined variable that allows registering an observation about any of ...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Project/">Project</a></td>
-<td>A collaborative effort in the Personal Exposure and Health research domain</td>
 <td>no</td>
 </tr>
 <tr>
@@ -452,8 +455,43 @@ Alias: context_aliases</p>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../Indicator/">Indicator</a></td>
-<td>Any measurable or observable variable that can describe data or context in th...</td>
+<td><a href="../ObservableProperty/">ObservableProperty</a></td>
+<td>A fully defined variable that allows registering an observation about any of ...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../IndicatorSubClass/">IndicatorSubClass</a></td>
+<td>Template class used to generate OWL Classes</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../Study/">Study</a></td>
+<td>A structured, goal-directed observational investigation designed to collect a...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../ObservablePropertyValueOption/">ObservablePropertyValueOption</a></td>
+<td>Potential selection choices for Observable Properties that are categorical va...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../Grouping/">Grouping</a></td>
+<td>A generic grouping entity that allows categorising entities in a hierarchical...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../Contact/">Contact</a></td>
+<td>A stakeholder having a contact role in the research process</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../Project/">Project</a></td>
+<td>A collaborative effort in the Personal Exposure and Health research domain</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../MatrixSubClass/">MatrixSubClass</a></td>
+<td>Template class used to generate OWL Classes</td>
 <td>no</td>
 </tr>
 <tr>
@@ -462,21 +500,47 @@ Alias: context_aliases</p>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../ObservablePropertyValueOption/">ObservablePropertyValueOption</a></td>
-<td>Potential selection choices for Observable Properties that are categorical va...</td>
+<td><a href="../BioChemEntitySubClass/">BioChemEntitySubClass</a></td>
+<td>Template class used to generate OWL Classes</td>
 <td>no</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
-<ul>
-<li>
-<p>Range: <a href="../ContextAlias/">ContextAlias</a></p>
-</li>
-<li>
-<p>Multivalued: True</p>
-</li>
-</ul>
+<h3 id="type-and-range">Type and Range</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Range</td>
+<td><a href="../ContextAlias/">ContextAlias</a></td>
+</tr>
+<tr>
+<td>Domain Of</td>
+<td><a href="../HasContextAliases/">HasContextAliases</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cardinality-and-requirements">Cardinality and Requirements</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Multivalued</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
