@@ -3,7 +3,7 @@ name: PEH-Model
 description: |-
   Entity and relation ontology and datamodel for Personal Exposure and Health data
 
-version: 0.5.0
+version: 0.5.1
 
 imports:
   - linkml:types
@@ -619,7 +619,7 @@ classes:
       - remark_on_content
       - remark_on_methodology
       - observed_entity_properties
-      - observation_designs
+      - observation_design_id_list
   ObservedEntityProperty:
     description: >-
       Conceptual definition of the observation of a certain property for a certain entity in a study
@@ -1019,6 +1019,10 @@ slots:
     range: ObservationDesign
     inlined: false
   observation_designs:
+    multivalued: true
+    inlined_as_list: true
+    range: ObservationDesign
+  observation_design_id_list:
     multivalued: true
     range: ObservationDesign
   observation_result_type:
