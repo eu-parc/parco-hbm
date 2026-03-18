@@ -445,11 +445,6 @@ Alias: observation_designs</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="../DataRequest/">DataRequest</a></td>
-<td>Registration of a request for data by a data user</td>
-<td>no</td>
-</tr>
-<tr>
 <td><a href="../EntityList/">EntityList</a></td>
 <td>A generic top level object for collecting named entities under one root entit...</td>
 <td>no</td>
@@ -472,7 +467,7 @@ Alias: observation_designs</p>
 </tr>
 <tr>
 <td>Domain Of</td>
-<td><a href="../EntityList/">EntityList</a>, <a href="../DataRequest/">DataRequest</a></td>
+<td><a href="../EntityList/">EntityList</a></td>
 </tr>
 </tbody>
 </table>
@@ -524,9 +519,10 @@ rank: 1000
 alias: observation_designs
 domain_of:
 - EntityList
-- DataRequest
 range: ObservationDesign
 multivalued: true
+inlined: true
+inlined_as_list: true
 
 </code></pre>
 

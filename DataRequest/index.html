@@ -295,13 +295,13 @@
 
       DataRequest : name
 
-      DataRequest : observation_designs
+      DataRequest : observation_design_id_list
 
 
 
 
 
-        DataRequest --&gt; "*" ObservationDesign : observation_designs
+        DataRequest --&gt; "*" ObservationDesign : observation_design_id_list
         click ObservationDesign href "../ObservationDesign/"
 
 
@@ -437,7 +437,7 @@
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../observation_designs/">observation_designs</a></td>
+<td><a href="../observation_design_id_list/">observation_design_id_list</a></td>
 <td>* <br/> <a href="../ObservationDesign/">ObservationDesign</a></td>
 <td></td>
 <td>direct</td>
@@ -547,7 +547,7 @@ slots:
 - remark_on_content
 - remark_on_methodology
 - observed_entity_properties
-- observation_designs
+- observation_design_id_list
 
 </code></pre>
 </details>
@@ -650,14 +650,13 @@ attributes:
     - DataRequest
     range: ObservedEntityProperty
     multivalued: true
-  observation_designs:
-    name: observation_designs
+  observation_design_id_list:
+    name: observation_design_id_list
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: observation_designs
+    alias: observation_design_id_list
     owner: DataRequest
     domain_of:
-    - EntityList
     - DataRequest
     range: ObservationDesign
     multivalued: true

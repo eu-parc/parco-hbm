@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://eu-parc.github.io/parco-hbm/translations/">
+        <link rel="canonical" href="https://eu-parc.github.io/parco-hbm/observation_design_id_list/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>Slot: translations - PEH-model Documentation</title>
+        <title>Slot: observation_design_id_list - PEH-model Documentation</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-translations" class="md-skip">
+        <a href="#slot-observation_design_id_list" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: translations
+              Slot: observation_design_id_list
             
           </span>
         </div>
@@ -429,9 +429,9 @@
   
 
 
-<h1 id="slot-translations">Slot: translations</h1>
-<p>URI: <a href="https://w3id.org/peh/terms/translations">pehterms:translations</a>
-Alias: translations</p>
+<h1 id="slot-observation_design_id_list">Slot: observation_design_id_list</h1>
+<p>URI: <a href="https://w3id.org/peh/terms/observation_design_id_list">pehterms:observation_design_id_list</a>
+Alias: observation_design_id_list</p>
 <!-- no inheritance hierarchy -->
 
 <h2 id="applicable-classes">Applicable Classes</h2>
@@ -445,63 +445,8 @@ Alias: translations</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="../MatrixSubClass/">MatrixSubClass</a></td>
-<td>Template class used to generate OWL Classes</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../BioChemEntitySubClass/">BioChemEntitySubClass</a></td>
-<td>Template class used to generate OWL Classes</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../ProjectStakeholder/">ProjectStakeholder</a></td>
-<td>An organisation collaborating in a Personal Exposure and Health research proj...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../BioChemEntity/">BioChemEntity</a></td>
-<td>A biological, chemical or biochemical entity that is relevant to the Personal...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Stakeholder/">Stakeholder</a></td>
-<td>Any organisation involved in the research process</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../ObservableProperty/">ObservableProperty</a></td>
-<td>A fully defined variable that allows registering an observation about any of ...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Matrix/">Matrix</a></td>
-<td>The physical medium or biological substrate from which a biomarker, or other ...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Project/">Project</a></td>
-<td>A collaborative effort in the Personal Exposure and Health research domain</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../IndicatorSubClass/">IndicatorSubClass</a></td>
-<td>Template class used to generate OWL Classes</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../HasTranslations/">HasTranslations</a></td>
-<td>The capacity of including a list of translated terms for one or more entity p...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Study/">Study</a></td>
-<td>A structured, goal-directed observational investigation designed to collect a...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Grouping/">Grouping</a></td>
-<td>A generic grouping entity that allows categorising entities in a hierarchical...</td>
+<td><a href="../DataRequest/">DataRequest</a></td>
+<td>Registration of a request for data by a data user</td>
 <td>no</td>
 </tr>
 </tbody>
@@ -518,11 +463,11 @@ Alias: translations</p>
 <tbody>
 <tr>
 <td>Range</td>
-<td><a href="../Translation/">Translation</a></td>
+<td><a href="../ObservationDesign/">ObservationDesign</a></td>
 </tr>
 <tr>
 <td>Domain Of</td>
-<td><a href="../HasTranslations/">HasTranslations</a></td>
+<td><a href="../DataRequest/">DataRequest</a></td>
 </tr>
 </tbody>
 </table>
@@ -557,27 +502,25 @@ Alias: translations</p>
 <tbody>
 <tr>
 <td>self</td>
-<td>pehterms:translations</td>
+<td>pehterms:observation_design_id_list</td>
 </tr>
 <tr>
 <td>native</td>
-<td>pehterms:translations</td>
+<td>pehterms:observation_design_id_list</td>
 </tr>
 </tbody>
 </table>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: translations
+<pre><code class="language-yaml">name: observation_design_id_list
 from_schema: https://w3id.org/peh/peh-model
 rank: 1000
-alias: translations
+alias: observation_design_id_list
 domain_of:
-- HasTranslations
-range: Translation
+- DataRequest
+range: ObservationDesign
 multivalued: true
-inlined: true
-inlined_as_list: true
 
 </code></pre>
 
