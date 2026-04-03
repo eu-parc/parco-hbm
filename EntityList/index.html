@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://eu-parc.github.io/parco-hbm/EntityList/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.7.5" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
 <title>Class: EntityList - PEH-model Documentation</title>
 <link href="../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
@@ -272,6 +272,17 @@
 
         EntityList --&gt; "*" DataRequest : data_requests
         click DataRequest href "../DataRequest/"
+
+
+
+      EntityList : derived_observations
+
+
+
+
+
+        EntityList --&gt; "*" DerivedObservation : derived_observations
+        click DerivedObservation href "../DerivedObservation/"
 
 
 
@@ -552,6 +563,12 @@
 <td>direct</td>
 </tr>
 <tr>
+<td><a href="../derived_observations/">derived_observations</a></td>
+<td>* <br/> <a href="../DerivedObservation/">DerivedObservation</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
 <td><a href="../observation_designs/">observation_designs</a></td>
 <td>* <br/> <a href="../ObservationDesign/">ObservationDesign</a></td>
 <td></td>
@@ -650,6 +667,7 @@ slots:
 - physical_entities
 - observation_groups
 - observations
+- derived_observations
 - observation_designs
 - observation_results
 - observed_values
@@ -778,6 +796,17 @@ attributes:
     domain_of:
     - EntityList
     range: Observation
+    multivalued: true
+    inlined_as_list: true
+  derived_observations:
+    name: derived_observations
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: derived_observations
+    owner: EntityList
+    domain_of:
+    - EntityList
+    range: DerivedObservation
     multivalued: true
     inlined_as_list: true
   observation_designs:

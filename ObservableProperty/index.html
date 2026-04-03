@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://eu-parc.github.io/parco-hbm/ObservableProperty/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.7.5" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
 <title>Class: ObservableProperty - PEH-model Documentation</title>
 <link href="../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
@@ -323,6 +323,10 @@
 
       ObservableProperty : immutable
 
+      ObservableProperty : max_value
+
+      ObservableProperty : min_value
+
       ObservableProperty : multivalued
 
       ObservableProperty : name
@@ -512,6 +516,18 @@
 <td><a href="../zeroallowed/">zeroallowed</a></td>
 <td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
 <td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../min_value/">min_value</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>String representation of the expected lower bound in observations, usable for...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../max_value/">max_value</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>String representation of the expected upper bound in observations, usable for...</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -725,6 +741,8 @@ slots:
 - unit
 - required
 - zeroallowed
+- min_value
+- max_value
 - significantdecimals
 - immutable
 - grouping_id_list
@@ -852,6 +870,28 @@ attributes:
     domain_of:
     - ObservableProperty
     range: boolean
+  min_value:
+    name: min_value
+    description: String representation of the expected lower bound in observations,
+      usable for data validation
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: min_value
+    owner: ObservableProperty
+    domain_of:
+    - ObservableProperty
+    range: string
+  max_value:
+    name: max_value
+    description: String representation of the expected upper bound in observations,
+      usable for data validation
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: max_value
+    owner: ObservableProperty
+    domain_of:
+    - ObservableProperty
+    range: string
   significantdecimals:
     name: significantdecimals
     description: Variable precision indication, expressed as the number of significant

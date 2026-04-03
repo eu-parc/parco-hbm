@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://eu-parc.github.io/parco-hbm/ObservedValue/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.7.5" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
 <title>Class: ObservedValue - PEH-model Documentation</title>
 <link href="../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
@@ -416,7 +416,7 @@
 <tr>
 <td><a href="../value/">value</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>String representation of a measured or configured value, to be parsed accordi...</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -625,6 +625,8 @@ attributes:
     range: QUDTUnit
   value:
     name: value
+    description: String representation of a measured or configured value, to be parsed
+      according to the corresponding value type
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     alias: value

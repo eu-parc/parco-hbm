@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://eu-parc.github.io/parco-hbm/Observation/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.7.5" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
 <title>Class: Observation - PEH-model Documentation</title>
 <link href="../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
@@ -258,15 +258,17 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-observation">Class: Observation</h1>
 <p><em>The registration of the intent to perform a set of observations as well as the resulting observed values</em></p>
-<ul>
-<li><strong>NOTE</strong>: this is an abstract class and should not be instantiated directly</li>
-</ul>
 <p>URI: <a href="https://w3id.org/peh/terms/Observation">pehterms:Observation</a></p>
 <div class="mermaid"> classDiagram
     class Observation
     click Observation href "../Observation/"
       NamedThing &lt;|-- Observation
         click NamedThing href "../NamedThing/"
+
+
+      Observation &lt;|-- DerivedObservation
+        click DerivedObservation href "../DerivedObservation/"
+
 
       Observation : description
 
@@ -320,7 +322,10 @@
 <h2 id="inheritance">Inheritance</h2>
 <ul>
 <li><a href="../NamedThing/">NamedThing</a><ul>
-<li><strong>Observation</strong></li>
+<li><strong>Observation</strong><ul>
+<li><a href="../DerivedObservation/">DerivedObservation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -461,7 +466,6 @@ description: The registration of the intent to perform a set of observations as 
   as the resulting observed values
 from_schema: https://w3id.org/peh/peh-model
 is_a: NamedThing
-abstract: true
 slots:
 - observation_type
 - observation_design
@@ -476,7 +480,6 @@ description: The registration of the intent to perform a set of observations as 
   as the resulting observed values
 from_schema: https://w3id.org/peh/peh-model
 is_a: NamedThing
-abstract: true
 attributes:
   observation_type:
     name: observation_type

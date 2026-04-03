@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://eu-parc.github.io/parco-hbm/NamedThing/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.7.5" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
 <title>Class: NamedThing - PEH-model Documentation</title>
 <link href="../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
@@ -429,6 +429,18 @@
 <td>range</td>
 <td><a href="./">NamedThing</a></td>
 </tr>
+<tr>
+<td><a href="../DerivedObservation/">DerivedObservation</a></td>
+<td><a href="../was_derived_from/">was_derived_from</a></td>
+<td>domain</td>
+<td><a href="./">NamedThing</a></td>
+</tr>
+<tr>
+<td><a href="../DerivedObservation/">DerivedObservation</a></td>
+<td><a href="../was_derived_from/">was_derived_from</a></td>
+<td>range</td>
+<td><a href="./">NamedThing</a></td>
+</tr>
 </tbody>
 </table>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
@@ -455,7 +467,7 @@
 </tr>
 <tr>
 <td>close</td>
-<td>schema:Thing</td>
+<td>schema:Thing, prov:Entity</td>
 </tr>
 </tbody>
 </table>
@@ -468,6 +480,7 @@ description: An abstract model for any of the identifiable entities
 from_schema: https://w3id.org/peh/peh-model
 close_mappings:
 - schema:Thing
+- prov:Entity
 abstract: true
 slots:
 - id
@@ -487,6 +500,7 @@ description: An abstract model for any of the identifiable entities
 from_schema: https://w3id.org/peh/peh-model
 close_mappings:
 - schema:Thing
+- prov:Entity
 abstract: true
 attributes:
   id:
