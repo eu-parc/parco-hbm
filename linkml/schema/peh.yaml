@@ -3,7 +3,7 @@ name: PEH-Model
 description: |-
   Entity and relation ontology and datamodel for Personal Exposure and Health data
 
-version: 0.5.1
+version: 0.5.2
 
 imports:
   - linkml:types
