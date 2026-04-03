@@ -287,6 +287,8 @@ classes:
       - unit
       - required
       - zeroallowed
+      - min_value
+      - max_value
       - significantdecimals
       - immutable
       - grouping_id_list
@@ -844,6 +846,10 @@ slots:
     range: boolean
   zeroallowed:
     range: boolean
+  min_value:
+    description: String representation of the expected lower bound in observations, usable for data validation
+  max_value:
+    description: String representation of the expected upper bound in observations, usable for data validation
   significantdecimals:
     description: Variable precision indication, expressed as the number of significant decimals
     range: integer
@@ -920,6 +926,7 @@ slots:
     inlined: false
   key:
   value:
+    description: String representation of a measured or configured value, to be parsed according to the corresponding value type
   metadata_fields:
     multivalued: true
     inlined_as_list: true
