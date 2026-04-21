@@ -292,6 +292,8 @@
 
 
 
+      CalculationKeywordArgument : value
+
       CalculationKeywordArgument : value_type
 
 
@@ -345,6 +347,12 @@
 <td>direct</td>
 </tr>
 <tr>
+<td><a href="../value/">value</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>String representation of a measured or configured value, to be parsed accordi...</td>
+<td>direct</td>
+</tr>
+<tr>
 <td><a href="../contextual_field_reference/">contextual_field_reference</a></td>
 <td>0..1 <br/> <a href="../ContextualFieldReference/">ContextualFieldReference</a></td>
 <td></td>
@@ -352,6 +360,19 @@
 </tr>
 </tbody>
 </table>
+<details>
+<summary>Expressions &amp; Logic</summary>
+#### Exactly One Of
+
+The class must satisfy exactly one of:
+- AnonymousClassExpression({
+  'slot_conditions': {'value': SlotDefinition({'name': 'value', 'required': True})}
+})
+- AnonymousClassExpression({
+  'slot_conditions': {'contextual_field_reference': SlotDefinition({'name': 'contextual_field_reference', 'required': True})}
+})
+
+</details>
 <h2 id="usages">Usages</h2>
 <table>
 <thead>
@@ -410,7 +431,17 @@ slots:
 - value_type
 - unit
 - observable_property
+- value
 - contextual_field_reference
+exactly_one_of:
+- slot_conditions:
+    value:
+      name: value
+      required: true
+- slot_conditions:
+    contextual_field_reference:
+      name: contextual_field_reference
+      required: true
 
 </code></pre>
 </details>
@@ -493,6 +524,20 @@ attributes:
     - ObservedEntityProperty
     range: ObservableProperty
     inlined: false
+  value:
+    name: value
+    description: String representation of a measured or configured value, to be parsed
+      according to the corresponding value type
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    alias: value
+    owner: CalculationKeywordArgument
+    domain_of:
+    - ObservablePropertyValueOption
+    - ObservablePropertyMetadataElement
+    - CalculationKeywordArgument
+    - ObservedValue
+    range: string
   contextual_field_reference:
     name: contextual_field_reference
     from_schema: https://w3id.org/peh/peh-model
@@ -503,6 +548,15 @@ attributes:
     - CalculationKeywordArgument
     - CalculationResult
     range: ContextualFieldReference
+exactly_one_of:
+- slot_conditions:
+    value:
+      name: value
+      required: true
+- slot_conditions:
+    contextual_field_reference:
+      name: contextual_field_reference
+      required: true
 
 </code></pre>
 </details>
