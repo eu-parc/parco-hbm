@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://eu-parc.github.io/parco-hbm/BioChemEntityType/">
+        <link rel="canonical" href="https://eu-parc.github.io/parco-hbm/group_labels/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>Enum: BioChemEntityType - PEH-model Documentation</title>
+        <title>Slot: group_labels - PEH-model Documentation</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#enum-biochementitytype" class="md-skip">
+        <a href="#slot-group_labels" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Enum: BioChemEntityType
+              Slot: group_labels
             
           </span>
         </div>
@@ -303,75 +303,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#permissible-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Permissible Values
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#slots" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Slots
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identifier-and-mapping-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Identifier and Mapping Information
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schema Source
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linkml-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        LinkML Source
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -390,85 +321,105 @@
   
 
 
-<h1 id="enum-biochementitytype">Enum: BioChemEntityType</h1>
-<p>URI: <a href="https://w3id.org/peh/terms/BioChemEntityType">pehterms:BioChemEntityType</a></p>
-<h2 id="permissible-values">Permissible Values</h2>
-<table>
-<thead>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>compound_group</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>compound</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>conjugated_compound</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>unconjugated_compound</td>
-<td>None</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../biochementity_type/">biochementity_type</a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://w3id.org/peh/peh-model</li>
-</ul>
-<h2 id="linkml-source">LinkML Source</h2>
+<h1 id="slot-group_labels">Slot: group_labels</h1>
+<div data-search-exclude markdown="1">
+
+
+
+URI: [pehterms:hasGroupLabel](https://w3id.org/peh/terms/hasGroupLabel)
+<!-- no inheritance hierarchy -->
+
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [BioChemEntitySubClass](BioChemEntitySubClass.md) | Template class used to generate OWL Classes |  no  |
+
+
+
+
+
+
+## Properties
+
+### Type and Range
+
+| Property | Value |
+| --- | --- |
+| Range | [String](String.md) |
+| Domain Of | [BioChemEntitySubClass](BioChemEntitySubClass.md) |
+| Slot URI | [pehterms:hasGroupLabel](https://w3id.org/peh/terms/hasGroupLabel) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+| Multivalued | Yes |
+
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://w3id.org/peh/peh-model
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | pehterms:hasGroupLabel |
+| native | pehterms:group_labels |
+
+
+
+
+## LinkML Source
+
 <details>
 
-<pre><code class="language-yaml">name: BioChemEntityType
+<pre><code class="language-yaml">name: group_labels
 from_schema: https://w3id.org/peh/peh-model
 rank: 1000
-permissible_values:
-  compound_group:
-    text: compound_group
-  compound:
-    text: compound
-  conjugated_compound:
-    text: conjugated_compound
-  unconjugated_compound:
-    text: unconjugated_compound
+slot_uri: pehterms:hasGroupLabel
+domain_of:
+- BioChemEntitySubClass
+range: string
+multivalued: true
+inlined: true
+inlined_as_list: true
 
 </code></pre>
 
-</details>
+</details></div>
 
 
 
 
 
 
+
+  
+  
 
 
 

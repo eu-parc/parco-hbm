@@ -303,114 +303,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#applicable-classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Applicable Classes
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Properties
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Properties">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#type-and-range" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Type and Range
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cardinality-and-requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cardinality and Requirements
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identifier-and-mapping-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Identifier and Mapping Information
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schema Source
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mappings" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Mappings
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linkml-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        LinkML Source
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -430,123 +322,91 @@
 
 
 <h1 id="slot-physical_entity_links">Slot: physical_entity_links</h1>
-<p>URI: <a href="https://w3id.org/peh/terms/physical_entity_links">pehterms:physical_entity_links</a>
-Alias: physical_entity_links</p>
+<div data-search-exclude markdown="1">
+
+
+
+URI: [pehterms:hasPhysicalEntityLink](https://w3id.org/peh/terms/hasPhysicalEntityLink)
 <!-- no inheritance hierarchy -->
 
-<h2 id="applicable-classes">Applicable Classes</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th>Modifies Slot</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../WorkEnvironment/">WorkEnvironment</a></td>
-<td>A work environment relevant to the research, typically related to the at-work...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Sample/">Sample</a></td>
-<td>A portion of a measurement matrix collected from a subject or environment for...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Environment/">Environment</a></td>
-<td>An environment relevant to the research, typically related to the exposure of...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../HomeEnvironment/">HomeEnvironment</a></td>
-<td>A home environment relevant to the research, typically related to the at-home...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../PhysicalEntity/">PhysicalEntity</a></td>
-<td>A digital placeholder for a physical entity as it exists in the real world,</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Person/">Person</a></td>
-<td>A human subject or stakeholder in Personal Exposure and Health research</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Geolocation/">Geolocation</a></td>
-<td>A geographic location relevant to the Personal Exposure and Health projects o...</td>
-<td>no</td>
-</tr>
-</tbody>
-</table>
-<h2 id="properties">Properties</h2>
-<h3 id="type-and-range">Type and Range</h3>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Range</td>
-<td><a href="../PhysicalEntityLink/">PhysicalEntityLink</a></td>
-</tr>
-<tr>
-<td>Domain Of</td>
-<td><a href="../PhysicalEntity/">PhysicalEntity</a></td>
-</tr>
-</tbody>
-</table>
-<h3 id="cardinality-and-requirements">Cardinality and Requirements</h3>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Multivalued</td>
-<td>Yes</td>
-</tr>
-</tbody>
-</table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://w3id.org/peh/peh-model</li>
-</ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>pehterms:physical_entity_links</td>
-</tr>
-<tr>
-<td>native</td>
-<td>pehterms:physical_entity_links</td>
-</tr>
-</tbody>
-</table>
-<h2 id="linkml-source">LinkML Source</h2>
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [PhysicalEntity](PhysicalEntity.md) | A digital placeholder for a physical entity as it exists in the real world,  |  no  |
+| [Sample](Sample.md) | A portion of a measurement matrix collected from a subject or environment for... |  no  |
+| [Person](Person.md) | A human subject or stakeholder in Personal Exposure and Health research |  no  |
+| [Geolocation](Geolocation.md) | A geographic location relevant to the Personal Exposure and Health projects o... |  no  |
+| [Environment](Environment.md) | An environment relevant to the research, typically related to the exposure of... |  no  |
+| [HomeEnvironment](HomeEnvironment.md) | A home environment relevant to the research, typically related to the at-home... |  no  |
+| [WorkEnvironment](WorkEnvironment.md) | A work environment relevant to the research, typically related to the at-work... |  no  |
+
+
+
+
+
+
+## Properties
+
+### Type and Range
+
+| Property | Value |
+| --- | --- |
+| Range | [PhysicalEntityLink](PhysicalEntityLink.md) |
+| Domain Of | [PhysicalEntity](PhysicalEntity.md) |
+| Slot URI | [pehterms:hasPhysicalEntityLink](https://w3id.org/peh/terms/hasPhysicalEntityLink) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+| Multivalued | Yes |
+
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://w3id.org/peh/peh-model
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | pehterms:hasPhysicalEntityLink |
+| native | pehterms:physical_entity_links |
+
+
+
+
+## LinkML Source
+
 <details>
 
 <pre><code class="language-yaml">name: physical_entity_links
 from_schema: https://w3id.org/peh/peh-model
 rank: 1000
-alias: physical_entity_links
+slot_uri: pehterms:hasPhysicalEntityLink
 domain_of:
 - PhysicalEntity
 range: PhysicalEntityLink
@@ -556,13 +416,16 @@ inlined_as_list: true
 
 </code></pre>
 
-</details>
+</details></div>
 
 
 
 
 
 
+
+  
+  
 
 
 

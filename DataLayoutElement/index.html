@@ -155,92 +155,6 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#slots">
-<span class="md-ellipsis">
-      
-        Slots
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usages">
-<span class="md-ellipsis">
-      
-        Usages
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#identifier-and-mapping-information">
-<span class="md-ellipsis">
-      
-        Identifier and Mapping Information
-      
-    </span>
-</a>
-<nav aria-label="Identifier and Mapping Information" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#schema-source">
-<span class="md-ellipsis">
-      
-        Schema Source
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#mappings">
-<span class="md-ellipsis">
-      
-        Mappings
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#linkml-source">
-<span class="md-ellipsis">
-      
-        LinkML Source
-      
-    </span>
-</a>
-<nav aria-label="LinkML Source" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#direct">
-<span class="md-ellipsis">
-      
-        Direct
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#induced">
-<span class="md-ellipsis">
-      
-        Induced
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
 </nav>
 </div>
 </div>
@@ -249,7 +163,17 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-datalayoutelement">Class: DataLayoutElement</h1>
 <p><em>Definition for an individual layout or data element, as part of a layout section</em></p>
-<p>URI: <a href="https://w3id.org/peh/terms/DataLayoutElement">pehterms:DataLayoutElement</a></p>
+<div data-search-exclude="" markdown="1">
+
+
+
+URI: [pehterms:DataLayoutElement](https://w3id.org/peh/terms/DataLayoutElement)
+
+
+
+
+
+
 <div class="mermaid"> classDiagram
     class DataLayoutElement
     click DataLayoutElement href "../DataLayoutElement/"
@@ -304,101 +228,71 @@
 
 </div>
 <!-- no inheritance hierarchy -->
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Cardinality and Range</th>
-<th>Description</th>
-<th>Inheritance</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../label/">label</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../element_type/">element_type</a></td>
-<td>0..1 <br/> <a href="../DataLayoutElementType/">DataLayoutElementType</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../element_style/">element_style</a></td>
-<td>0..1 <br/> <a href="../DataLayoutElementStyle/">DataLayoutElementStyle</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../observable_property/">observable_property</a></td>
-<td>0..1 <br/> <a href="../ObservableProperty/">ObservableProperty</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../is_observable_entity_key/">is_observable_entity_key</a></td>
-<td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../foreign_key_link/">foreign_key_link</a></td>
-<td>0..1 <br/> <a href="../DataLayoutElementLink/">DataLayoutElementLink</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-</tbody>
-</table>
-<h2 id="usages">Usages</h2>
-<table>
-<thead>
-<tr>
-<th>used by</th>
-<th>used in</th>
-<th>type</th>
-<th>used</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../DataLayoutSection/">DataLayoutSection</a></td>
-<td><a href="../elements/">elements</a></td>
-<td>range</td>
-<td><a href="./">DataLayoutElement</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://w3id.org/peh/peh-model</li>
-</ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>pehterms:DataLayoutElement</td>
-</tr>
-<tr>
-<td>native</td>
-<td>pehterms:DataLayoutElement</td>
-</tr>
-</tbody>
-</table>
-<h2 id="linkml-source">LinkML Source</h2>
+
+## Slots
+
+| Name | Cardinality and Range | Description | Inheritance |
+| ---  | --- | --- | --- |
+| [label](label.md) | 0..1 <br/> [String](String.md) |  | direct |
+| [element_type](element_type.md) | 0..1 <br/> [DataLayoutElementType](DataLayoutElementType.md) |  | direct |
+| [element_style](element_style.md) | 0..1 <br/> [DataLayoutElementStyle](DataLayoutElementStyle.md) |  | direct |
+| [observable_property](observable_property.md) | 0..1 <br/> [ObservableProperty](ObservableProperty.md) |  | direct |
+| [is_observable_entity_key](is_observable_entity_key.md) | 0..1 <br/> [Boolean](Boolean.md) |  | direct |
+| [foreign_key_link](foreign_key_link.md) | 0..1 <br/> [DataLayoutElementLink](DataLayoutElementLink.md) |  | direct |
+
+
+
+
+
+## Usages
+
+| used by | used in | type | used |
+| ---  | --- | --- | --- |
+| [DataLayoutSection](DataLayoutSection.md) | [elements](elements.md) | range | [DataLayoutElement](DataLayoutElement.md) |
+
+
+
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://w3id.org/peh/peh-model
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | pehterms:DataLayoutElement |
+| native | pehterms:DataLayoutElement |
+
+
+
+
+
+
+## LinkML Source
+
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
-<h3 id="direct">Direct</h3>
+
+### Direct
+
 <details>
 <pre><code class="language-yaml">name: DataLayoutElement
 description: Definition for an individual layout or data element, as part of a layout
@@ -414,7 +308,9 @@ slots:
 
 </code></pre>
 </details>
-<h3 id="induced">Induced</h3>
+
+### Induced
+
 <details>
 <pre><code class="language-yaml">name: DataLayoutElement
 description: Definition for an individual layout or data element, as part of a layout
@@ -425,7 +321,7 @@ attributes:
     name: label
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: label
+    slot_uri: rdfs:label
     owner: DataLayoutElement
     domain_of:
     - ObservablePropertyValueOption
@@ -436,7 +332,7 @@ attributes:
     name: element_type
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: element_type
+    slot_uri: pehterms:hasElementType
     owner: DataLayoutElement
     domain_of:
     - DataLayoutElement
@@ -445,7 +341,7 @@ attributes:
     name: element_style
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: element_style
+    slot_uri: pehterms:hasElementStyle
     owner: DataLayoutElement
     domain_of:
     - DataLayoutElement
@@ -454,7 +350,7 @@ attributes:
     name: observable_property
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: observable_property
+    slot_uri: pehterms:hasObservableProperty
     owner: DataLayoutElement
     domain_of:
     - CalculationKeywordArgument
@@ -469,7 +365,7 @@ attributes:
     name: is_observable_entity_key
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: is_observable_entity_key
+    slot_uri: pehterms:isObservableEntityKey
     owner: DataLayoutElement
     domain_of:
     - DataLayoutElement
@@ -478,14 +374,14 @@ attributes:
     name: foreign_key_link
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: foreign_key_link
+    slot_uri: pehterms:hasForeignKeyLink
     owner: DataLayoutElement
     domain_of:
     - DataLayoutElement
     range: DataLayoutElementLink
 
 </code></pre>
-</details>
+</details></div>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>

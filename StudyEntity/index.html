@@ -155,101 +155,6 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#inheritance">
-<span class="md-ellipsis">
-      
-        Inheritance
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#slots">
-<span class="md-ellipsis">
-      
-        Slots
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usages">
-<span class="md-ellipsis">
-      
-        Usages
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#identifier-and-mapping-information">
-<span class="md-ellipsis">
-      
-        Identifier and Mapping Information
-      
-    </span>
-</a>
-<nav aria-label="Identifier and Mapping Information" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#schema-source">
-<span class="md-ellipsis">
-      
-        Schema Source
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#mappings">
-<span class="md-ellipsis">
-      
-        Mappings
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#linkml-source">
-<span class="md-ellipsis">
-      
-        LinkML Source
-      
-    </span>
-</a>
-<nav aria-label="LinkML Source" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#direct">
-<span class="md-ellipsis">
-      
-        Direct
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#induced">
-<span class="md-ellipsis">
-      
-        Induced
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
 </nav>
 </div>
 </div>
@@ -258,10 +163,19 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-studyentity">Class: StudyEntity</h1>
 <p><em>Any entity carrying data or context relevant to a Personal Exposure and Health research project or study</em></p>
-<ul>
-<li><strong>NOTE</strong>: this is an abstract class and should not be instantiated directly</li>
-</ul>
-<p>URI: <a href="https://w3id.org/peh/terms/StudyEntity">pehterms:StudyEntity</a></p>
+<div data-search-exclude="" markdown="1">
+
+
+* __NOTE__: this is an abstract class and should not be instantiated directly
+
+
+URI: [pehterms:StudyEntity](https://w3id.org/peh/terms/StudyEntity)
+
+
+
+
+
+
 <div class="mermaid"> classDiagram
     class StudyEntity
     click StudyEntity href "../StudyEntity/"
@@ -323,171 +237,97 @@
 
 
 </div>
-<h2 id="inheritance">Inheritance</h2>
-<ul>
-<li><a href="../NamedThing/">NamedThing</a><ul>
-<li><strong>StudyEntity</strong><ul>
-<li><a href="../Project/">Project</a> [ <a href="../HasTranslations/">HasTranslations</a> <a href="../HasContextAliases/">HasContextAliases</a>]</li>
-<li><a href="../Study/">Study</a> [ <a href="../HasTranslations/">HasTranslations</a> <a href="../HasContextAliases/">HasContextAliases</a>]</li>
-<li><a href="../ObservationGroup/">ObservationGroup</a></li>
-<li><a href="../StudyPopulation/">StudyPopulation</a></li>
-<li><a href="../SampleCollection/">SampleCollection</a></li>
-<li><a href="../StudySubject/">StudySubject</a></li>
-<li><a href="../StudySubjectGroup/">StudySubjectGroup</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Cardinality and Range</th>
-<th>Description</th>
-<th>Inheritance</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../physical_entity/">physical_entity</a></td>
-<td>0..1 <br/> <a href="../PhysicalEntity/">PhysicalEntity</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../study_entity_links/">study_entity_links</a></td>
-<td>* <br/> <a href="../StudyEntityLink/">StudyEntityLink</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../id/">id</a></td>
-<td>1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
-<td>Machine readable, unique identifier; ideally a URI/GUPRI (Globally Unique, Pe...</td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-<tr>
-<td><a href="../short_name/">short_name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Shortened name or code, preferrably unique within the context the entity is (...</td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-<tr>
-<td><a href="../name/">name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Common human readable name</td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-<tr>
-<td><a href="../ui_label/">ui_label</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Human readable label, to be used in user interactions through forms or docume...</td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-<tr>
-<td><a href="../description/">description</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Long form description or definition for the entity</td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-<tr>
-<td><a href="../remark/">remark</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Additional comment, note or remark providing context on the use of an entity ...</td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-<tr>
-<td><a href="../exact_matches/">exact_matches</a></td>
-<td>* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
-<td></td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="usages">Usages</h2>
-<table>
-<thead>
-<tr>
-<th>used by</th>
-<th>used in</th>
-<th>type</th>
-<th>used</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../EntityList/">EntityList</a></td>
-<td><a href="../study_entities/">study_entities</a></td>
-<td>range</td>
-<td><a href="./">StudyEntity</a></td>
-</tr>
-<tr>
-<td><a href="../StudyEntityLink/">StudyEntityLink</a></td>
-<td><a href="../study_entity/">study_entity</a></td>
-<td>range</td>
-<td><a href="./">StudyEntity</a></td>
-</tr>
-<tr>
-<td><a href="../Study/">Study</a></td>
-<td><a href="../study_entity_id_list/">study_entity_id_list</a></td>
-<td>range</td>
-<td><a href="./">StudyEntity</a></td>
-</tr>
-<tr>
-<td><a href="../StudyPopulation/">StudyPopulation</a></td>
-<td><a href="../member_id_list/">member_id_list</a></td>
-<td>range</td>
-<td><a href="./">StudyEntity</a></td>
-</tr>
-<tr>
-<td><a href="../ObservationDesign/">ObservationDesign</a></td>
-<td><a href="../observable_entity_id_list/">observable_entity_id_list</a></td>
-<td>range</td>
-<td><a href="./">StudyEntity</a></td>
-</tr>
-<tr>
-<td><a href="../ObservedValue/">ObservedValue</a></td>
-<td><a href="../observable_entity/">observable_entity</a></td>
-<td>range</td>
-<td><a href="./">StudyEntity</a></td>
-</tr>
-<tr>
-<td><a href="../ObservedEntityProperty/">ObservedEntityProperty</a></td>
-<td><a href="../observable_entity/">observable_entity</a></td>
-<td>range</td>
-<td><a href="./">StudyEntity</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://w3id.org/peh/peh-model</li>
-</ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>pehterms:StudyEntity</td>
-</tr>
-<tr>
-<td>native</td>
-<td>pehterms:StudyEntity</td>
-</tr>
-</tbody>
-</table>
-<h2 id="linkml-source">LinkML Source</h2>
+
+
+
+
+
+
+## Inheritance
+* [NamedThing](NamedThing.md)
+    * **StudyEntity**
+        * [Project](Project.md) [ [HasTranslations](HasTranslations.md) [HasContextAliases](HasContextAliases.md)]
+        * [Study](Study.md) [ [HasTranslations](HasTranslations.md) [HasContextAliases](HasContextAliases.md)]
+        * [ObservationGroup](ObservationGroup.md)
+        * [StudyPopulation](StudyPopulation.md)
+        * [SampleCollection](SampleCollection.md)
+        * [StudySubject](StudySubject.md)
+        * [StudySubjectGroup](StudySubjectGroup.md)
+
+
+## Slots
+
+| Name | Cardinality and Range | Description | Inheritance |
+| ---  | --- | --- | --- |
+| [physical_entity](physical_entity.md) | 0..1 <br/> [PhysicalEntity](PhysicalEntity.md) |  | direct |
+| [study_entity_links](study_entity_links.md) | * <br/> [StudyEntityLink](StudyEntityLink.md) |  | direct |
+| [id](id.md) | 1 <br/> [Uriorcurie](Uriorcurie.md) | Machine readable, unique identifier; ideally a URI/GUPRI (Globally Unique, Pe... | [NamedThing](NamedThing.md) |
+| [short_name](short_name.md) | 0..1 <br/> [String](String.md) | Shortened name or code, preferrably unique within the context the entity is (... | [NamedThing](NamedThing.md) |
+| [name](name.md) | 0..1 <br/> [String](String.md) | Common human readable name | [NamedThing](NamedThing.md) |
+| [ui_label](ui_label.md) | 0..1 <br/> [String](String.md) | Human readable label, to be used in user interactions through forms or docume... | [NamedThing](NamedThing.md) |
+| [description](description.md) | 0..1 <br/> [String](String.md) | Long form description or definition for the entity | [NamedThing](NamedThing.md) |
+| [remark](remark.md) | 0..1 <br/> [String](String.md) | Additional comment, note or remark providing context on the use of an entity ... | [NamedThing](NamedThing.md) |
+| [exact_matches](exact_matches.md) | * <br/> [Uriorcurie](Uriorcurie.md) |  | [NamedThing](NamedThing.md) |
+
+
+
+
+
+## Usages
+
+| used by | used in | type | used |
+| ---  | --- | --- | --- |
+| [EntityList](EntityList.md) | [study_entities](study_entities.md) | range | [StudyEntity](StudyEntity.md) |
+| [StudyEntityLink](StudyEntityLink.md) | [study_entity](study_entity.md) | range | [StudyEntity](StudyEntity.md) |
+| [Study](Study.md) | [study_entity_id_list](study_entity_id_list.md) | range | [StudyEntity](StudyEntity.md) |
+| [StudyPopulation](StudyPopulation.md) | [member_id_list](member_id_list.md) | range | [StudyEntity](StudyEntity.md) |
+| [ObservationDesign](ObservationDesign.md) | [observable_entity_id_list](observable_entity_id_list.md) | range | [StudyEntity](StudyEntity.md) |
+| [ObservedValue](ObservedValue.md) | [observable_entity](observable_entity.md) | range | [StudyEntity](StudyEntity.md) |
+| [ObservedEntityProperty](ObservedEntityProperty.md) | [observable_entity](observable_entity.md) | range | [StudyEntity](StudyEntity.md) |
+
+
+
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://w3id.org/peh/peh-model
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | pehterms:StudyEntity |
+| native | pehterms:StudyEntity |
+
+
+
+
+
+
+## LinkML Source
+
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
-<h3 id="direct">Direct</h3>
+
+### Direct
+
 <details>
 <pre><code class="language-yaml">name: StudyEntity
 description: Any entity carrying data or context relevant to a Personal Exposure and
@@ -501,7 +341,9 @@ slots:
 
 </code></pre>
 </details>
-<h3 id="induced">Induced</h3>
+
+### Induced
+
 <details>
 <pre><code class="language-yaml">name: StudyEntity
 description: Any entity carrying data or context relevant to a Personal Exposure and
@@ -514,7 +356,7 @@ attributes:
     name: physical_entity
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: physical_entity
+    slot_uri: pehterms:hasPhysicalEntity
     owner: StudyEntity
     domain_of:
     - PhysicalEntityLink
@@ -525,7 +367,7 @@ attributes:
     name: study_entity_links
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: study_entity_links
+    slot_uri: pehterms:hasStudyEntityLink
     owner: StudyEntity
     domain_of:
     - StudyEntity
@@ -541,12 +383,13 @@ attributes:
     rank: 1000
     slot_uri: schema:identifier
     identifier: true
-    alias: id
     owner: StudyEntity
     domain_of:
     - NamedThing
     - QUDTUnit
     - QUDTQuantityKind
+    - IAdoptVariable
+    - BioChemRole
     range: uriorcurie
     required: true
   short_name:
@@ -558,7 +401,6 @@ attributes:
     - skos:altLabel
     rank: 1000
     slot_uri: schema:alternateName
-    alias: short_name
     owner: StudyEntity
     domain_of:
     - NamedThing
@@ -572,7 +414,6 @@ attributes:
     - skos:prefLabel
     rank: 1000
     slot_uri: rdfs:label
-    alias: name
     owner: StudyEntity
     domain_of:
     - NamedThing
@@ -584,7 +425,7 @@ attributes:
       or documents.
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: ui_label
+    slot_uri: pehterms:hasUiLabel
     owner: StudyEntity
     domain_of:
     - NamedThing
@@ -597,7 +438,6 @@ attributes:
     - skos:definition
     rank: 1000
     slot_uri: schema:description
-    alias: description
     owner: StudyEntity
     domain_of:
     - NamedThing
@@ -611,7 +451,6 @@ attributes:
     - skos:note
     rank: 1000
     slot_uri: schema:comment
-    alias: remark
     owner: StudyEntity
     domain_of:
     - NamedThing
@@ -621,7 +460,6 @@ attributes:
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     slot_uri: skos:exactMatch
-    alias: exact_matches
     owner: StudyEntity
     domain_of:
     - NamedThing
@@ -629,7 +467,7 @@ attributes:
     multivalued: true
 
 </code></pre>
-</details>
+</details></div>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>

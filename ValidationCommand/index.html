@@ -303,75 +303,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#permissible-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Permissible Values
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#slots" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Slots
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identifier-and-mapping-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Identifier and Mapping Information
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schema Source
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linkml-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        LinkML Source
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -391,115 +322,65 @@
 
 
 <h1 id="enum-validationcommand">Enum: ValidationCommand</h1>
-<p>URI: <a href="https://w3id.org/peh/terms/ValidationCommand">pehterms:ValidationCommand</a></p>
-<h2 id="permissible-values">Permissible Values</h2>
-<table>
-<thead>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>is_equal_to</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>is_equal_to_or_both_missing</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>is_greater_than_or_equal_to</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>is_greater_than</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>is_less_than_or_equal_to</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>is_less_than</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>is_not_equal_to</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>is_not_equal_to_and_not_both_missing</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>is_unique</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>is_duplicated</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>is_in</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>is_null</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>is_not_null</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>conjunction</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>disjunction</td>
-<td>None</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../validation_command/">validation_command</a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://w3id.org/peh/peh-model</li>
-</ul>
-<h2 id="linkml-source">LinkML Source</h2>
+<div data-search-exclude markdown="1">
+
+URI: [pehterms:ValidationCommand](https://w3id.org/peh/terms/ValidationCommand)
+
+## Permissible Values
+| Value | Meaning | Description |
+| --- | --- | --- |
+| is_equal_to | None |  |
+| is_equal_to_or_both_missing | None |  |
+| is_greater_than_or_equal_to | None |  |
+| is_greater_than | None |  |
+| is_less_than_or_equal_to | None |  |
+| is_less_than | None |  |
+| is_not_equal_to | None |  |
+| is_not_equal_to_and_not_both_missing | None |  |
+| is_unique | None |  |
+| is_duplicated | None |  |
+| is_in | None |  |
+| is_null | None |  |
+| is_not_null | None |  |
+| conjunction | None |  |
+| disjunction | None |  |
+
+
+
+
+## Slots
+
+| Name | Description |
+| ---  | --- |
+| [validation_command](validation_command.md) |  |
+
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://w3id.org/peh/peh-model
+
+
+
+
+
+
+## LinkML Source
+
 <details>
 
 <pre><code class="language-yaml">name: ValidationCommand
@@ -541,11 +422,16 @@ permissible_values:
 
 </details>
 
+</div>
 
 
 
 
 
+
+
+  
+  
 
 
 

@@ -155,92 +155,6 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#class-properties">
-<span class="md-ellipsis">
-      
-        Class Properties
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#slots">
-<span class="md-ellipsis">
-      
-        Slots
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#identifier-and-mapping-information">
-<span class="md-ellipsis">
-      
-        Identifier and Mapping Information
-      
-    </span>
-</a>
-<nav aria-label="Identifier and Mapping Information" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#schema-source">
-<span class="md-ellipsis">
-      
-        Schema Source
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#mappings">
-<span class="md-ellipsis">
-      
-        Mappings
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#linkml-source">
-<span class="md-ellipsis">
-      
-        LinkML Source
-      
-    </span>
-</a>
-<nav aria-label="LinkML Source" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#direct">
-<span class="md-ellipsis">
-      
-        Direct
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#induced">
-<span class="md-ellipsis">
-      
-        Induced
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
 </nav>
 </div>
 </div>
@@ -249,7 +163,17 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-entitylist">Class: EntityList</h1>
 <p><em>A generic top level object for collecting named entities under one root entity</em></p>
-<p>URI: <a href="https://w3id.org/peh/terms/EntityList">pehterms:EntityList</a></p>
+<div data-search-exclude="" markdown="1">
+
+
+
+URI: [pehterms:EntityList](https://w3id.org/peh/terms/EntityList)
+
+
+
+
+
+
 <div class="mermaid"> classDiagram
     class EntityList
     click EntityList href "../EntityList/"
@@ -476,181 +400,85 @@
 
 </div>
 <!-- no inheritance hierarchy -->
-<h2 id="class-properties">Class Properties</h2>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Tree Root</td>
-<td>Yes</td>
-</tr>
-</tbody>
-</table>
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Cardinality and Range</th>
-<th>Description</th>
-<th>Inheritance</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../metadata_fields/">metadata_fields</a></td>
-<td>* <br/> <a href="../ObservablePropertyMetadataField/">ObservablePropertyMetadataField</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../groupings/">groupings</a></td>
-<td>* <br/> <a href="../Grouping/">Grouping</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../observable_properties/">observable_properties</a></td>
-<td>* <br/> <a href="../ObservableProperty/">ObservableProperty</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../stakeholders/">stakeholders</a></td>
-<td>* <br/> <a href="../Stakeholder/">Stakeholder</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../projects/">projects</a></td>
-<td>* <br/> <a href="../Project/">Project</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../studies/">studies</a></td>
-<td>* <br/> <a href="../Study/">Study</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../study_entities/">study_entities</a></td>
-<td>* <br/> <a href="../StudyEntity/">StudyEntity</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../physical_entities/">physical_entities</a></td>
-<td>* <br/> <a href="../PhysicalEntity/">PhysicalEntity</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../observation_groups/">observation_groups</a></td>
-<td>* <br/> <a href="../ObservationGroup/">ObservationGroup</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../observations/">observations</a></td>
-<td>* <br/> <a href="../Observation/">Observation</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../derived_observations/">derived_observations</a></td>
-<td>* <br/> <a href="../DerivedObservation/">DerivedObservation</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../observation_designs/">observation_designs</a></td>
-<td>* <br/> <a href="../ObservationDesign/">ObservationDesign</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../observation_results/">observation_results</a></td>
-<td>* <br/> <a href="../ObservationResult/">ObservationResult</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../observed_values/">observed_values</a></td>
-<td>* <br/> <a href="../ObservedValue/">ObservedValue</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../layouts/">layouts</a></td>
-<td>* <br/> <a href="../DataLayout/">DataLayout</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../import_configs/">import_configs</a></td>
-<td>* <br/> <a href="../DataImportConfig/">DataImportConfig</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../data_requests/">data_requests</a></td>
-<td>* <br/> <a href="../DataRequest/">DataRequest</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../matrix_subclasses/">matrix_subclasses</a></td>
-<td>* <br/> <a href="../MatrixSubClass/">MatrixSubClass</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../biochementity_subclasses/">biochementity_subclasses</a></td>
-<td>* <br/> <a href="../BioChemEntitySubClass/">BioChemEntitySubClass</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../indicator_subclasses/">indicator_subclasses</a></td>
-<td>* <br/> <a href="../IndicatorSubClass/">IndicatorSubClass</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-</tbody>
-</table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://w3id.org/peh/peh-model</li>
-</ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>pehterms:EntityList</td>
-</tr>
-<tr>
-<td>native</td>
-<td>pehterms:EntityList</td>
-</tr>
-</tbody>
-</table>
-<h2 id="linkml-source">LinkML Source</h2>
+
+## Class Properties
+
+| Property | Value |
+| --- | --- |
+| Tree Root | Yes |
+
+
+## Slots
+
+| Name | Cardinality and Range | Description | Inheritance |
+| ---  | --- | --- | --- |
+| [metadata_fields](metadata_fields.md) | * <br/> [ObservablePropertyMetadataField](ObservablePropertyMetadataField.md) |  | direct |
+| [groupings](groupings.md) | * <br/> [Grouping](Grouping.md) |  | direct |
+| [observable_properties](observable_properties.md) | * <br/> [ObservableProperty](ObservableProperty.md) |  | direct |
+| [stakeholders](stakeholders.md) | * <br/> [Stakeholder](Stakeholder.md) |  | direct |
+| [projects](projects.md) | * <br/> [Project](Project.md) |  | direct |
+| [studies](studies.md) | * <br/> [Study](Study.md) |  | direct |
+| [study_entities](study_entities.md) | * <br/> [StudyEntity](StudyEntity.md) |  | direct |
+| [physical_entities](physical_entities.md) | * <br/> [PhysicalEntity](PhysicalEntity.md) |  | direct |
+| [observation_groups](observation_groups.md) | * <br/> [ObservationGroup](ObservationGroup.md) |  | direct |
+| [observations](observations.md) | * <br/> [Observation](Observation.md) |  | direct |
+| [derived_observations](derived_observations.md) | * <br/> [DerivedObservation](DerivedObservation.md) |  | direct |
+| [observation_designs](observation_designs.md) | * <br/> [ObservationDesign](ObservationDesign.md) |  | direct |
+| [observation_results](observation_results.md) | * <br/> [ObservationResult](ObservationResult.md) |  | direct |
+| [observed_values](observed_values.md) | * <br/> [ObservedValue](ObservedValue.md) |  | direct |
+| [layouts](layouts.md) | * <br/> [DataLayout](DataLayout.md) |  | direct |
+| [import_configs](import_configs.md) | * <br/> [DataImportConfig](DataImportConfig.md) |  | direct |
+| [data_requests](data_requests.md) | * <br/> [DataRequest](DataRequest.md) |  | direct |
+| [matrix_subclasses](matrix_subclasses.md) | * <br/> [MatrixSubClass](MatrixSubClass.md) |  | direct |
+| [biochementity_subclasses](biochementity_subclasses.md) | * <br/> [BioChemEntitySubClass](BioChemEntitySubClass.md) |  | direct |
+| [indicator_subclasses](indicator_subclasses.md) | * <br/> [IndicatorSubClass](IndicatorSubClass.md) |  | direct |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://w3id.org/peh/peh-model
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | pehterms:EntityList |
+| native | pehterms:EntityList |
+
+
+
+
+
+
+## LinkML Source
+
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
-<h3 id="direct">Direct</h3>
+
+### Direct
+
 <details>
 <pre><code class="language-yaml">name: EntityList
 description: A generic top level object for collecting named entities under one root
@@ -681,7 +509,9 @@ tree_root: true
 
 </code></pre>
 </details>
-<h3 id="induced">Induced</h3>
+
+### Induced
+
 <details>
 <pre><code class="language-yaml">name: EntityList
 description: A generic top level object for collecting named entities under one root
@@ -692,150 +522,163 @@ attributes:
     name: metadata_fields
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: metadata_fields
+    slot_uri: pehterms:hasMetadataField
     owner: EntityList
     domain_of:
     - EntityList
     range: ObservablePropertyMetadataField
     multivalued: true
+    inlined: true
     inlined_as_list: true
   groupings:
     name: groupings
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: groupings
+    slot_uri: pehterms:hasGrouping
     owner: EntityList
     domain_of:
     - EntityList
     range: Grouping
     multivalued: true
+    inlined: true
     inlined_as_list: true
   observable_properties:
     name: observable_properties
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: observable_properties
+    slot_uri: pehterms:hasObservableProperty
     owner: EntityList
     domain_of:
     - EntityList
     range: ObservableProperty
     multivalued: true
+    inlined: true
     inlined_as_list: true
   stakeholders:
     name: stakeholders
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: stakeholders
+    slot_uri: pehterms:hasStakeholder
     owner: EntityList
     domain_of:
     - EntityList
     range: Stakeholder
     multivalued: true
+    inlined: true
     inlined_as_list: true
   projects:
     name: projects
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: projects
+    slot_uri: pehterms:hasProject
     owner: EntityList
     domain_of:
     - EntityList
     range: Project
     multivalued: true
+    inlined: true
     inlined_as_list: true
   studies:
     name: studies
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: studies
+    slot_uri: pehterms:hasStudy
     owner: EntityList
     domain_of:
     - EntityList
     range: Study
     multivalued: true
+    inlined: true
     inlined_as_list: true
   study_entities:
     name: study_entities
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: study_entities
+    slot_uri: pehterms:hasStudyEntity
     owner: EntityList
     domain_of:
     - EntityList
     range: StudyEntity
     multivalued: true
+    inlined: true
     inlined_as_list: true
   physical_entities:
     name: physical_entities
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: physical_entities
+    slot_uri: pehterms:hasPhysicalEntity
     owner: EntityList
     domain_of:
     - EntityList
     range: PhysicalEntity
     multivalued: true
+    inlined: true
     inlined_as_list: true
   observation_groups:
     name: observation_groups
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: observation_groups
+    slot_uri: pehterms:hasObservationGroup
     owner: EntityList
     domain_of:
     - EntityList
     range: ObservationGroup
     multivalued: true
+    inlined: true
     inlined_as_list: true
   observations:
     name: observations
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: observations
+    slot_uri: pehterms:hasObservation
     owner: EntityList
     domain_of:
     - EntityList
     range: Observation
     multivalued: true
+    inlined: true
     inlined_as_list: true
   derived_observations:
     name: derived_observations
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: derived_observations
+    slot_uri: pehterms:hasDerivedObservation
     owner: EntityList
     domain_of:
     - EntityList
     range: DerivedObservation
     multivalued: true
+    inlined: true
     inlined_as_list: true
   observation_designs:
     name: observation_designs
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: observation_designs
+    slot_uri: pehterms:hasObservationDesign
     owner: EntityList
     domain_of:
     - EntityList
     range: ObservationDesign
     multivalued: true
+    inlined: true
     inlined_as_list: true
   observation_results:
     name: observation_results
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: observation_results
+    slot_uri: pehterms:hasObservationResult
     owner: EntityList
     domain_of:
     - EntityList
     range: ObservationResult
     multivalued: true
+    inlined: true
     inlined_as_list: true
   observed_values:
     name: observed_values
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: observed_values
+    slot_uri: pehterms:hasObservedValue
     owner: EntityList
     domain_of:
     - EntityList
@@ -843,77 +686,84 @@ attributes:
     - DataExtract
     range: ObservedValue
     multivalued: true
+    inlined: true
     inlined_as_list: true
   layouts:
     name: layouts
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: layouts
+    slot_uri: pehterms:hasLayout
     owner: EntityList
     domain_of:
     - EntityList
     range: DataLayout
     multivalued: true
+    inlined: true
     inlined_as_list: true
   import_configs:
     name: import_configs
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: import_configs
+    slot_uri: pehterms:hasImportConfig
     owner: EntityList
     domain_of:
     - EntityList
     range: DataImportConfig
     multivalued: true
+    inlined: true
     inlined_as_list: true
   data_requests:
     name: data_requests
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: data_requests
+    slot_uri: pehterms:hasDataRequest
     owner: EntityList
     domain_of:
     - EntityList
     range: DataRequest
     multivalued: true
+    inlined: true
     inlined_as_list: true
   matrix_subclasses:
     name: matrix_subclasses
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: matrix_subclasses
+    slot_uri: pehterms:hasMatrixSubclass
     owner: EntityList
     domain_of:
     - EntityList
     range: MatrixSubClass
     multivalued: true
+    inlined: true
     inlined_as_list: true
   biochementity_subclasses:
     name: biochementity_subclasses
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: biochementity_subclasses
+    slot_uri: pehterms:hasBioChemEntitySubclass
     owner: EntityList
     domain_of:
     - EntityList
     range: BioChemEntitySubClass
     multivalued: true
+    inlined: true
     inlined_as_list: true
   indicator_subclasses:
     name: indicator_subclasses
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: indicator_subclasses
+    slot_uri: pehterms:hasIndicatorSubclass
     owner: EntityList
     domain_of:
     - EntityList
     range: IndicatorSubClass
     multivalued: true
+    inlined: true
     inlined_as_list: true
 tree_root: true
 
 </code></pre>
-</details>
+</details></div>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>

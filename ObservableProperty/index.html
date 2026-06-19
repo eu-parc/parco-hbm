@@ -155,101 +155,6 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#inheritance">
-<span class="md-ellipsis">
-      
-        Inheritance
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#slots">
-<span class="md-ellipsis">
-      
-        Slots
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usages">
-<span class="md-ellipsis">
-      
-        Usages
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#identifier-and-mapping-information">
-<span class="md-ellipsis">
-      
-        Identifier and Mapping Information
-      
-    </span>
-</a>
-<nav aria-label="Identifier and Mapping Information" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#schema-source">
-<span class="md-ellipsis">
-      
-        Schema Source
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#mappings">
-<span class="md-ellipsis">
-      
-        Mappings
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#linkml-source">
-<span class="md-ellipsis">
-      
-        LinkML Source
-      
-    </span>
-</a>
-<nav aria-label="LinkML Source" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#direct">
-<span class="md-ellipsis">
-      
-        Direct
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#induced">
-<span class="md-ellipsis">
-      
-        Induced
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
 </nav>
 </div>
 </div>
@@ -258,7 +163,17 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-observableproperty">Class: ObservableProperty</h1>
 <p><em>A fully defined variable that allows registering an observation about any of the entities relevant to Personal Exposure and Health research</em></p>
-<p>URI: <a href="https://w3id.org/peh/terms/ObservableProperty">pehterms:ObservableProperty</a></p>
+<div data-search-exclude="" markdown="1">
+
+
+
+URI: [pehterms:ObservableProperty](https://w3id.org/peh/terms/ObservableProperty)
+
+
+
+
+
+
 <div class="mermaid"> classDiagram
     class ObservableProperty
     click ObservableProperty href "../ObservableProperty/"
@@ -305,6 +220,17 @@
 
         ObservableProperty --&gt; "*" Grouping : grouping_id_list
         click Grouping href "../Grouping/"
+
+
+
+      ObservableProperty : has_iadopt_variable
+
+
+
+
+
+        ObservableProperty --&gt; "0..1" IAdoptVariable : has_iadopt_variable
+        click IAdoptVariable href "../IAdoptVariable/"
 
 
 
@@ -446,282 +372,112 @@
 
 
 </div>
-<h2 id="inheritance">Inheritance</h2>
-<ul>
-<li><a href="../NamedThing/">NamedThing</a><ul>
-<li><strong>ObservableProperty</strong> [ <a href="../HasTranslations/">HasTranslations</a> <a href="../HasContextAliases/">HasContextAliases</a>]</li>
-</ul>
-</li>
-</ul>
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Cardinality and Range</th>
-<th>Description</th>
-<th>Inheritance</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../value_type/">value_type</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../categorical/">categorical</a></td>
-<td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../multivalued/">multivalued</a></td>
-<td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../value_options/">value_options</a></td>
-<td>* <br/> <a href="../ObservablePropertyValueOption/">ObservablePropertyValueOption</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../value_metadata/">value_metadata</a></td>
-<td>* <br/> <a href="../ObservablePropertyMetadataElement/">ObservablePropertyMetadataElement</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../quantity_kind/">quantity_kind</a></td>
-<td>0..1 <br/> <a href="../QUDTQuantityKind/">QUDTQuantityKind</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../unit/">unit</a></td>
-<td>0..1 <br/> <a href="../QUDTUnit/">QUDTUnit</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../required/">required</a></td>
-<td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../zeroallowed/">zeroallowed</a></td>
-<td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../min_value/">min_value</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>String representation of the expected lower bound in observations, usable for...</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../max_value/">max_value</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>String representation of the expected upper bound in observations, usable for...</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../significantdecimals/">significantdecimals</a></td>
-<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
-<td>Variable precision indication, expressed as the number of significant decimal...</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../immutable/">immutable</a></td>
-<td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
-<td>Variable values are not expected to change over time (e</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../grouping_id_list/">grouping_id_list</a></td>
-<td>* <br/> <a href="../Grouping/">Grouping</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../observation_result_type/">observation_result_type</a></td>
-<td>0..1 <br/> <a href="../ObservationResultType/">ObservationResultType</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../relevant_observable_entity_types/">relevant_observable_entity_types</a></td>
-<td>* <br/> <a href="../ObservableEntityType/">ObservableEntityType</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../relevant_observation_types/">relevant_observation_types</a></td>
-<td>* <br/> <a href="../ObservationType/">ObservationType</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../calculation_design/">calculation_design</a></td>
-<td>0..1 <br/> <a href="../CalculationDesign/">CalculationDesign</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../validation_designs/">validation_designs</a></td>
-<td>* <br/> <a href="../ValidationDesign/">ValidationDesign</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../has_observable_property_type/">has_observable_property_type</a></td>
-<td>* <br/> <a href="../IndicatorSubClass/">IndicatorSubClass</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../translations/">translations</a></td>
-<td>* <br/> <a href="../Translation/">Translation</a></td>
-<td></td>
-<td><a href="../HasTranslations/">HasTranslations</a></td>
-</tr>
-<tr>
-<td><a href="../context_aliases/">context_aliases</a></td>
-<td>* <br/> <a href="../ContextAlias/">ContextAlias</a></td>
-<td></td>
-<td><a href="../HasContextAliases/">HasContextAliases</a></td>
-</tr>
-<tr>
-<td><a href="../id/">id</a></td>
-<td>1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
-<td>Machine readable, unique identifier; ideally a URI/GUPRI (Globally Unique, Pe...</td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-<tr>
-<td><a href="../short_name/">short_name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Shortened name or code, preferrably unique within the context the entity is (...</td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-<tr>
-<td><a href="../name/">name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Common human readable name</td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-<tr>
-<td><a href="../ui_label/">ui_label</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Human readable label, to be used in user interactions through forms or docume...</td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-<tr>
-<td><a href="../description/">description</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Long form description or definition for the entity</td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-<tr>
-<td><a href="../remark/">remark</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Additional comment, note or remark providing context on the use of an entity ...</td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-<tr>
-<td><a href="../exact_matches/">exact_matches</a></td>
-<td>* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
-<td></td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="usages">Usages</h2>
-<table>
-<thead>
-<tr>
-<th>used by</th>
-<th>used in</th>
-<th>type</th>
-<th>used</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../EntityList/">EntityList</a></td>
-<td><a href="../observable_properties/">observable_properties</a></td>
-<td>range</td>
-<td><a href="./">ObservableProperty</a></td>
-</tr>
-<tr>
-<td><a href="../CalculationKeywordArgument/">CalculationKeywordArgument</a></td>
-<td><a href="../observable_property/">observable_property</a></td>
-<td>range</td>
-<td><a href="./">ObservableProperty</a></td>
-</tr>
-<tr>
-<td><a href="../CalculationResult/">CalculationResult</a></td>
-<td><a href="../observable_property/">observable_property</a></td>
-<td>range</td>
-<td><a href="./">ObservableProperty</a></td>
-</tr>
-<tr>
-<td><a href="../ObservablePropertySpecification/">ObservablePropertySpecification</a></td>
-<td><a href="../observable_property/">observable_property</a></td>
-<td>range</td>
-<td><a href="./">ObservableProperty</a></td>
-</tr>
-<tr>
-<td><a href="../ObservedValue/">ObservedValue</a></td>
-<td><a href="../observable_property/">observable_property</a></td>
-<td>range</td>
-<td><a href="./">ObservableProperty</a></td>
-</tr>
-<tr>
-<td><a href="../DataLayoutElement/">DataLayoutElement</a></td>
-<td><a href="../observable_property/">observable_property</a></td>
-<td>range</td>
-<td><a href="./">ObservableProperty</a></td>
-</tr>
-<tr>
-<td><a href="../ObservedEntityProperty/">ObservedEntityProperty</a></td>
-<td><a href="../observable_property/">observable_property</a></td>
-<td>range</td>
-<td><a href="./">ObservableProperty</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://w3id.org/peh/peh-model</li>
-</ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>pehterms:ObservableProperty</td>
-</tr>
-<tr>
-<td>native</td>
-<td>pehterms:ObservableProperty</td>
-</tr>
-</tbody>
-</table>
-<h2 id="linkml-source">LinkML Source</h2>
+
+
+
+
+
+
+## Inheritance
+* [NamedThing](NamedThing.md)
+    * **ObservableProperty** [ [HasTranslations](HasTranslations.md) [HasContextAliases](HasContextAliases.md)]
+
+
+## Slots
+
+| Name | Cardinality and Range | Description | Inheritance |
+| ---  | --- | --- | --- |
+| [value_type](value_type.md) | 0..1 <br/> [String](String.md) |  | direct |
+| [categorical](categorical.md) | 0..1 <br/> [Boolean](Boolean.md) |  | direct |
+| [multivalued](multivalued.md) | 0..1 <br/> [Boolean](Boolean.md) |  | direct |
+| [value_options](value_options.md) | * <br/> [ObservablePropertyValueOption](ObservablePropertyValueOption.md) |  | direct |
+| [value_metadata](value_metadata.md) | * <br/> [ObservablePropertyMetadataElement](ObservablePropertyMetadataElement.md) |  | direct |
+| [quantity_kind](quantity_kind.md) | 0..1 <br/> [QUDTQuantityKind](QUDTQuantityKind.md) |  | direct |
+| [unit](unit.md) | 0..1 <br/> [QUDTUnit](QUDTUnit.md) |  | direct |
+| [required](required.md) | 0..1 <br/> [Boolean](Boolean.md) |  | direct |
+| [zeroallowed](zeroallowed.md) | 0..1 <br/> [Boolean](Boolean.md) |  | direct |
+| [min_value](min_value.md) | 0..1 <br/> [String](String.md) | String representation of the expected lower bound in observations, usable for... | direct |
+| [max_value](max_value.md) | 0..1 <br/> [String](String.md) | String representation of the expected upper bound in observations, usable for... | direct |
+| [significantdecimals](significantdecimals.md) | 0..1 <br/> [Integer](Integer.md) | Variable precision indication, expressed as the number of significant decimal... | direct |
+| [immutable](immutable.md) | 0..1 <br/> [Boolean](Boolean.md) | Variable values are not expected to change over time (e | direct |
+| [grouping_id_list](grouping_id_list.md) | * <br/> [Grouping](Grouping.md) |  | direct |
+| [observation_result_type](observation_result_type.md) | 0..1 <br/> [ObservationResultType](ObservationResultType.md) |  | direct |
+| [relevant_observable_entity_types](relevant_observable_entity_types.md) | * <br/> [ObservableEntityType](ObservableEntityType.md) |  | direct |
+| [relevant_observation_types](relevant_observation_types.md) | * <br/> [ObservationType](ObservationType.md) |  | direct |
+| [calculation_design](calculation_design.md) | 0..1 <br/> [CalculationDesign](CalculationDesign.md) |  | direct |
+| [validation_designs](validation_designs.md) | * <br/> [ValidationDesign](ValidationDesign.md) |  | direct |
+| [has_iadopt_variable](has_iadopt_variable.md) | 0..1 <br/> [IAdoptVariable](IAdoptVariable.md) |  | direct |
+| [has_observable_property_type](has_observable_property_type.md) | * <br/> [IndicatorSubClass](IndicatorSubClass.md) |  | direct |
+| [translations](translations.md) | * <br/> [Translation](Translation.md) |  | [HasTranslations](HasTranslations.md) |
+| [context_aliases](context_aliases.md) | * <br/> [ContextAlias](ContextAlias.md) |  | [HasContextAliases](HasContextAliases.md) |
+| [id](id.md) | 1 <br/> [Uriorcurie](Uriorcurie.md) | Machine readable, unique identifier; ideally a URI/GUPRI (Globally Unique, Pe... | [NamedThing](NamedThing.md) |
+| [short_name](short_name.md) | 0..1 <br/> [String](String.md) | Shortened name or code, preferrably unique within the context the entity is (... | [NamedThing](NamedThing.md) |
+| [name](name.md) | 0..1 <br/> [String](String.md) | Common human readable name | [NamedThing](NamedThing.md) |
+| [ui_label](ui_label.md) | 0..1 <br/> [String](String.md) | Human readable label, to be used in user interactions through forms or docume... | [NamedThing](NamedThing.md) |
+| [description](description.md) | 0..1 <br/> [String](String.md) | Long form description or definition for the entity | [NamedThing](NamedThing.md) |
+| [remark](remark.md) | 0..1 <br/> [String](String.md) | Additional comment, note or remark providing context on the use of an entity ... | [NamedThing](NamedThing.md) |
+| [exact_matches](exact_matches.md) | * <br/> [Uriorcurie](Uriorcurie.md) |  | [NamedThing](NamedThing.md) |
+
+
+
+
+
+## Usages
+
+| used by | used in | type | used |
+| ---  | --- | --- | --- |
+| [EntityList](EntityList.md) | [observable_properties](observable_properties.md) | range | [ObservableProperty](ObservableProperty.md) |
+| [ObservableProperty](ObservableProperty.md) | [has_iadopt_variable](has_iadopt_variable.md) | domain | [ObservableProperty](ObservableProperty.md) |
+| [CalculationKeywordArgument](CalculationKeywordArgument.md) | [observable_property](observable_property.md) | range | [ObservableProperty](ObservableProperty.md) |
+| [CalculationResult](CalculationResult.md) | [observable_property](observable_property.md) | range | [ObservableProperty](ObservableProperty.md) |
+| [ObservablePropertySpecification](ObservablePropertySpecification.md) | [observable_property](observable_property.md) | range | [ObservableProperty](ObservableProperty.md) |
+| [ObservedValue](ObservedValue.md) | [observable_property](observable_property.md) | range | [ObservableProperty](ObservableProperty.md) |
+| [DataLayoutElement](DataLayoutElement.md) | [observable_property](observable_property.md) | range | [ObservableProperty](ObservableProperty.md) |
+| [ObservedEntityProperty](ObservedEntityProperty.md) | [observable_property](observable_property.md) | range | [ObservableProperty](ObservableProperty.md) |
+
+
+
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://w3id.org/peh/peh-model
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | pehterms:ObservableProperty |
+| native | pehterms:ObservableProperty |
+
+
+
+
+
+
+## LinkML Source
+
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
-<h3 id="direct">Direct</h3>
+
+### Direct
+
 <details>
 <pre><code class="language-yaml">name: ObservableProperty
 description: A fully defined variable that allows registering an observation about
@@ -751,11 +507,14 @@ slots:
 - relevant_observation_types
 - calculation_design
 - validation_designs
+- has_iadopt_variable
 - has_observable_property_type
 
 </code></pre>
 </details>
-<h3 id="induced">Induced</h3>
+
+### Induced
+
 <details>
 <pre><code class="language-yaml">name: ObservableProperty
 description: A fully defined variable that allows registering an observation about
@@ -770,7 +529,7 @@ attributes:
     name: value_type
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: value_type
+    slot_uri: pehterms:hasValueType
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
@@ -782,7 +541,7 @@ attributes:
     name: categorical
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: categorical
+    slot_uri: pehterms:isCategorical
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
@@ -791,7 +550,7 @@ attributes:
     name: multivalued
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: multivalued
+    slot_uri: pehterms:isMultivalued
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
@@ -800,7 +559,7 @@ attributes:
     name: value_options
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: value_options
+    slot_uri: pehterms:hasValueOption
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
@@ -812,7 +571,7 @@ attributes:
     name: value_metadata
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: value_metadata
+    slot_uri: pehterms:hasValueMetadata
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
@@ -829,7 +588,6 @@ attributes:
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     slot_uri: qudt:hasQuantityKind
-    alias: quantity_kind
     owner: ObservableProperty
     domain_of:
     - IndicatorSubClass
@@ -844,7 +602,6 @@ attributes:
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     slot_uri: qudt:hasUnit
-    alias: unit
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
@@ -856,7 +613,7 @@ attributes:
     name: required
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: required
+    slot_uri: pehterms:isRequired
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
@@ -865,7 +622,7 @@ attributes:
     name: zeroallowed
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: zeroallowed
+    slot_uri: pehterms:isZeroAllowed
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
@@ -876,7 +633,7 @@ attributes:
       usable for data validation
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: min_value
+    slot_uri: pehterms:hasMinimumValue
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
@@ -887,7 +644,7 @@ attributes:
       usable for data validation
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: max_value
+    slot_uri: pehterms:hasMaximumValue
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
@@ -898,7 +655,7 @@ attributes:
       decimals
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: significantdecimals
+    slot_uri: pehterms:hasSignificantDecimals
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
@@ -909,7 +666,7 @@ attributes:
       of a person)
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: immutable
+    slot_uri: pehterms:isImmutable
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
@@ -919,7 +676,6 @@ attributes:
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     slot_uri: skos:broader
-    alias: grouping_id_list
     owner: ObservableProperty
     domain_of:
     - BioChemEntitySubClass
@@ -931,7 +687,7 @@ attributes:
     name: observation_result_type
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: observation_result_type
+    slot_uri: pehterms:hasObservationResultType
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
@@ -942,7 +698,7 @@ attributes:
     name: relevant_observable_entity_types
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: relevant_observable_entity_types
+    slot_uri: pehterms:hasRelevantObservableEntityType
     owner: ObservableProperty
     domain_of:
     - IndicatorSubClass
@@ -953,7 +709,7 @@ attributes:
     name: relevant_observation_types
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: relevant_observation_types
+    slot_uri: pehterms:hasRelevantObservationType
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
@@ -963,7 +719,7 @@ attributes:
     name: calculation_design
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: calculation_design
+    slot_uri: pehterms:hasCalculationDesign
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
@@ -973,7 +729,7 @@ attributes:
     name: validation_designs
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: validation_designs
+    slot_uri: pehterms:hasValidationDesign
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
@@ -983,12 +739,21 @@ attributes:
     multivalued: true
     inlined: true
     inlined_as_list: true
+  has_iadopt_variable:
+    name: has_iadopt_variable
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    domain: ObservableProperty
+    slot_uri: pehterms:hasVariable
+    owner: ObservableProperty
+    domain_of:
+    - ObservableProperty
+    range: IAdoptVariable
   has_observable_property_type:
     name: has_observable_property_type
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     slot_uri: rdf:type
-    alias: has_observable_property_type
     owner: ObservableProperty
     domain_of:
     - ObservableProperty
@@ -998,7 +763,7 @@ attributes:
     name: translations
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: translations
+    slot_uri: pehterms:hasTranslation
     owner: ObservableProperty
     domain_of:
     - HasTranslations
@@ -1010,7 +775,7 @@ attributes:
     name: context_aliases
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: context_aliases
+    slot_uri: pehterms:hasContextAlias
     owner: ObservableProperty
     domain_of:
     - HasContextAliases
@@ -1026,12 +791,13 @@ attributes:
     rank: 1000
     slot_uri: schema:identifier
     identifier: true
-    alias: id
     owner: ObservableProperty
     domain_of:
     - NamedThing
     - QUDTUnit
     - QUDTQuantityKind
+    - IAdoptVariable
+    - BioChemRole
     range: uriorcurie
     required: true
   short_name:
@@ -1043,7 +809,6 @@ attributes:
     - skos:altLabel
     rank: 1000
     slot_uri: schema:alternateName
-    alias: short_name
     owner: ObservableProperty
     domain_of:
     - NamedThing
@@ -1057,7 +822,6 @@ attributes:
     - skos:prefLabel
     rank: 1000
     slot_uri: rdfs:label
-    alias: name
     owner: ObservableProperty
     domain_of:
     - NamedThing
@@ -1069,7 +833,7 @@ attributes:
       or documents.
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: ui_label
+    slot_uri: pehterms:hasUiLabel
     owner: ObservableProperty
     domain_of:
     - NamedThing
@@ -1082,7 +846,6 @@ attributes:
     - skos:definition
     rank: 1000
     slot_uri: schema:description
-    alias: description
     owner: ObservableProperty
     domain_of:
     - NamedThing
@@ -1096,7 +859,6 @@ attributes:
     - skos:note
     rank: 1000
     slot_uri: schema:comment
-    alias: remark
     owner: ObservableProperty
     domain_of:
     - NamedThing
@@ -1106,7 +868,6 @@ attributes:
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     slot_uri: skos:exactMatch
-    alias: exact_matches
     owner: ObservableProperty
     domain_of:
     - NamedThing
@@ -1114,7 +875,7 @@ attributes:
     multivalued: true
 
 </code></pre>
-</details>
+</details></div>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>

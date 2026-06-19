@@ -155,92 +155,6 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#slots">
-<span class="md-ellipsis">
-      
-        Slots
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usages">
-<span class="md-ellipsis">
-      
-        Usages
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#identifier-and-mapping-information">
-<span class="md-ellipsis">
-      
-        Identifier and Mapping Information
-      
-    </span>
-</a>
-<nav aria-label="Identifier and Mapping Information" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#schema-source">
-<span class="md-ellipsis">
-      
-        Schema Source
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#mappings">
-<span class="md-ellipsis">
-      
-        Mappings
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#linkml-source">
-<span class="md-ellipsis">
-      
-        LinkML Source
-      
-    </span>
-</a>
-<nav aria-label="LinkML Source" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#direct">
-<span class="md-ellipsis">
-      
-        Direct
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#induced">
-<span class="md-ellipsis">
-      
-        Induced
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
 </nav>
 </div>
 </div>
@@ -249,7 +163,17 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-observablepropertyspecification">Class: ObservablePropertySpecification</h1>
 <p><em>For an observable property being recorded, lists its categorisation and processing rules</em></p>
-<p>URI: <a href="https://w3id.org/peh/terms/ObservablePropertySpecification">pehterms:ObservablePropertySpecification</a></p>
+<div data-search-exclude="" markdown="1">
+
+
+
+URI: [pehterms:ObservablePropertySpecification](https://w3id.org/peh/terms/ObservablePropertySpecification)
+
+
+
+
+
+
 <div class="mermaid"> classDiagram
     class ObservablePropertySpecification
     click ObservablePropertySpecification href "../ObservablePropertySpecification/"
@@ -300,89 +224,69 @@
 
 </div>
 <!-- no inheritance hierarchy -->
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Cardinality and Range</th>
-<th>Description</th>
-<th>Inheritance</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../observable_property/">observable_property</a></td>
-<td>0..1 <br/> <a href="../ObservableProperty/">ObservableProperty</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../specification_category/">specification_category</a></td>
-<td>0..1 <br/> <a href="../ObservablePropertySpecificationCategory/">ObservablePropertySpecificationCategory</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../calculation_design/">calculation_design</a></td>
-<td>0..1 <br/> <a href="../CalculationDesign/">CalculationDesign</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../validation_designs/">validation_designs</a></td>
-<td>* <br/> <a href="../ValidationDesign/">ValidationDesign</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-</tbody>
-</table>
-<h2 id="usages">Usages</h2>
-<table>
-<thead>
-<tr>
-<th>used by</th>
-<th>used in</th>
-<th>type</th>
-<th>used</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../ObservationDesign/">ObservationDesign</a></td>
-<td><a href="../observable_property_specifications/">observable_property_specifications</a></td>
-<td>range</td>
-<td><a href="./">ObservablePropertySpecification</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://w3id.org/peh/peh-model</li>
-</ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>pehterms:ObservablePropertySpecification</td>
-</tr>
-<tr>
-<td>native</td>
-<td>pehterms:ObservablePropertySpecification</td>
-</tr>
-</tbody>
-</table>
-<h2 id="linkml-source">LinkML Source</h2>
+
+## Slots
+
+| Name | Cardinality and Range | Description | Inheritance |
+| ---  | --- | --- | --- |
+| [observable_property](observable_property.md) | 0..1 <br/> [ObservableProperty](ObservableProperty.md) |  | direct |
+| [specification_category](specification_category.md) | 0..1 <br/> [ObservablePropertySpecificationCategory](ObservablePropertySpecificationCategory.md) |  | direct |
+| [calculation_design](calculation_design.md) | 0..1 <br/> [CalculationDesign](CalculationDesign.md) |  | direct |
+| [validation_designs](validation_designs.md) | * <br/> [ValidationDesign](ValidationDesign.md) |  | direct |
+
+
+
+
+
+## Usages
+
+| used by | used in | type | used |
+| ---  | --- | --- | --- |
+| [ObservationDesign](ObservationDesign.md) | [observable_property_specifications](observable_property_specifications.md) | range | [ObservablePropertySpecification](ObservablePropertySpecification.md) |
+
+
+
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://w3id.org/peh/peh-model
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | pehterms:ObservablePropertySpecification |
+| native | pehterms:ObservablePropertySpecification |
+
+
+
+
+
+
+## LinkML Source
+
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
-<h3 id="direct">Direct</h3>
+
+### Direct
+
 <details>
 <pre><code class="language-yaml">name: ObservablePropertySpecification
 description: For an observable property being recorded, lists its categorisation and
@@ -396,7 +300,9 @@ slots:
 
 </code></pre>
 </details>
-<h3 id="induced">Induced</h3>
+
+### Induced
+
 <details>
 <pre><code class="language-yaml">name: ObservablePropertySpecification
 description: For an observable property being recorded, lists its categorisation and
@@ -407,7 +313,7 @@ attributes:
     name: observable_property
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: observable_property
+    slot_uri: pehterms:hasObservableProperty
     owner: ObservablePropertySpecification
     domain_of:
     - CalculationKeywordArgument
@@ -422,7 +328,7 @@ attributes:
     name: specification_category
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: specification_category
+    slot_uri: pehterms:hasSpecificationCategory
     owner: ObservablePropertySpecification
     domain_of:
     - ObservablePropertySpecification
@@ -431,7 +337,7 @@ attributes:
     name: calculation_design
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: calculation_design
+    slot_uri: pehterms:hasCalculationDesign
     owner: ObservablePropertySpecification
     domain_of:
     - ObservableProperty
@@ -441,7 +347,7 @@ attributes:
     name: validation_designs
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: validation_designs
+    slot_uri: pehterms:hasValidationDesign
     owner: ObservablePropertySpecification
     domain_of:
     - ObservableProperty
@@ -453,7 +359,7 @@ attributes:
     inlined_as_list: true
 
 </code></pre>
-</details>
+</details></div>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>

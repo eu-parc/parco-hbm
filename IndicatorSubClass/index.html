@@ -155,110 +155,6 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#inheritance">
-<span class="md-ellipsis">
-      
-        Inheritance
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#class-properties">
-<span class="md-ellipsis">
-      
-        Class Properties
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#slots">
-<span class="md-ellipsis">
-      
-        Slots
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usages">
-<span class="md-ellipsis">
-      
-        Usages
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#identifier-and-mapping-information">
-<span class="md-ellipsis">
-      
-        Identifier and Mapping Information
-      
-    </span>
-</a>
-<nav aria-label="Identifier and Mapping Information" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#schema-source">
-<span class="md-ellipsis">
-      
-        Schema Source
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#mappings">
-<span class="md-ellipsis">
-      
-        Mappings
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#linkml-source">
-<span class="md-ellipsis">
-      
-        LinkML Source
-      
-    </span>
-</a>
-<nav aria-label="LinkML Source" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#direct">
-<span class="md-ellipsis">
-      
-        Direct
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#induced">
-<span class="md-ellipsis">
-      
-        Induced
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
 </nav>
 </div>
 </div>
@@ -267,7 +163,17 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-indicatorsubclass">Class: IndicatorSubClass</h1>
 <p><em>Template class used to generate OWL Classes</em></p>
-<p>URI: <a href="http://www.w3.org/2002/07/owl#Class">owl:Class</a></p>
+<div data-search-exclude="" markdown="1">
+
+
+
+URI: [owl:Class](http://www.w3.org/2002/07/owl#Class)
+
+
+
+
+
+
 <div class="mermaid"> classDiagram
     class IndicatorSubClass
     click IndicatorSubClass href "../IndicatorSubClass/"
@@ -343,13 +249,13 @@
 
       IndicatorSubClass : name
 
-      IndicatorSubClass : parent_indicator
+      IndicatorSubClass : parent_indicators
 
 
 
 
 
-        IndicatorSubClass --&gt; "0..1" IndicatorSubClass : parent_indicator
+        IndicatorSubClass --&gt; "*" IndicatorSubClass : parent_indicators
         click IndicatorSubClass href "../IndicatorSubClass/"
 
 
@@ -382,6 +288,8 @@
 
       IndicatorSubClass : short_name
 
+      IndicatorSubClass : suggester
+
       IndicatorSubClass : translations
 
 
@@ -397,207 +305,103 @@
 
 
 </div>
-<h2 id="inheritance">Inheritance</h2>
-<ul>
-<li><a href="../NamedThing/">NamedThing</a><ul>
-<li><strong>IndicatorSubClass</strong> [ <a href="../HasContextAliases/">HasContextAliases</a> <a href="../HasTranslations/">HasTranslations</a>]</li>
-</ul>
-</li>
-</ul>
-<h2 id="class-properties">Class Properties</h2>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Class URI</td>
-<td><a href="http://www.w3.org/2002/07/owl#Class">owl:Class</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Cardinality and Range</th>
-<th>Description</th>
-<th>Inheritance</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../indicator_type/">indicator_type</a></td>
-<td>0..1 <br/> <a href="../IndicatorType/">IndicatorType</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../property/">property</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../quantity_kind/">quantity_kind</a></td>
-<td>0..1 <br/> <a href="../QUDTQuantityKind/">QUDTQuantityKind</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../matrix/">matrix</a></td>
-<td>0..1 <br/> <a href="../Matrix/">Matrix</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../constraints/">constraints</a></td>
-<td>* <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../grouping_id_list/">grouping_id_list</a></td>
-<td>* <br/> <a href="../Grouping/">Grouping</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../relevant_observable_entity_types/">relevant_observable_entity_types</a></td>
-<td>* <br/> <a href="../ObservableEntityType/">ObservableEntityType</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../biochementity/">biochementity</a></td>
-<td>0..1 <br/> <a href="../BioChemEntity/">BioChemEntity</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../parent_indicator/">parent_indicator</a></td>
-<td>0..1 <br/> <a href="./">IndicatorSubClass</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../context_aliases/">context_aliases</a></td>
-<td>* <br/> <a href="../ContextAlias/">ContextAlias</a></td>
-<td></td>
-<td><a href="../HasContextAliases/">HasContextAliases</a></td>
-</tr>
-<tr>
-<td><a href="../translations/">translations</a></td>
-<td>* <br/> <a href="../Translation/">Translation</a></td>
-<td></td>
-<td><a href="../HasTranslations/">HasTranslations</a></td>
-</tr>
-<tr>
-<td><a href="../id/">id</a></td>
-<td>1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
-<td>Machine readable, unique identifier; ideally a URI/GUPRI (Globally Unique, Pe...</td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-<tr>
-<td><a href="../short_name/">short_name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Shortened name or code, preferrably unique within the context the entity is (...</td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-<tr>
-<td><a href="../name/">name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Common human readable name</td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-<tr>
-<td><a href="../ui_label/">ui_label</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Human readable label, to be used in user interactions through forms or docume...</td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-<tr>
-<td><a href="../description/">description</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Long form description or definition for the entity</td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-<tr>
-<td><a href="../remark/">remark</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Additional comment, note or remark providing context on the use of an entity ...</td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-<tr>
-<td><a href="../exact_matches/">exact_matches</a></td>
-<td>* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
-<td></td>
-<td><a href="../NamedThing/">NamedThing</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="usages">Usages</h2>
-<table>
-<thead>
-<tr>
-<th>used by</th>
-<th>used in</th>
-<th>type</th>
-<th>used</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../EntityList/">EntityList</a></td>
-<td><a href="../indicator_subclasses/">indicator_subclasses</a></td>
-<td>range</td>
-<td><a href="./">IndicatorSubClass</a></td>
-</tr>
-<tr>
-<td><a href="./">IndicatorSubClass</a></td>
-<td><a href="../parent_indicator/">parent_indicator</a></td>
-<td>range</td>
-<td><a href="./">IndicatorSubClass</a></td>
-</tr>
-<tr>
-<td><a href="../ObservableProperty/">ObservableProperty</a></td>
-<td><a href="../has_observable_property_type/">has_observable_property_type</a></td>
-<td>range</td>
-<td><a href="./">IndicatorSubClass</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://w3id.org/peh/peh-model</li>
-</ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>owl:Class</td>
-</tr>
-<tr>
-<td>native</td>
-<td>pehterms:IndicatorSubClass</td>
-</tr>
-</tbody>
-</table>
-<h2 id="linkml-source">LinkML Source</h2>
+
+
+
+
+
+
+## Inheritance
+* [NamedThing](NamedThing.md)
+    * **IndicatorSubClass** [ [HasContextAliases](HasContextAliases.md) [HasTranslations](HasTranslations.md)]
+
+
+## Class Properties
+
+| Property | Value |
+| --- | --- |
+| Class URI | [owl:Class](http://www.w3.org/2002/07/owl#Class) |
+
+
+## Slots
+
+| Name | Cardinality and Range | Description | Inheritance |
+| ---  | --- | --- | --- |
+| [indicator_type](indicator_type.md) | 0..1 <br/> [IndicatorType](IndicatorType.md) |  | direct |
+| [property](property.md) | 0..1 <br/> [String](String.md) |  | direct |
+| [quantity_kind](quantity_kind.md) | 0..1 <br/> [QUDTQuantityKind](QUDTQuantityKind.md) |  | direct |
+| [matrix](matrix.md) | 0..1 <br/> [Matrix](Matrix.md) |  | direct |
+| [constraints](constraints.md) | * <br/> [String](String.md) |  | direct |
+| [grouping_id_list](grouping_id_list.md) | * <br/> [Grouping](Grouping.md) |  | direct |
+| [relevant_observable_entity_types](relevant_observable_entity_types.md) | * <br/> [ObservableEntityType](ObservableEntityType.md) |  | direct |
+| [biochementity](biochementity.md) | 0..1 <br/> [BioChemEntity](BioChemEntity.md) |  | direct |
+| [parent_indicators](parent_indicators.md) | * <br/> [IndicatorSubClass](IndicatorSubClass.md) |  | direct |
+| [suggester](suggester.md) | 0..1 <br/> [Uriorcurie](Uriorcurie.md) | ORCID of the person who suggested this entity, recorded as the provenance att... | direct |
+| [context_aliases](context_aliases.md) | * <br/> [ContextAlias](ContextAlias.md) |  | [HasContextAliases](HasContextAliases.md) |
+| [translations](translations.md) | * <br/> [Translation](Translation.md) |  | [HasTranslations](HasTranslations.md) |
+| [id](id.md) | 1 <br/> [Uriorcurie](Uriorcurie.md) | Machine readable, unique identifier; ideally a URI/GUPRI (Globally Unique, Pe... | [NamedThing](NamedThing.md) |
+| [short_name](short_name.md) | 0..1 <br/> [String](String.md) | Shortened name or code, preferrably unique within the context the entity is (... | [NamedThing](NamedThing.md) |
+| [name](name.md) | 0..1 <br/> [String](String.md) | Common human readable name | [NamedThing](NamedThing.md) |
+| [ui_label](ui_label.md) | 0..1 <br/> [String](String.md) | Human readable label, to be used in user interactions through forms or docume... | [NamedThing](NamedThing.md) |
+| [description](description.md) | 0..1 <br/> [String](String.md) | Long form description or definition for the entity | [NamedThing](NamedThing.md) |
+| [remark](remark.md) | 0..1 <br/> [String](String.md) | Additional comment, note or remark providing context on the use of an entity ... | [NamedThing](NamedThing.md) |
+| [exact_matches](exact_matches.md) | * <br/> [Uriorcurie](Uriorcurie.md) |  | [NamedThing](NamedThing.md) |
+
+
+
+
+
+## Usages
+
+| used by | used in | type | used |
+| ---  | --- | --- | --- |
+| [EntityList](EntityList.md) | [indicator_subclasses](indicator_subclasses.md) | range | [IndicatorSubClass](IndicatorSubClass.md) |
+| [IndicatorSubClass](IndicatorSubClass.md) | [parent_indicators](parent_indicators.md) | range | [IndicatorSubClass](IndicatorSubClass.md) |
+| [ObservableProperty](ObservableProperty.md) | [has_observable_property_type](has_observable_property_type.md) | range | [IndicatorSubClass](IndicatorSubClass.md) |
+
+
+
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://w3id.org/peh/peh-model
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | owl:Class |
+| native | pehterms:IndicatorSubClass |
+
+
+
+
+
+
+## LinkML Source
+
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
-<h3 id="direct">Direct</h3>
+
+### Direct
+
 <details>
 <pre><code class="language-yaml">name: IndicatorSubClass
 description: Template class used to generate OWL Classes
@@ -615,12 +419,15 @@ slots:
 - grouping_id_list
 - relevant_observable_entity_types
 - biochementity
-- parent_indicator
+- parent_indicators
+- suggester
 class_uri: owl:Class
 
 </code></pre>
 </details>
-<h3 id="induced">Induced</h3>
+
+### Induced
+
 <details>
 <pre><code class="language-yaml">name: IndicatorSubClass
 description: Template class used to generate OWL Classes
@@ -634,7 +441,7 @@ attributes:
     name: indicator_type
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: indicator_type
+    slot_uri: pehterms:hasIndicatorType
     owner: IndicatorSubClass
     domain_of:
     - IndicatorSubClass
@@ -643,7 +450,7 @@ attributes:
     name: property
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: property
+    slot_uri: pehterms:hasProperty
     owner: IndicatorSubClass
     domain_of:
     - IndicatorSubClass
@@ -657,7 +464,6 @@ attributes:
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     slot_uri: qudt:hasQuantityKind
-    alias: quantity_kind
     owner: IndicatorSubClass
     domain_of:
     - IndicatorSubClass
@@ -667,7 +473,7 @@ attributes:
     name: matrix
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: matrix
+    slot_uri: pehterms:hasMatrix
     owner: IndicatorSubClass
     domain_of:
     - IndicatorSubClass
@@ -678,7 +484,7 @@ attributes:
     name: constraints
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: constraints
+    slot_uri: pehterms:hasConstraint
     owner: IndicatorSubClass
     domain_of:
     - IndicatorSubClass
@@ -691,7 +497,6 @@ attributes:
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     slot_uri: skos:broader
-    alias: grouping_id_list
     owner: IndicatorSubClass
     domain_of:
     - BioChemEntitySubClass
@@ -703,7 +508,7 @@ attributes:
     name: relevant_observable_entity_types
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: relevant_observable_entity_types
+    slot_uri: pehterms:hasRelevantObservableEntityType
     owner: IndicatorSubClass
     domain_of:
     - IndicatorSubClass
@@ -714,27 +519,40 @@ attributes:
     name: biochementity
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: biochementity
+    slot_uri: pehterms:hasBioChemEntity
     owner: IndicatorSubClass
     domain_of:
     - IndicatorSubClass
     range: BioChemEntity
     inlined: false
-  parent_indicator:
-    name: parent_indicator
+  parent_indicators:
+    name: parent_indicators
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     slot_uri: rdfs:subClassOf
-    alias: parent_indicator
     owner: IndicatorSubClass
     domain_of:
     - IndicatorSubClass
     range: IndicatorSubClass
+    multivalued: true
+  suggester:
+    name: suggester
+    description: ORCID of the person who suggested this entity, recorded as the provenance
+      attribution (prov:wasAttributedTo) of the resulting nanopublication.
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    slot_uri: prov:wasAttributedTo
+    owner: IndicatorSubClass
+    domain_of:
+    - BioChemEntitySubClass
+    - MatrixSubClass
+    - IndicatorSubClass
+    range: uriorcurie
   context_aliases:
     name: context_aliases
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: context_aliases
+    slot_uri: pehterms:hasContextAlias
     owner: IndicatorSubClass
     domain_of:
     - HasContextAliases
@@ -746,7 +564,7 @@ attributes:
     name: translations
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: translations
+    slot_uri: pehterms:hasTranslation
     owner: IndicatorSubClass
     domain_of:
     - HasTranslations
@@ -762,12 +580,13 @@ attributes:
     rank: 1000
     slot_uri: schema:identifier
     identifier: true
-    alias: id
     owner: IndicatorSubClass
     domain_of:
     - NamedThing
     - QUDTUnit
     - QUDTQuantityKind
+    - IAdoptVariable
+    - BioChemRole
     range: uriorcurie
     required: true
   short_name:
@@ -779,7 +598,6 @@ attributes:
     - skos:altLabel
     rank: 1000
     slot_uri: schema:alternateName
-    alias: short_name
     owner: IndicatorSubClass
     domain_of:
     - NamedThing
@@ -793,7 +611,6 @@ attributes:
     - skos:prefLabel
     rank: 1000
     slot_uri: rdfs:label
-    alias: name
     owner: IndicatorSubClass
     domain_of:
     - NamedThing
@@ -805,7 +622,7 @@ attributes:
       or documents.
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
-    alias: ui_label
+    slot_uri: pehterms:hasUiLabel
     owner: IndicatorSubClass
     domain_of:
     - NamedThing
@@ -818,7 +635,6 @@ attributes:
     - skos:definition
     rank: 1000
     slot_uri: schema:description
-    alias: description
     owner: IndicatorSubClass
     domain_of:
     - NamedThing
@@ -832,7 +648,6 @@ attributes:
     - skos:note
     rank: 1000
     slot_uri: schema:comment
-    alias: remark
     owner: IndicatorSubClass
     domain_of:
     - NamedThing
@@ -842,7 +657,6 @@ attributes:
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     slot_uri: skos:exactMatch
-    alias: exact_matches
     owner: IndicatorSubClass
     domain_of:
     - NamedThing
@@ -851,7 +665,7 @@ attributes:
 class_uri: owl:Class
 
 </code></pre>
-</details>
+</details></div>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
