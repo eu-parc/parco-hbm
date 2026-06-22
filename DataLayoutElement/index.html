@@ -225,6 +225,8 @@ URI: [pehterms:DataLayoutElement](https://w3id.org/peh/terms/DataLayoutElement)
 
 
 
+      DataLayoutElement : order
+
 
 </div>
 <!-- no inheritance hierarchy -->
@@ -239,6 +241,7 @@ URI: [pehterms:DataLayoutElement](https://w3id.org/peh/terms/DataLayoutElement)
 | [observable_property](observable_property.md) | 0..1 <br/> [ObservableProperty](ObservableProperty.md) |  | direct |
 | [is_observable_entity_key](is_observable_entity_key.md) | 0..1 <br/> [Boolean](Boolean.md) |  | direct |
 | [foreign_key_link](foreign_key_link.md) | 0..1 <br/> [DataLayoutElementLink](DataLayoutElementLink.md) |  | direct |
+| [order](order.md) | 0..1 <br/> [Integer](Integer.md) | Integer determining the order of elements in the form modeled by the data lay... | direct |
 
 
 
@@ -305,6 +308,7 @@ slots:
 - observable_property
 - is_observable_entity_key
 - foreign_key_link
+- order
 
 </code></pre>
 </details>
@@ -379,6 +383,17 @@ attributes:
     domain_of:
     - DataLayoutElement
     range: DataLayoutElementLink
+  order:
+    name: order
+    description: Integer determining the order of elements in the form modeled by
+      the data layout
+    from_schema: https://w3id.org/peh/peh-model
+    rank: 1000
+    slot_uri: pehterms:hasOrder
+    owner: DataLayoutElement
+    domain_of:
+    - DataLayoutElement
+    range: integer
 
 </code></pre>
 </details></div>

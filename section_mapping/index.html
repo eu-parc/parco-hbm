@@ -338,6 +338,7 @@ URI: [pehterms:hasSectionMapping](https://w3id.org/peh/terms/hasSectionMapping)
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
 | [DataImportConfig](DataImportConfig.md) | Configuration for incoming data, defining the expected DataLayout and the Obs... |  no  |
+| [DataExportConfig](DataExportConfig.md) | Configuration for outgoing data, defining the expected DataLayout and the Obs... |  no  |
 
 
 
@@ -351,7 +352,7 @@ URI: [pehterms:hasSectionMapping](https://w3id.org/peh/terms/hasSectionMapping)
 | Property | Value |
 | --- | --- |
 | Range | [DataImportSectionMapping](DataImportSectionMapping.md) |
-| Domain Of | [DataImportConfig](DataImportConfig.md) |
+| Domain Of | [DataImportConfig](DataImportConfig.md), [DataExportConfig](DataExportConfig.md) |
 | Slot URI | [pehterms:hasSectionMapping](https://w3id.org/peh/terms/hasSectionMapping) |
 
 ### Cardinality and Requirements
@@ -402,6 +403,7 @@ rank: 1000
 slot_uri: pehterms:hasSectionMapping
 domain_of:
 - DataImportConfig
+- DataExportConfig
 range: DataImportSectionMapping
 
 </code></pre>

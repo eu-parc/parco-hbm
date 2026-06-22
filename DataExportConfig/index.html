@@ -5,10 +5,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://eu-parc.github.io/parco-hbm/DataImportConfig/" rel="canonical"/>
+<link href="https://eu-parc.github.io/parco-hbm/DataExportConfig/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
-<title>Class: DataImportConfig - PEH-model Documentation</title>
+<title>Class: DataExportConfig - PEH-model Documentation</title>
 <link href="../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -24,7 +24,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#class-dataimportconfig">
+<a class="md-skip" href="#class-dataexportconfig">
           Skip to content
         </a>
 </div>
@@ -50,7 +50,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Class: DataImportConfig
+              Class: DataExportConfig
             
           </span>
 </div>
@@ -161,13 +161,13 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="class-dataimportconfig">Class: DataImportConfig</h1>
-<p><em>Configuration for incoming data, defining the expected DataLayout and the Observation(s) the data will be added to</em></p>
+<h1 id="class-dataexportconfig">Class: DataExportConfig</h1>
+<p><em>Configuration for outgoing data, defining the expected DataLayout and the Observation(s) the data will be added to</em></p>
 <div data-search-exclude="" markdown="1">
 
 
 
-URI: [pehterms:DataImportConfig](https://w3id.org/peh/terms/DataImportConfig)
+URI: [pehterms:DataExportConfig](https://w3id.org/peh/terms/DataExportConfig)
 
 
 
@@ -175,46 +175,46 @@ URI: [pehterms:DataImportConfig](https://w3id.org/peh/terms/DataImportConfig)
 
 
 <div class="mermaid"> classDiagram
-    class DataImportConfig
-    click DataImportConfig href "../DataImportConfig/"
-      NamedThing &lt;|-- DataImportConfig
+    class DataExportConfig
+    click DataExportConfig href "../DataExportConfig/"
+      NamedThing &lt;|-- DataExportConfig
         click NamedThing href "../NamedThing/"
 
-      DataImportConfig : description
+      DataExportConfig : description
 
-      DataImportConfig : exact_matches
+      DataExportConfig : exact_matches
 
-      DataImportConfig : id
+      DataExportConfig : id
 
-      DataImportConfig : layout
-
-
+      DataExportConfig : layout
 
 
 
-        DataImportConfig --&gt; "0..1" DataLayout : layout
+
+
+        DataExportConfig --&gt; "0..1" DataLayout : layout
         click DataLayout href "../DataLayout/"
 
 
 
-      DataImportConfig : name
+      DataExportConfig : name
 
-      DataImportConfig : remark
+      DataExportConfig : remark
 
-      DataImportConfig : section_mapping
-
-
+      DataExportConfig : section_mapping
 
 
 
-        DataImportConfig --&gt; "0..1" DataImportSectionMapping : section_mapping
+
+
+        DataExportConfig --&gt; "0..1" DataImportSectionMapping : section_mapping
         click DataImportSectionMapping href "../DataImportSectionMapping/"
 
 
 
-      DataImportConfig : short_name
+      DataExportConfig : short_name
 
-      DataImportConfig : ui_label
+      DataExportConfig : ui_label
 
 
 </div>
@@ -226,7 +226,7 @@ URI: [pehterms:DataImportConfig](https://w3id.org/peh/terms/DataImportConfig)
 
 ## Inheritance
 * [NamedThing](NamedThing.md)
-    * **DataImportConfig**
+    * **DataExportConfig**
 
 
 ## Slots
@@ -245,13 +245,6 @@ URI: [pehterms:DataImportConfig](https://w3id.org/peh/terms/DataImportConfig)
 
 
 
-
-
-## Usages
-
-| used by | used in | type | used |
-| ---  | --- | --- | --- |
-| [EntityList](EntityList.md) | [import_configs](import_configs.md) | range | [DataImportConfig](DataImportConfig.md) |
 
 
 
@@ -282,8 +275,8 @@ URI: [pehterms:DataImportConfig](https://w3id.org/peh/terms/DataImportConfig)
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
-| self | pehterms:DataImportConfig |
-| native | pehterms:DataImportConfig |
+| self | pehterms:DataExportConfig |
+| native | pehterms:DataExportConfig |
 
 
 
@@ -297,8 +290,8 @@ URI: [pehterms:DataImportConfig](https://w3id.org/peh/terms/DataImportConfig)
 ### Direct
 
 <details>
-<pre><code class="language-yaml">name: DataImportConfig
-description: Configuration for incoming data, defining the expected DataLayout and
+<pre><code class="language-yaml">name: DataExportConfig
+description: Configuration for outgoing data, defining the expected DataLayout and
   the Observation(s) the data will be added to
 from_schema: https://w3id.org/peh/peh-model
 is_a: NamedThing
@@ -312,8 +305,8 @@ slots:
 ### Induced
 
 <details>
-<pre><code class="language-yaml">name: DataImportConfig
-description: Configuration for incoming data, defining the expected DataLayout and
+<pre><code class="language-yaml">name: DataExportConfig
+description: Configuration for outgoing data, defining the expected DataLayout and
   the Observation(s) the data will be added to
 from_schema: https://w3id.org/peh/peh-model
 is_a: NamedThing
@@ -323,7 +316,7 @@ attributes:
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     slot_uri: pehterms:hasLayout
-    owner: DataImportConfig
+    owner: DataExportConfig
     domain_of:
     - DataImportConfig
     - DataExportConfig
@@ -334,7 +327,7 @@ attributes:
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     slot_uri: pehterms:hasSectionMapping
-    owner: DataImportConfig
+    owner: DataExportConfig
     domain_of:
     - DataImportConfig
     - DataExportConfig
@@ -347,7 +340,7 @@ attributes:
     rank: 1000
     slot_uri: schema:identifier
     identifier: true
-    owner: DataImportConfig
+    owner: DataExportConfig
     domain_of:
     - NamedThing
     - QUDTUnit
@@ -365,7 +358,7 @@ attributes:
     - skos:altLabel
     rank: 1000
     slot_uri: schema:alternateName
-    owner: DataImportConfig
+    owner: DataExportConfig
     domain_of:
     - NamedThing
     range: string
@@ -378,7 +371,7 @@ attributes:
     - skos:prefLabel
     rank: 1000
     slot_uri: rdfs:label
-    owner: DataImportConfig
+    owner: DataExportConfig
     domain_of:
     - NamedThing
     - Contact
@@ -390,7 +383,7 @@ attributes:
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     slot_uri: pehterms:hasUiLabel
-    owner: DataImportConfig
+    owner: DataExportConfig
     domain_of:
     - NamedThing
     range: string
@@ -402,7 +395,7 @@ attributes:
     - skos:definition
     rank: 1000
     slot_uri: schema:description
-    owner: DataImportConfig
+    owner: DataExportConfig
     domain_of:
     - NamedThing
     range: string
@@ -415,7 +408,7 @@ attributes:
     - skos:note
     rank: 1000
     slot_uri: schema:comment
-    owner: DataImportConfig
+    owner: DataExportConfig
     domain_of:
     - NamedThing
     range: string
@@ -424,7 +417,7 @@ attributes:
     from_schema: https://w3id.org/peh/peh-model
     rank: 1000
     slot_uri: skos:exactMatch
-    owner: DataImportConfig
+    owner: DataExportConfig
     domain_of:
     - NamedThing
     range: uriorcurie
